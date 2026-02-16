@@ -1841,7 +1841,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57bbb31e83b5546b2bc08465147008c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mainSceneName: Game
+  mainSceneName: Courtyard
 --- !u!4 &1291815694
 Transform:
   m_ObjectHideFlags: 0

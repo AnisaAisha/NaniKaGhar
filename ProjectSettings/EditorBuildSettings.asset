@@ -12,8 +12,11 @@ EditorBuildSettings:
     path: Assets/Scenes/Main Menu.unity
     guid: 5565accf80c8f4accb45ec791066d43c
   - enabled: 1
-    path: Assets/Scenes/Game.unity
+    path: Assets/Scenes/Courtyard.unity
     guid: f3872a674501048219d4a41fd5259c91
+  - enabled: 1
+    path: Assets/Scenes/Room 1.unity
+    guid: bc89ff2520a184f2d933d344b79d0a3c
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0
