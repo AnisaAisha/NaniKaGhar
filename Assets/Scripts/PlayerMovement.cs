@@ -3,7 +3,6 @@ using System.Collections;
 
 public class PlayerMovement : MonoBehaviour
 {
-    [SerializeField] SpriteRenderer spriteRenderer;
     [SerializeField] Rigidbody2D playerRigidbody;
     [SerializeField] Animator animator;
     [SerializeField] float speed;
@@ -24,16 +23,16 @@ public class PlayerMovement : MonoBehaviour
             movement.x = 0;
         }
 
-        // Flip sprite when moving left
-        if (movement.x > 0) {
-            spriteRenderer.flipX = false;
-        }
-        else if (movement.x < 0) {
-            spriteRenderer.flipX = true;
-        }
-
         playerRigidbody.linearVelocity = movement * speed;
         animator.SetFloat("Speed", Mathf.Abs(movement.x));
 
+        // Set parameters for player movement and idle blend trees in animator
+        animator.SetFloat("Horizontal", movement.x);
+        animator.SetFloat("Vertical", movement.y);
+
+        if (movement != Vector2.zero) {
+            animator.SetFloat("LastHorizontal", movement.x);
+            animator.SetFloat("LastVertical", movement.y);
+        }
     }
 }
