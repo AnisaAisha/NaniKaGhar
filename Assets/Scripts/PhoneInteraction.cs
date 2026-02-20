@@ -8,6 +8,7 @@ public class PhoneInteraction : MonoBehaviour
     [SerializeField] AudioSource phoneRing;
     [SerializeField] AudioSource phoneCut;
     [SerializeField] LifafaInteraction letter;
+    [SerializeField] ParticleSystem smoke;
     // [SerializeField] StoryManager storyManager;
 
     private bool isPhoneRingTriggered;
@@ -48,6 +49,7 @@ public class PhoneInteraction : MonoBehaviour
 
         // Since sentences are a queue, taking the index from bottom (to fix later)
         dialogTrigger.SetDialogueInteraction(2, phoneCut);
+        dialogTrigger.SetDialogueInteraction(1, smoke);
     }
 
     void PlayPhonecutSFX() {

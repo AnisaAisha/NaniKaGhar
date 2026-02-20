@@ -1,0 +1,689 @@
+fileFormatVersion: 2
+guid: 163146e6d210a48f096d6a989eb956cc
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1499006240421726856
+    second: fortuneteller-mini_0
+  - first:
+      213: -7165082329505205686
+    second: fortuneteller-mini_1
+  - first:
+      213: 3971386003687343077
+    second: fortuneteller-mini_2
+  - first:
+      213: 5337068209734261309
+    second: fortuneteller-mini_3
+  - first:
+      213: -1418638799614095191
+    second: fortuneteller-mini_4
+  - first:
+      213: 7972135984671006590
+    second: fortuneteller-mini_5
+  - first:
+      213: -5092624356437914130
+    second: fortuneteller-mini_6
+  - first:
+      213: 2266403923703624039
+    second: fortuneteller-mini_7
+  - first:
+      213: -763660693706930213
+    second: fortuneteller-mini_8
+  - first:
+      213: -3707020047028945619
+    second: fortuneteller-mini_9
+  - first:
+      213: -6331054360898790223
+    second: fortuneteller-mini_10
+  - first:
+      213: 6723530226807297692
+    second: fortuneteller-mini_11
+  - first:
+      213: -3423419912257094262
+    second: fortuneteller-mini_12
+  - first:
+      213: -189441043527760439
+    second: fortuneteller-mini_13
+  - first:
+      213: -7865838995636636596
+    second: fortuneteller-mini_14
+  - first:
+      213: -7790564771845255615
+    second: fortuneteller-mini_15
+  - first:
+      213: -6751864827614418109
+    second: fortuneteller-mini_16
+  - first:
+      213: 7633026051867277737
+    second: fortuneteller-mini_17
+  - first:
+      213: 8275276449171447087
+    second: fortuneteller-mini_18
+  - first:
+      213: -2382948196109718879
+    second: fortuneteller-mini_19
+  - first:
+      213: 9185716022259782820
+    second: fortuneteller-mini_20
+  - first:
+      213: -5374608395618566175
+    second: fortuneteller-mini_21
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: fortuneteller-mini_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 236
+        height: 183
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88a4e6ccb3a8dc410800000000000000
+      internalID: 1499006240421726856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fortuneteller-mini_1
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 149
+        width: 40
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a42f9636593809c90800000000000000
+      internalID: -7165082329505205686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fortuneteller-mini_2
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 149
+        width: 13
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e30ebf67823d1730800000000000000
+      internalID: 3971386003687343077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fortuneteller-mini_3
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 166
+        width: 26
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3a9d3f7243111a40800000000000000
+      internalID: 5337068209734261309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fortuneteller-mini_4
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 157
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a05a6c278bff4ce0800000000000000
+      internalID: -1418638799614095191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fortuneteller-mini_5
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 145
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7f9c6b9077b2ae60800000000000000
+      internalID: 7972135984671006590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fortuneteller-mini_6
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 145
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eed0404312d5359b0800000000000000
+      internalID: -5092624356437914130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fortuneteller-mini_7
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 148
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 761f7e55c52e37f10800000000000000
+      internalID: 2266403923703624039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fortuneteller-mini_8
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 144
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd78ba625aee665f0800000000000000
+      internalID: -763660693706930213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fortuneteller-mini_9
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 146
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2d769968e40e8cc0800000000000000
+      internalID: -3707020047028945619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fortuneteller-mini_10
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 121
+        width: 18
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1bc90f42a939328a0800000000000000
+      internalID: -6331054360898790223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fortuneteller-mini_11
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 139
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c9653755e17ce4d50800000000000000
+      internalID: 6723530226807297692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fortuneteller-mini_12
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 139
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8dbae45ab19d70d0800000000000000
+      internalID: -3423419912257094262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fortuneteller-mini_13
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 129
+        width: 9
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c506a6ef58fe5df0800000000000000
+      internalID: -189441043527760439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fortuneteller-mini_14
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 135
+        width: 6
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c44b9a4cb1de6d290800000000000000
+      internalID: -7865838995636636596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fortuneteller-mini_15
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 130
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14ecd7ebd9a52e390800000000000000
+      internalID: -7790564771845255615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fortuneteller-mini_16
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 124
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34ba69256be8c42a0800000000000000
+      internalID: -6751864827614418109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fortuneteller-mini_17
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 128
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a9f9dea0c4fde960800000000000000
+      internalID: 7633026051867277737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fortuneteller-mini_18
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 68
+        width: 20
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f2d15031610b7d270800000000000000
+      internalID: 8275276449171447087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fortuneteller-mini_19
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 107
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1aae8b4bd311eeed0800000000000000
+      internalID: -2382948196109718879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fortuneteller-mini_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 71
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a49862ed083a7f70800000000000000
+      internalID: 9185716022259782820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fortuneteller-mini_21
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 64
+        width: 21
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1efb25cd32e8965b0800000000000000
+      internalID: -5374608395618566175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      fortuneteller-mini_0: 1499006240421726856
+      fortuneteller-mini_1: -7165082329505205686
+      fortuneteller-mini_10: -6331054360898790223
+      fortuneteller-mini_11: 6723530226807297692
+      fortuneteller-mini_12: -3423419912257094262
+      fortuneteller-mini_13: -189441043527760439
+      fortuneteller-mini_14: -7865838995636636596
+      fortuneteller-mini_15: -7790564771845255615
+      fortuneteller-mini_16: -6751864827614418109
+      fortuneteller-mini_17: 7633026051867277737
+      fortuneteller-mini_18: 8275276449171447087
+      fortuneteller-mini_19: -2382948196109718879
+      fortuneteller-mini_2: 3971386003687343077
+      fortuneteller-mini_20: 9185716022259782820
+      fortuneteller-mini_21: -5374608395618566175
+      fortuneteller-mini_3: 5337068209734261309
+      fortuneteller-mini_4: -1418638799614095191
+      fortuneteller-mini_5: 7972135984671006590
+      fortuneteller-mini_6: -5092624356437914130
+      fortuneteller-mini_7: 2266403923703624039
+      fortuneteller-mini_8: -763660693706930213
+      fortuneteller-mini_9: -3707020047028945619
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -75,6 +75,8 @@ public class DialogueManager : MonoBehaviour
             if (sentences.Count == i) {
                 if (item is AudioSource audio) {
                     audio.Play();
+                } else if (item is ParticleSystem ps) {
+                    ps.Play();
                 }
             }
         }

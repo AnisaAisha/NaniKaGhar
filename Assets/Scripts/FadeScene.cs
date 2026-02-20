@@ -5,6 +5,7 @@ using System.Collections;
 
 public class FadeScene : MonoBehaviour
 {
+    [SerializeField] bool isStaticScene;
     [SerializeField] Image image;
     [SerializeField] string NewSceneName;
 
@@ -40,5 +41,11 @@ public class FadeScene : MonoBehaviour
         if (collider.gameObject.layer == 6) {
             StartCoroutine(ChangeScene());
         }
+    }
+
+    void OnMouseDown() {
+        if (isStaticScene) {
+            StartCoroutine(ChangeScene());
+        }  
     }
 }

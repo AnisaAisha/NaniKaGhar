@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 56e37a665bb0c4642a2c5143b87de6d3, type: 3}
-  m_Name: rag
+  m_Name: JalpariScales
   m_EditorClassIdentifier: 
-  id: 1
-  name: rag
-  isDry: 0
-  icon: {fileID: 1499006240421726856, guid: 163146e6d210a48f096d6a989eb956cc, type: 3}
+  id: 2
+  name: Jalpari Scales
+  isDry: 1
+  icon: {fileID: 2008113668272904275, guid: 1600d60112e014a9397d250c16e12ce9, type: 3}
