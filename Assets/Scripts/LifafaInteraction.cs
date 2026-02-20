@@ -6,12 +6,17 @@ public class LifafaInteraction : MonoBehaviour, IPointerClickHandler
     [SerializeField] GameObject peekingLetter;
     [SerializeField] GameObject letter;
     [SerializeField] GameManager gameManager;
+    // [SerializeField] StoryManager storyManager;
+
+    public bool isLetterOpened;
 
     private int clickCount;
+
 
     void Awake()
     {
         clickCount = 0;
+        isLetterOpened = false;
     }
 
     public void OnPointerClick(PointerEventData eventData)
@@ -27,6 +32,8 @@ public class LifafaInteraction : MonoBehaviour, IPointerClickHandler
 
         DialogueTrigger dialogTrigger = gameObject.AddComponent<DialogueTrigger>();
         dialogTrigger.TriggerDialogue(d);
+
+        isLetterOpened = true;
 
         gameManager.SetBackgroundBlur(false);
     }
