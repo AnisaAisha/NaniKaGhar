@@ -31,6 +31,7 @@ public class DiaryInteraction : MonoBehaviour
         {
             diaryUIOverlay.SetActive(true);
             isDiaryOpened = true;
+            StoryManager.instance.isDiaryOpened = true;
         }
     }
 }

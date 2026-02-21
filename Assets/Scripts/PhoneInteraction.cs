@@ -22,13 +22,27 @@ public class PhoneInteraction : MonoBehaviour
         isPhonePicked = false;
     }
 
+    void Start()
+    {
+        if (StoryManager.instance.isDiaryOpened)
+        {
+            Debug.Log("Scene loaded and diary was already opened");
+
+            phoneRing.Play();
+        }
+    }
+
     public void OnMouseDown()
     {
         phoneRing.Stop();
         isPhoneRinging = false;
         isPhonePicked = true;
         Debug.Log(name + " Game Object Clicked!");
-        StartPhoneDialogue();
+        if (StoryManager.instance.isDiaryOpened) {
+            StartSecondPhoneDialogue();
+        } else {
+            StartPhoneDialogue();
+        }
     }
 
     void StartPhoneDialogue() 
@@ -52,15 +66,35 @@ public class PhoneInteraction : MonoBehaviour
         dialogTrigger.SetDialogueInteraction(1, smoke);
     }
 
+     void StartSecondPhoneDialogue() 
+    {
+        Dialogue d = new Dialogue();
+        d.sentences = new string[] { 
+            "Mamu: Maia, just talked to the movers, they'll be there at 6pm.",
+            "Maia: Mamu...I don't think I can do this.",
+            "Mamu: Sure, you can. The value of Nani ka Ghar will only depreciate further the longer we wait.",
+            "Mamu: You know, I have been insisting on selling this house for a long time. Only your nani wouldn't listen...",
+            "Maia: I just...I need more time.",
+            "Mamu: We don't have time beta. Pick yourself up, c'mon.",
+            "..."
+        };
+
+        DialogueTrigger dialogTrigger = gameObject.AddComponent<DialogueTrigger>();
+        dialogTrigger.TriggerDialogue(d);
+
+        // Since sentences are a queue, taking the index from bottom (to fix later)
+        dialogTrigger.SetDialogueInteraction(0, phoneCut);
+    }
+
     void PlayPhonecutSFX() {
         phoneCut.Play();
     }
 
-    IEnumerator RingAfterDelay() 
+    IEnumerator RingAfterDelay(float delay) 
     {
         Debug.Log("adding delay...");
         
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(delay);
 
         isPhoneRinging = true;
         Debug.Log("Phone has started ringing...");
@@ -72,7 +106,7 @@ public class PhoneInteraction : MonoBehaviour
     {
         if (letter.isLetterOpened && !isPhoneRingTriggered) {
             isPhoneRingTriggered= true;
-            StartCoroutine(RingAfterDelay());
+            StartCoroutine(RingAfterDelay(3f));
         }
     }
 }

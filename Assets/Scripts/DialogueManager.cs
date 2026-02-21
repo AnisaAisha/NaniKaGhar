@@ -18,6 +18,7 @@ public class DialogueManager : MonoBehaviour
 
     private Dictionary<int, object> interactionList;
     private int sentenceCounter;
+    private bool isDelayRequired;
 
     public bool dialogInteraction;
 
@@ -25,6 +26,7 @@ public class DialogueManager : MonoBehaviour
     {
         sentenceCounter = 0;
         dialogInteraction = false;
+        isDelayRequired = false;
         sentences = new Queue<string>();
         interactionList = new Dictionary<int, object>();
     }
@@ -40,13 +42,17 @@ public class DialogueManager : MonoBehaviour
     }
 
     public void DisplayNextSentence() {
-        if (sentences.Count == 0) {
-            return;
+        if (isDelayRequired) {
+            StartCoroutine(DisplayWithDelay());
+        } else {
+            if (sentences.Count == 0) {
+                return;
+            }
+            string sentence = sentences.Dequeue();
+            sentenceCounter++;
+            StopAllCoroutines();
+            StartCoroutine(TypeSentence(sentence));
         }
-        string sentence = sentences.Dequeue();
-        sentenceCounter++;
-        StopAllCoroutines();
-        StartCoroutine(TypeSentence(sentence));
         if (dialogInteraction) {
             StartDialogueInteraction();
         }
@@ -58,6 +64,23 @@ public class DialogueManager : MonoBehaviour
             dialogText.text += letter;
             yield return new WaitForSeconds(0.03f);
         }
+    }
+
+    IEnumerator AddDelay(float delay) {
+        yield return new WaitForSeconds(delay);
+    }
+
+    IEnumerator DisplayWithDelay()
+    {
+        yield return new WaitForSeconds(2f);
+
+        if (sentences.Count == 0) {
+            yield break;
+        }
+        string sentence = sentences.Dequeue();
+        sentenceCounter++;
+
+        StartCoroutine(TypeSentence(sentence));
     }
 
     public void SetDialogueInteraction(int dialogIndex, object item) {
@@ -77,6 +100,8 @@ public class DialogueManager : MonoBehaviour
                     audio.Play();
                 } else if (item is ParticleSystem ps) {
                     ps.Play();
+                } else if (item is string s) { // right now the only string is "delay"
+                    isDelayRequired = true;
                 }
             }
         }
