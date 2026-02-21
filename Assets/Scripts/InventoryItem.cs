@@ -43,6 +43,8 @@ public class InventoryItem : MonoBehaviour, IBeginDragHandler, IDragHandler, IEn
         if (hit != null)
         {
             Debug.Log("Hovering over: " + hit.name);
+            Dialogue d = new Dialogue();
+            DialogueTrigger dialogTrigger = gameObject.AddComponent<DialogueTrigger>();
             if (itemData.name == "rag" && hit.CompareTag("Sink")) {
                 itemImage.sprite = wetRag; // Change rag icon
 
@@ -50,17 +52,11 @@ public class InventoryItem : MonoBehaviour, IBeginDragHandler, IDragHandler, IEn
                 itemData.icon = wetRag;
                 itemData.isDry = false;
 
-                Dialogue d = new Dialogue();
                 d.sentences = new string[] { "The rag is now wet (idk pls help with this dialogue)" };
-
-                DialogueTrigger dialogTrigger = gameObject.AddComponent<DialogueTrigger>();
                 dialogTrigger.TriggerDialogue(d);
             }
             else if (itemData.name == "rag" && itemData.isDry && hit.CompareTag("Flame")) {
-                Dialogue d = new Dialogue();
                 d.sentences = new string[] { "Maia: I can't use a dry cloth." };
-
-                DialogueTrigger dialogTrigger = gameObject.AddComponent<DialogueTrigger>();
                 dialogTrigger.TriggerDialogue(d);
             }
             else if (itemData.name == "rag" && !itemData.isDry && hit.CompareTag("Flame")) {
@@ -72,7 +68,6 @@ public class InventoryItem : MonoBehaviour, IBeginDragHandler, IDragHandler, IEn
                 StartCoroutine(AddDelay());
 
                 // Dialogues for Maia Room Scene
-                Dialogue d = new Dialogue();
                 d.sentences = new string[] { 
                     "Maia: Any later, and mamu wouldn't have had a house to claim.",
                     "Maia: It's such a shame though, the Sundrip fragrance was nani's favourite.",
@@ -80,15 +75,18 @@ public class InventoryItem : MonoBehaviour, IBeginDragHandler, IDragHandler, IEn
                     "Actually, now that nani...isn't...or I mean she can't...see what I'm doing, I can just brew potions in the kitchen I guess.",
                     "I should gather the ingredients again."
                 };
-
-                DialogueTrigger dialogTrigger = gameObject.AddComponent<DialogueTrigger>();
                 dialogTrigger.TriggerDialogue(d);
             } else if (hit.CompareTag("Flame")) {
-                Dialogue d = new Dialogue();
                 d.sentences = new string[] { "Maia: I can't use this item." };
-
-                DialogueTrigger dialogTrigger = gameObject.AddComponent<DialogueTrigger>();
                 dialogTrigger.TriggerDialogue(d);
+            } else if (hit.CompareTag("Stove")) {
+                // Debug.Log(itemData);
+                // Debug.Log(itemData.name);
+                // Debug.Log(gameObject.name);
+                d.sentences = new string[] {  $"{itemData.name} added to the pot!", };
+                dialogTrigger.TriggerDialogue(d);
+                StoryManager.instance.AddStoveItems(itemData.name);
+                InventoryManager.instance.RemoveItem(itemData);
             }
         }
     }

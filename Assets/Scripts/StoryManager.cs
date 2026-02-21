@@ -1,29 +1,43 @@
 using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 
 public class StoryManager : MonoBehaviour
 {
     // TODO: Use a persistent system like Yarn or Ink for this after the Game Jam
+    public static StoryManager instance;
 
-    // public bool isLetterOpened;
-    // public bool isPhonePicked;
-    // public bool isPhoneRinging;
+    public bool isDiaryOpened;
+    public bool isLockOpened;
+    public bool isPotionReady;
+    public bool doorCreakDone;
 
-    // void Awake() {
-    //     isLetterOpened = false;
-    //     isPhoneRinging = false;
-    //     isPhonePicked = false;
-    // }
+    private List<string> currentIngredients;
 
-    // IEnumerator AddDelay() {
-    //     Debug.Log("adding delay...");
-    //     yield return new WaitForSeconds(1);
-    // }
+    void Awake() {
+        if (instance != null && instance != this)
+        {
+            Destroy(gameObject);
+            return;
+        }
 
-    // void Update() {
-    //     if (isLetterOpened && !isPhoneRinging && !isPhonePicked) {
-    //         StartCoroutine(AddDelay());
-    //         isPhoneRinging = true;
-    //     } 
-    // }
+        instance = this;
+        DontDestroyOnLoad(gameObject);
+
+        // Initialize only once
+        isDiaryOpened = false;
+        isLockOpened = false;
+        isPotionReady = false;
+        doorCreakDone = false;
+        currentIngredients = new List<string>();
+    }
+
+    public void AddStoveItems(string itemName) {
+        currentIngredients.Add(itemName);
+    }
+
+    public List<string> GetCurrentStoveIngredients() {
+        return currentIngredients;
+    }
+
 }

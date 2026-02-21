@@ -9,7 +9,16 @@ public class ClickObject : MonoBehaviour
 
     public void OnMouseDown() {
         Dialogue d = new Dialogue();
-        d.sentences = new string[] { $"{itemData.name} added to inventory!" };
+
+        if (itemData.name == "Jalpari Scales") {
+            InventoryManager.instance.isContainScales = true;
+            d.sentences = new string[] { 
+                $"{itemData.name} added to inventory!",
+                "Maia: Guess I have no reason to hide these things anymore." 
+            };
+        } else {
+            d.sentences = new string[] { $"{itemData.name} added to inventory!" };
+        }
 
         dialogTrigger.TriggerDialogue(d);
         InventoryManager.instance.AddItem(itemData);

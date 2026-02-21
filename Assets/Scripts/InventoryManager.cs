@@ -11,6 +11,8 @@ public class InventoryManager : MonoBehaviour
     GameObject inventoryMenu;
     [SerializeField] GameObject itemSlot;
 
+    public bool isContainScales;
+
     private bool isMenuActive;
     private List<InventoryItemData> inventoryList;
     private List<GameObject> inventoryObjList;
@@ -30,6 +32,7 @@ public class InventoryManager : MonoBehaviour
         inventoryList = new List<InventoryItemData>();
         inventoryObjList = new List<GameObject>();
         isMenuActive = false;
+        isContainScales = false;
     }
 
     void OnEnable()
@@ -86,13 +89,32 @@ public class InventoryManager : MonoBehaviour
         Debug.Log(item);
         inventoryList.Add(item);
 
-        GameObject newInventoryItem = Instantiate(itemSlot, new Vector3(0, 0, 0), Quaternion.identity);
+        GameObject newInventoryItem = Instantiate(itemSlot, inventoryMenu.transform);
         newInventoryItem.GetComponent<InventoryItem>().itemData = item;
         newInventoryItem.GetComponent<Image>().sprite = item.icon;
         newInventoryItem.transform.parent = inventoryMenu.transform;
 
         inventoryObjList.Add(newInventoryItem);
         // Debug.Log(inventoryList);
+    }
+
+    public void RemoveItem(InventoryItemData item)
+    {
+        // Remove UI objects
+        inventoryObjList.RemoveAll(obj =>
+        {
+            var invItem = obj.GetComponent<InventoryItem>();
+
+            if (invItem != null && invItem.itemData == item)
+            {
+                // hacky because destroying it was causing issues so we just hid it in scene
+                // Destroy(obj);
+                obj.SetActive(false);
+                return true;
+            }
+            return false;
+        });
+        inventoryList.Remove(item);
     }
 
     public void ToggleMenu()
