@@ -5,16 +5,15 @@ using System.Collections;
 
 public class SettingsMenu : MonoBehaviour
 {
-    //[SerializeField] private AudioSource buttonAudioSource;
+    [SerializeField] private AudioSource buttonAudioSource;
     [SerializeField] private AudioMixer mixer;
-    //[SerializeField] private GameObject MainMenu;
+    [SerializeField] private GameObject MainMenu;
 
-    /**TODO: Create AudioManager that handles all the BG Music/SFX 
+    /** TODO: Create AudioManager that handles all the BG Music/SFX 
     (this is a temporary working version to test out the sliders) 
     Probably also use PlayerPrefs to save/load audio settings in AudioManager
     */
-    
-    /**public void OnButtonClick()
+    public void OnButtonClick()
     {
         StartCoroutine(PlayButtonSFX());
     }
@@ -26,7 +25,7 @@ public class SettingsMenu : MonoBehaviour
         yield return new WaitForSeconds(buttonAudioSource.clip.length);
         this.gameObject.SetActive(false);
         MainMenu.SetActive(true);
-    }*/
+    }
 
     public void SetVolume(float sliderValue)
     {
