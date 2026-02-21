@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: 3
   name: DriedApricot
-  isDry: 0
+  isDry: 1
   icon: {fileID: -1795104590057013751, guid: e750190677f8e40e1a4c0957a77a6ce2, type: 3}

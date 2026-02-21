@@ -19,6 +19,7 @@ public class DialogueManager : MonoBehaviour
     private Dictionary<int, object> interactionList;
     private int sentenceCounter;
     private bool isDelayRequired;
+    private bool isFade;
 
     public bool dialogInteraction;
 
@@ -27,6 +28,7 @@ public class DialogueManager : MonoBehaviour
         sentenceCounter = 0;
         dialogInteraction = false;
         isDelayRequired = false;
+        isFade = false;
         sentences = new Queue<string>();
         interactionList = new Dictionary<int, object>();
     }
@@ -56,6 +58,10 @@ public class DialogueManager : MonoBehaviour
         if (dialogInteraction) {
             StartDialogueInteraction();
         }
+        // if (isFade) {
+        //     FadeScene fs = GameObject.Find("FaderImage").GetComponent<FadeScene>();
+        //     StartCoroutine(fs.FadeOut(5f));
+        // }
     }
 
     IEnumerator TypeSentence(string sentence) {
@@ -101,7 +107,8 @@ public class DialogueManager : MonoBehaviour
                 } else if (item is ParticleSystem ps) {
                     ps.Play();
                 } else if (item is string s) { // right now the only string is "delay"
-                    isDelayRequired = true;
+                    if (s == "delay") isDelayRequired = true;
+                    // else if (s == "fade") isFade = true;
                 }
             }
         }

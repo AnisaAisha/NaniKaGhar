@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: 5
   name: Bougainvillea
-  isDry: 0
-  icon: {fileID: 2008113668272904275, guid: 1600d60112e014a9397d250c16e12ce9, type: 3}
+  isDry: 1
+  icon: {fileID: 7598814892522292925, guid: bc954ac16158b4e699232492c835ddc0, type: 3}
