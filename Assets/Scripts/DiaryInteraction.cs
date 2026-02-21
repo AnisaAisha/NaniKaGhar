@@ -16,7 +16,7 @@ public class DiaryInteraction : MonoBehaviour
 
     public void CloseDiary() {
         diaryUIOverlay.SetActive(false);
-        clickCount++;
+        //clickCount++;
     }
 
     public void OnMouseDown()
@@ -31,6 +31,7 @@ public class DiaryInteraction : MonoBehaviour
         {
             diaryUIOverlay.SetActive(true);
             isDiaryOpened = true;
+            clickCount = 0;
         }
     }
 }
