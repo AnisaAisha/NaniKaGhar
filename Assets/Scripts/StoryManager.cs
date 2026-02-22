@@ -15,7 +15,7 @@ public class StoryManager : MonoBehaviour
     public bool isLockOpened;
     public bool isPotionReady;
     public bool doorCreakDone;
-
+    public bool isSecondPhoneRingOnce;
     private List<string> currentIngredients;
 
     void Awake() {

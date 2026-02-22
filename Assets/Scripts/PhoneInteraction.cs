@@ -9,6 +9,8 @@ public class PhoneInteraction : MonoBehaviour
     [SerializeField] AudioSource phoneCut;
     [SerializeField] LifafaInteraction letter;
     [SerializeField] ParticleSystem smoke;
+    [SerializeField] AudioSource SmokeSound;
+    
 
     private bool isPhoneRingTriggered;
     private bool isPhoneRinging;
@@ -23,11 +25,12 @@ public class PhoneInteraction : MonoBehaviour
 
     void Start()
     {
-        if (StoryManager.instance.isDiaryOpened)
+        if (StoryManager.instance.isDiaryOpened && !StoryManager.instance.isSecondPhoneRingOnce)
         {
             Debug.Log("Scene loaded and diary was already opened");
 
             phoneRing.Play();
+            StoryManager.instance.isSecondPhoneRingOnce = true;
         }
     }
 
@@ -40,6 +43,7 @@ public class PhoneInteraction : MonoBehaviour
         if (StoryManager.instance.isDiaryOpened) {
             StartSecondPhoneDialogue();
         } else if (StoryManager.instance.isLetterOpened) {
+            SmokeSound.Play();
             smoke.Play();
             StartPhoneDialogue();
             StoryManager.instance.isPhonePicked = true;

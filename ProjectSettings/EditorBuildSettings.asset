@@ -8,9 +8,9 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/MainMenu.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
-  - enabled: 0
-    path: Assets/Scenes/OldScenes/Main Menu.unity
-    guid: 5565accf80c8f4accb45ec791066d43c
+  - enabled: 1
+    path: Assets/Scenes/ZZ Main Menu.unity
+    guid: 0286aca4ca3a44784831d2ca1122f39b
   - enabled: 1
     path: Assets/Scenes/Courtyard.unity
     guid: aacd3601afa7c40be9b62ec153e6d280
@@ -20,12 +20,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Kitchen.unity
     guid: cc90d37472c9c443a8d4a50a298794e4
-  - enabled: 0
-    path: Assets/Scenes/Zuni/Z Room 1.unity
-    guid: 452654c4f935b784aa1b52ccf552eb3d
-  - enabled: 1
-    path: Assets/Scenes/Z Main Menu.unity
-    guid: 52a0ed89232064bf6adf5942d5055e5d
   - enabled: 1
     path: Assets/Scenes/Void.unity
     guid: e76f8bc69d7134ff991be424170633c2

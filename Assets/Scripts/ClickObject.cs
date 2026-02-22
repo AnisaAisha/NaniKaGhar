@@ -16,6 +16,7 @@ public class ClickObject : MonoBehaviour
                 $"{itemData.name} added to inventory!",
                 "Maia: Guess I have no reason to hide these things anymore." 
             };
+            GameObject.Find("sandooq open_0").SetActive(false);
         } else {
             d.sentences = new string[] { $"{itemData.name} added to inventory!" };
         }

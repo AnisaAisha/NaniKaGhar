@@ -2,6 +2,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
 using System.Collections;
+using UnityEngine.Audio;
 
 public class InventoryItem : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler
 {
@@ -64,11 +65,13 @@ public class InventoryItem : MonoBehaviour, IBeginDragHandler, IDragHandler, IEn
                 dialogTrigger.TriggerDialogue(d);
             }
             else if (itemData.name == "Dry Rag" && !itemData.isDry && hit.CompareTag("Flame")) {
-
+                StoryManager.instance.isFireExtinguished = true;
                 // Turn off the flame and smoke
                 hit.gameObject.SetActive(false);
                 ParticleSystem smoke = GameObject.Find("Smoke").GetComponent<ParticleSystem>();
+                AudioSource crackling = GameObject.Find("Smoke").GetComponent<AudioSource>();
                 smoke.Stop();
+                crackling.Stop();
                 StartCoroutine(AddDelay());
 
                 // Dialogues for Maia Room Scene

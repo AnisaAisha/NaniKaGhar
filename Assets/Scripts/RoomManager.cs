@@ -3,6 +3,7 @@ using UnityEngine;
 public class RoomManager : MonoBehaviour
 {
     [SerializeField] ParticleSystem smoke;
+    [SerializeField] AudioSource crackling;
 
     void Start()
     {
@@ -12,7 +13,7 @@ public class RoomManager : MonoBehaviour
         if (StoryManager.instance.isPhonePicked && !StoryManager.instance.isRoomDialogDone) {
             Dialogue d = new Dialogue();
             d.sentences = new string[] { 
-                "Maia: Oh no. I forgot about the brewing Sundrip fragrance. I need to put this fire out somehow."
+                "Maia: Oh no. I forgot about the brewing Sundrip fragrance. I need to go find a rag somewhere."
             };
 
             DialogueTrigger dialogTrigger = gameObject.AddComponent<DialogueTrigger>();

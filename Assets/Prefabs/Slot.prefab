@@ -144,5 +144,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 81e9e2c6632dc4f91ba05c614ca9cf6a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  wetRag: {fileID: 1499006240421726856, guid: 163146e6d210a48f096d6a989eb956cc, type: 3}
+  wetRag: {fileID: -7149484325893976055, guid: 42aa8e622be5245608b65531f9d9ced1, type: 3}
   itemData: {fileID: 0}
