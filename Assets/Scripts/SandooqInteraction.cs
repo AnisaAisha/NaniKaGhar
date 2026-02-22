@@ -2,13 +2,15 @@ using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
+using UnityEngine.Audio;
 
 public class SandooqInteraction : MonoBehaviour
 {
     [SerializeField] List<TMP_InputField> lockInputFields;
     [SerializeField] GameObject sandooqOpen;
     [SerializeField] GameObject scalesCollider;
-
+    [SerializeField] private AudioSource buttonAudioSource;
+    [SerializeField] private AudioSource buttonAudioSource2;
     public bool isLockOpened;
     private const string correctCombo = "2699";
 
@@ -23,6 +25,8 @@ public class SandooqInteraction : MonoBehaviour
     }
 
     public void CloseLock() {
+        
+        buttonAudioSource.Play();
         Dialogue d = new Dialogue();
         d.sentences = new string[] { "The lock opened!" };
 
@@ -35,6 +39,7 @@ public class SandooqInteraction : MonoBehaviour
         StoryManager.instance.isLockOpened = true;
 
         if (!InventoryManager.instance.isContainScales && StoryManager.instance.isLockOpened) {
+            buttonAudioSource2.Play();
             sandooqOpen.SetActive(true);
             scalesCollider.SetActive(true);
         }

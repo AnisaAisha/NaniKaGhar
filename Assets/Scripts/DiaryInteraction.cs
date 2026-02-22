@@ -1,9 +1,11 @@
 using UnityEngine;
+using UnityEngine.Audio;
+using System.Collections;
 
 public class DiaryInteraction : MonoBehaviour
 {
     [SerializeField] GameObject diaryUIOverlay;
-
+    [SerializeField] private AudioSource buttonAudioSource;
     public bool isDiaryOpened;
     private int clickCount;
 
@@ -22,6 +24,7 @@ public class DiaryInteraction : MonoBehaviour
     public void OnMouseDown()
     {
         clickCount++;
+        buttonAudioSource.Play();
     }
 
     void Update()
