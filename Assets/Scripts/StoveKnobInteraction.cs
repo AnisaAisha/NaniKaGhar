@@ -1,25 +1,29 @@
 using UnityEngine;
 using System.Collections;
+using System.Linq;
 using System.Collections.Generic;
 
 public class StoveKnobInteraction : MonoBehaviour
 {
     [SerializeField] AudioSource doorCreakSFX;
     [SerializeField] ParticleSystem purpleHaze;
+    [SerializeField] GameObject stoveFlame;
     private string[] reqIngredients;
     private bool isStoveReady;
     
     void Awake() {
         isStoveReady = false;
-        reqIngredients = new string[] { "ChinarBark", "DriedApricot" }; // TODO: UPDATE THIS LIST
+        reqIngredients = new string[] { "Jalpari Scales", "ChinarBark", "DriedApricot", "Bougainvillea" };
     }
 
     bool CheckStoveIngredients() {
         List<string> inventoryIngredients = StoryManager.instance.GetCurrentStoveIngredients();
         Debug.Log(inventoryIngredients.Count);
+        Debug.Log(reqIngredients.Length);
         if (inventoryIngredients.Count == reqIngredients.Length) {
             for (int i = 0; i < reqIngredients.Length; i++) {
-                if (inventoryIngredients[i] != reqIngredients[i]) {
+                // Debug.Log(inventoryIngredients[i] + " " + reqIngredients[i]);
+                if (!reqIngredients.Contains(inventoryIngredients[i])) {
                     return false;
                 }
             }
@@ -32,6 +36,7 @@ public class StoveKnobInteraction : MonoBehaviour
     {
         bool isStoveReady = CheckStoveIngredients();
         if (isStoveReady) {
+            stoveFlame.SetActive(true);
             purpleHaze.Play();
 
             Dialogue d = new Dialogue();
@@ -49,7 +54,7 @@ public class StoveKnobInteraction : MonoBehaviour
             StoryManager.instance.isPotionReady = true;
 
             dialogTrigger.SetDialogueInteraction(1, "delay");
-            dialogTrigger.SetDialogueInteraction(0, doorCreakSFX);
+            dialogTrigger.SetDialogueInteraction(2, doorCreakSFX);
 
             StoryManager.instance.doorCreakDone = true;
         }

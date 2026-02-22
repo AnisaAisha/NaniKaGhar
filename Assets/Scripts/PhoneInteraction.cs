@@ -9,7 +9,6 @@ public class PhoneInteraction : MonoBehaviour
     [SerializeField] AudioSource phoneCut;
     [SerializeField] LifafaInteraction letter;
     [SerializeField] ParticleSystem smoke;
-    // [SerializeField] StoryManager storyManager;
 
     private bool isPhoneRingTriggered;
     private bool isPhoneRinging;
@@ -35,13 +34,15 @@ public class PhoneInteraction : MonoBehaviour
     public void OnMouseDown()
     {
         phoneRing.Stop();
-        isPhoneRinging = false;
-        isPhonePicked = true;
-        Debug.Log(name + " Game Object Clicked!");
+        // isPhoneRinging = false;
+        // isPhonePicked = true;
+        // Debug.Log(name + " Game Object Clicked!");
         if (StoryManager.instance.isDiaryOpened) {
             StartSecondPhoneDialogue();
-        } else {
+        } else if (StoryManager.instance.isLetterOpened) {
+            smoke.Play();
             StartPhoneDialogue();
+            StoryManager.instance.isPhonePicked = true;
         }
     }
 
@@ -63,7 +64,7 @@ public class PhoneInteraction : MonoBehaviour
 
         // Since sentences are a queue, taking the index from bottom (to fix later)
         dialogTrigger.SetDialogueInteraction(2, phoneCut);
-        dialogTrigger.SetDialogueInteraction(1, smoke);
+        // dialogTrigger.SetDialogueInteraction(4, smoke);
     }
 
      void StartSecondPhoneDialogue() 

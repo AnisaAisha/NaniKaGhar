@@ -1,0 +1,1040 @@
+fileFormatVersion: 2
+guid: ea3567234c41f470a859c656f91f0208
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3454695078902890188
+    second: mamuLetter_0
+  - first:
+      213: -836301979209686793
+    second: mamuLetter_1
+  - first:
+      213: -2158936165123791429
+    second: mamuLetter_2
+  - first:
+      213: -8436494559630292503
+    second: mamuLetter_3
+  - first:
+      213: 1413597165264873566
+    second: mamuLetter_4
+  - first:
+      213: -1898798485253653081
+    second: mamuLetter_5
+  - first:
+      213: -8418466250781128866
+    second: mamuLetter_6
+  - first:
+      213: 7172195085889923677
+    second: mamuLetter_7
+  - first:
+      213: 2144271670685585572
+    second: mamuLetter_8
+  - first:
+      213: -1934151564201691595
+    second: mamuLetter_9
+  - first:
+      213: 19634073614384004
+    second: mamuLetter_10
+  - first:
+      213: 2912513905306714344
+    second: mamuLetter_11
+  - first:
+      213: 8563243554455702127
+    second: mamuLetter_12
+  - first:
+      213: 8499197162529571357
+    second: mamuLetter_13
+  - first:
+      213: 7352283749152236499
+    second: mamuLetter_14
+  - first:
+      213: 7552728940545843916
+    second: mamuLetter_15
+  - first:
+      213: -4665697692444794993
+    second: mamuLetter_16
+  - first:
+      213: -8495474223640580182
+    second: mamuLetter_17
+  - first:
+      213: 3242360080367103082
+    second: mamuLetter_18
+  - first:
+      213: -3689639828479774640
+    second: mamuLetter_19
+  - first:
+      213: 2481966480174357554
+    second: mamuLetter_20
+  - first:
+      213: 2105341225602052922
+    second: mamuLetter_21
+  - first:
+      213: -1681278810428610010
+    second: mamuLetter_22
+  - first:
+      213: -1989157130066128826
+    second: mamuLetter_23
+  - first:
+      213: -1889201589677392601
+    second: mamuLetter_24
+  - first:
+      213: -5566111476859702579
+    second: mamuLetter_25
+  - first:
+      213: -8939695917573748436
+    second: mamuLetter_26
+  - first:
+      213: 6113958437491475306
+    second: mamuLetter_27
+  - first:
+      213: 2712294250624869698
+    second: mamuLetter_28
+  - first:
+      213: 3870482725626733370
+    second: mamuLetter_29
+  - first:
+      213: 301457687149271230
+    second: mamuLetter_30
+  - first:
+      213: -8930595457424361557
+    second: mamuLetter_31
+  - first:
+      213: -3528317373927407226
+    second: mamuLetter_32
+  - first:
+      213: 4445309981960219265
+    second: mamuLetter_33
+  - first:
+      213: 5520561599120493504
+    second: mamuLetter_34
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: mamuLetter_0
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 944
+        width: 22
+        height: 136
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43104b621257e00d0800000000000000
+      internalID: -3454695078902890188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mamuLetter_1
+      rect:
+        serializedVersion: 2
+        x: 387
+        y: 0
+        width: 1095
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f02044e7cbd464f0800000000000000
+      internalID: -836301979209686793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mamuLetter_2
+      rect:
+        serializedVersion: 2
+        x: 404
+        y: 1056
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb56d011ffae902e0800000000000000
+      internalID: -2158936165123791429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mamuLetter_3
+      rect:
+        serializedVersion: 2
+        x: 405
+        y: 1056
+        width: 37
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e988bf75ec8bea80800000000000000
+      internalID: -8436494559630292503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mamuLetter_4
+      rect:
+        serializedVersion: 2
+        x: 406
+        y: 1043
+        width: 15
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e58ac1bd12b1e9310800000000000000
+      internalID: 1413597165264873566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mamuLetter_5
+      rect:
+        serializedVersion: 2
+        x: 407
+        y: 1035
+        width: 13
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7adf76286dc16a5e0800000000000000
+      internalID: -1898798485253653081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mamuLetter_6
+      rect:
+        serializedVersion: 2
+        x: 407
+        y: 1023
+        width: 8
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5783904c899b2b80800000000000000
+      internalID: -8418466250781128866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mamuLetter_7
+      rect:
+        serializedVersion: 2
+        x: 407
+        y: 1014
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5a65424e61c88360800000000000000
+      internalID: 7172195085889923677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mamuLetter_8
+      rect:
+        serializedVersion: 2
+        x: 411
+        y: 1020
+        width: 8
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a0d52149bbf1cd10800000000000000
+      internalID: 2144271670685585572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mamuLetter_9
+      rect:
+        serializedVersion: 2
+        x: 405
+        y: 971
+        width: 11
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 536fdf166638825e0800000000000000
+      internalID: -1934151564201691595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mamuLetter_10
+      rect:
+        serializedVersion: 2
+        x: 406
+        y: 1006
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48b774ff511c54000800000000000000
+      internalID: 19634073614384004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mamuLetter_11
+      rect:
+        serializedVersion: 2
+        x: 405
+        y: 961
+        width: 8
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e0413937f35b6820800000000000000
+      internalID: 2912513905306714344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mamuLetter_12
+      rect:
+        serializedVersion: 2
+        x: 406
+        y: 953
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6a4c7c84a0c6d670800000000000000
+      internalID: 8563243554455702127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mamuLetter_13
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 920
+        width: 10
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d124594e9c633f570800000000000000
+      internalID: 8499197162529571357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mamuLetter_14
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 938
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d3a814ad1f880660800000000000000
+      internalID: 7352283749152236499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mamuLetter_15
+      rect:
+        serializedVersion: 2
+        x: 405
+        y: 938
+        width: 9
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc22c0294fea0d860800000000000000
+      internalID: 7552728940545843916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mamuLetter_16
+      rect:
+        serializedVersion: 2
+        x: 405
+        y: 933
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8fd77c2bac104fb0800000000000000
+      internalID: -4665697692444794993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mamuLetter_17
+      rect:
+        serializedVersion: 2
+        x: 454
+        y: 934
+        width: 10
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aaf6a6d54330a1a80800000000000000
+      internalID: -8495474223640580182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mamuLetter_18
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 432
+        width: 45
+        height: 394
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6c2038705d2ffc20800000000000000
+      internalID: 3242360080367103082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mamuLetter_19
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 892
+        width: 12
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0507452ef14cbccc0800000000000000
+      internalID: -3689639828479774640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mamuLetter_20
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 884
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23c183b1d57b17220800000000000000
+      internalID: 2481966480174357554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mamuLetter_21
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 864
+        width: 11
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a33fefaa0bca73d10800000000000000
+      internalID: 2105341225602052922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mamuLetter_22
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 835
+        width: 20
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 62ae20864d5eaa8e0800000000000000
+      internalID: -1681278810428610010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mamuLetter_23
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 880
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64019f311281564e0800000000000000
+      internalID: -1989157130066128826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mamuLetter_24
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 826
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72dfc22e92538c5e0800000000000000
+      internalID: -1889201589677392601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mamuLetter_25
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 811
+        width: 14
+        height: 121
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc27d813a1331c2b0800000000000000
+      internalID: -5566111476859702579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mamuLetter_26
+      rect:
+        serializedVersion: 2
+        x: 454
+        y: 892
+        width: 11
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c29c1017de1dfe380800000000000000
+      internalID: -8939695917573748436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mamuLetter_27
+      rect:
+        serializedVersion: 2
+        x: 1466
+        y: 822
+        width: 299
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a638e264ec429d450800000000000000
+      internalID: 6113958437491475306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mamuLetter_28
+      rect:
+        serializedVersion: 2
+        x: 1506
+        y: 320
+        width: 14
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24564d6204104a520800000000000000
+      internalID: 2712294250624869698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mamuLetter_29
+      rect:
+        serializedVersion: 2
+        x: 1512
+        y: 317
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3364424887b6b530800000000000000
+      internalID: 3870482725626733370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mamuLetter_30
+      rect:
+        serializedVersion: 2
+        x: 1508
+        y: 290
+        width: 12
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb8d7555b2efe2400800000000000000
+      internalID: 301457687149271230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mamuLetter_31
+      rect:
+        serializedVersion: 2
+        x: 1510
+        y: 274
+        width: 9
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba7f08f6fb6201480800000000000000
+      internalID: -8930595457424361557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mamuLetter_32
+      rect:
+        serializedVersion: 2
+        x: 485
+        y: 236
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 681c730da06e80fc0800000000000000
+      internalID: -3528317373927407226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mamuLetter_33
+      rect:
+        serializedVersion: 2
+        x: 1510
+        y: 220
+        width: 9
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18aac3750e9e0bd30800000000000000
+      internalID: 4445309981960219265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mamuLetter_34
+      rect:
+        serializedVersion: 2
+        x: 1517
+        y: 118
+        width: 8
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0cb4d347689fc9c40800000000000000
+      internalID: 5520561599120493504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      mamuLetter_0: -3454695078902890188
+      mamuLetter_1: -836301979209686793
+      mamuLetter_10: 19634073614384004
+      mamuLetter_11: 2912513905306714344
+      mamuLetter_12: 8563243554455702127
+      mamuLetter_13: 8499197162529571357
+      mamuLetter_14: 7352283749152236499
+      mamuLetter_15: 7552728940545843916
+      mamuLetter_16: -4665697692444794993
+      mamuLetter_17: -8495474223640580182
+      mamuLetter_18: 3242360080367103082
+      mamuLetter_19: -3689639828479774640
+      mamuLetter_2: -2158936165123791429
+      mamuLetter_20: 2481966480174357554
+      mamuLetter_21: 2105341225602052922
+      mamuLetter_22: -1681278810428610010
+      mamuLetter_23: -1989157130066128826
+      mamuLetter_24: -1889201589677392601
+      mamuLetter_25: -5566111476859702579
+      mamuLetter_26: -8939695917573748436
+      mamuLetter_27: 6113958437491475306
+      mamuLetter_28: 2712294250624869698
+      mamuLetter_29: 3870482725626733370
+      mamuLetter_3: -8436494559630292503
+      mamuLetter_30: 301457687149271230
+      mamuLetter_31: -8930595457424361557
+      mamuLetter_32: -3528317373927407226
+      mamuLetter_33: 4445309981960219265
+      mamuLetter_34: 5520561599120493504
+      mamuLetter_4: 1413597165264873566
+      mamuLetter_5: -1898798485253653081
+      mamuLetter_6: -8418466250781128866
+      mamuLetter_7: 7172195085889923677
+      mamuLetter_8: 2144271670685585572
+      mamuLetter_9: -1934151564201691595
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -45,21 +45,25 @@ public class InventoryItem : MonoBehaviour, IBeginDragHandler, IDragHandler, IEn
             Debug.Log("Hovering over: " + hit.name);
             Dialogue d = new Dialogue();
             DialogueTrigger dialogTrigger = gameObject.AddComponent<DialogueTrigger>();
-            if (itemData.name == "rag" && hit.CompareTag("Sink")) {
+            if (itemData.name == "Dry Rag" && hit.CompareTag("Stove")) {
+                d.sentences = new string[] { "I cannot add this to the pot." };
+                dialogTrigger.TriggerDialogue(d);
+            }
+            else if (itemData.name == "Dry Rag" && hit.CompareTag("Sink")) {
                 itemImage.sprite = wetRag; // Change rag icon
 
                 // Update scriptable object for persistent storage
                 itemData.icon = wetRag;
                 itemData.isDry = false;
 
-                d.sentences = new string[] { "The rag is now wet (idk pls help with this dialogue)" };
+                d.sentences = new string[] { "The rag is now drenched in water. Maybe this can put out the fire..." };
                 dialogTrigger.TriggerDialogue(d);
             }
-            else if (itemData.name == "rag" && itemData.isDry && hit.CompareTag("Flame")) {
+            else if (itemData.name == "Dry Rag" && itemData.isDry && hit.CompareTag("Flame")) {
                 d.sentences = new string[] { "Maia: I can't use a dry cloth." };
                 dialogTrigger.TriggerDialogue(d);
             }
-            else if (itemData.name == "rag" && !itemData.isDry && hit.CompareTag("Flame")) {
+            else if (itemData.name == "Dry Rag" && !itemData.isDry && hit.CompareTag("Flame")) {
 
                 // Turn off the flame and smoke
                 hit.gameObject.SetActive(false);

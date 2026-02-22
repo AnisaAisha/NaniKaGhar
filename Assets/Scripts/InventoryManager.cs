@@ -69,6 +69,7 @@ public class InventoryManager : MonoBehaviour
 
     void RebuildInventoryUI()
     {
+        inventoryObjList.Clear();
         Debug.Log(inventoryObjList.Count);
         // inventoryObjList.Clear();
 

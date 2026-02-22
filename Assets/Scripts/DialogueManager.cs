@@ -15,6 +15,7 @@ public class DialogueManager : MonoBehaviour
 {
     [SerializeField] TextMeshProUGUI dialogText;
     [SerializeField] Queue<string> sentences;
+    [SerializeField] Animator animator;
 
     private Dictionary<int, object> interactionList;
     private int sentenceCounter;
@@ -34,13 +35,14 @@ public class DialogueManager : MonoBehaviour
     }
 
     public void StartDialogue(Dialogue dialogue) {
-       sentences.Clear();
+        animator.SetBool("isOpen", true);
+        sentences.Clear();
 
-       foreach (string sentence in dialogue.sentences) 
-       {
-        sentences.Enqueue(sentence);
-       } 
-       DisplayNextSentence();
+        foreach (string sentence in dialogue.sentences) 
+        {
+            sentences.Enqueue(sentence);
+        } 
+        DisplayNextSentence();
     }
 
     public void DisplayNextSentence() {
@@ -48,6 +50,7 @@ public class DialogueManager : MonoBehaviour
             StartCoroutine(DisplayWithDelay());
         } else {
             if (sentences.Count == 0) {
+                animator.SetBool("isOpen", false);
                 return;
             }
             string sentence = sentences.Dequeue();
@@ -81,6 +84,7 @@ public class DialogueManager : MonoBehaviour
         yield return new WaitForSeconds(2f);
 
         if (sentences.Count == 0) {
+            animator.SetBool("isOpen", false);
             yield break;
         }
         string sentence = sentences.Dequeue();

@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: rag
   m_EditorClassIdentifier: 
   id: 1
-  name: rag
-  isDry: 0
-  icon: {fileID: 1652737239819419185, guid: fe7ae4cc1ac3844f891b1672a5dd6a83, type: 3}
+  name: Dry Rag
+  isDry: 1
+  icon: {fileID: 5178497552001929108, guid: a6f5636e248a04a119a30c4f376eed15, type: 3}

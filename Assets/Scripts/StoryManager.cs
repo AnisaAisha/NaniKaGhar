@@ -7,6 +7,10 @@ public class StoryManager : MonoBehaviour
     // TODO: Use a persistent system like Yarn or Ink for this after the Game Jam
     public static StoryManager instance;
 
+    public bool isPhonePicked;
+    public bool isRoomDialogDone;
+    public bool isLetterOpened;
+    public bool isFireExtinguished;
     public bool isDiaryOpened;
     public bool isLockOpened;
     public bool isPotionReady;
@@ -25,10 +29,14 @@ public class StoryManager : MonoBehaviour
         DontDestroyOnLoad(gameObject);
 
         // Initialize only once
+        isLetterOpened = false;
+        isPhonePicked = false;
+        isFireExtinguished = false;
         isDiaryOpened = false;
         isLockOpened = false;
         isPotionReady = false;
         doorCreakDone = false;
+        isRoomDialogDone = false;
         currentIngredients = new List<string>();
     }
 
