@@ -904,7 +904,7 @@ Transform:
   m_GameObject: {fileID: 198634841}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.26, y: -13.62, z: 0}
+  m_LocalPosition: {x: -6.26, y: -13.62, z: -1}
   m_LocalScale: {x: 1.6, y: 1.6, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -8004,7 +8004,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isStaticScene: 0
   image: {fileID: 1234534923}
-  NewSceneName: Z Room 1
+  NewSceneName: Room 1
 --- !u!1 &1234534921
 GameObject:
   m_ObjectHideFlags: 0
@@ -9110,7 +9110,7 @@ Transform:
   m_GameObject: {fileID: 1538580435}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -26.07, y: -26.85, z: 0}
+  m_LocalPosition: {x: -26.07, y: -26.85, z: -1}
   m_LocalScale: {x: 1.6, y: 1.6, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

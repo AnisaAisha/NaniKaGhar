@@ -1,0 +1,546 @@
+fileFormatVersion: 2
+guid: 964fcfb5571b64083b45b0381a6daab8
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7802243277410287310
+    second: maia sprite DTU_0
+  - first:
+      213: 959899179998219598
+    second: maia sprite DTU_1
+  - first:
+      213: -806149811496731720
+    second: maia sprite DTU_2
+  - first:
+      213: -3206452689445420470
+    second: maia sprite DTU_3
+  - first:
+      213: -7193980027794514279
+    second: maia sprite DTU_4
+  - first:
+      213: -6081205095941437749
+    second: maia sprite DTU_5
+  - first:
+      213: 1638100970661486559
+    second: maia sprite DTU_6
+  - first:
+      213: -5556142143250033252
+    second: maia sprite DTU_7
+  - first:
+      213: 1323584430406351216
+    second: maia sprite DTU_8
+  - first:
+      213: 4498166019039819728
+    second: maia sprite DTU_9
+  - first:
+      213: -5794313783487710728
+    second: maia sprite DTU_10
+  - first:
+      213: 6427351406768373901
+    second: maia sprite DTU_11
+  - first:
+      213: 8762169263618883667
+    second: maia sprite DTU_12
+  - first:
+      213: -154664635588413716
+    second: maia sprite DTU_13
+  - first:
+      213: 6485596771160467157
+    second: maia sprite DTU_14
+  - first:
+      213: 1446307452128709003
+    second: maia sprite DTU_15
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: maia sprite DTU_0
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 102
+        width: 397
+        height: 937
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 231c7c6c31dd8b390800000000000000
+      internalID: -7802243277410287310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: maia sprite DTU_1
+      rect:
+        serializedVersion: 2
+        x: 907
+        y: 655
+        width: 6
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4d8bfbe73f325d00800000000000000
+      internalID: 959899179998219598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: maia sprite DTU_2
+      rect:
+        serializedVersion: 2
+        x: 910
+        y: 109
+        width: 363
+        height: 930
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8bb3df1840bffc4f0800000000000000
+      internalID: -806149811496731720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: maia sprite DTU_3
+      rect:
+        serializedVersion: 2
+        x: 1549
+        y: 655
+        width: 6
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a42828874446083d0800000000000000
+      internalID: -3206452689445420470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: maia sprite DTU_4
+      rect:
+        serializedVersion: 2
+        x: 1552
+        y: 99
+        width: 350
+        height: 940
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 99e9d02b749d92c90800000000000000
+      internalID: -7193980027794514279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: maia sprite DTU_5
+      rect:
+        serializedVersion: 2
+        x: 2170
+        y: 101
+        width: 361
+        height: 938
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc68d125f283b9ba0800000000000000
+      internalID: -6081205095941437749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: maia sprite DTU_6
+      rect:
+        serializedVersion: 2
+        x: 2798
+        y: 139
+        width: 399
+        height: 900
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fdf108e5724bbb610800000000000000
+      internalID: 1638100970661486559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: maia sprite DTU_7
+      rect:
+        serializedVersion: 2
+        x: 3465
+        y: 116
+        width: 370
+        height: 923
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c95110e882e94e2b0800000000000000
+      internalID: -5556142143250033252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: maia sprite DTU_8
+      rect:
+        serializedVersion: 2
+        x: 4121
+        y: 78
+        width: 374
+        height: 961
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 079bb9cd6015e5210800000000000000
+      internalID: 1323584430406351216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: maia sprite DTU_9
+      rect:
+        serializedVersion: 2
+        x: 4767
+        y: 81
+        width: 374
+        height: 958
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d7f9997922bc6e30800000000000000
+      internalID: 4498166019039819728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: maia sprite DTU_10
+      rect:
+        serializedVersion: 2
+        x: 899
+        y: 594
+        width: 6
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f9b0124056769fa0800000000000000
+      internalID: -5794313783487710728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: maia sprite DTU_11
+      rect:
+        serializedVersion: 2
+        x: 1541
+        y: 594
+        width: 6
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d8049070d0a823950800000000000000
+      internalID: 6427351406768373901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: maia sprite DTU_12
+      rect:
+        serializedVersion: 2
+        x: 3845
+        y: 573
+        width: 8
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35089d3758a799970800000000000000
+      internalID: 8762169263618883667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: maia sprite DTU_13
+      rect:
+        serializedVersion: 2
+        x: 4492
+        y: 574
+        width: 7
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce6ff6855558addf0800000000000000
+      internalID: -154664635588413716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: maia sprite DTU_14
+      rect:
+        serializedVersion: 2
+        x: 5138
+        y: 575
+        width: 7
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d6a075b6e7710a50800000000000000
+      internalID: 6485596771160467157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: maia sprite DTU_15
+      rect:
+        serializedVersion: 2
+        x: 5011
+        y: 80
+        width: 12
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b89c12007f0521410800000000000000
+      internalID: 1446307452128709003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      maia sprite DTU_0: -7802243277410287310
+      maia sprite DTU_1: 959899179998219598
+      maia sprite DTU_10: -5794313783487710728
+      maia sprite DTU_11: 6427351406768373901
+      maia sprite DTU_12: 8762169263618883667
+      maia sprite DTU_13: -154664635588413716
+      maia sprite DTU_14: 6485596771160467157
+      maia sprite DTU_15: 1446307452128709003
+      maia sprite DTU_2: -806149811496731720
+      maia sprite DTU_3: -3206452689445420470
+      maia sprite DTU_4: -7193980027794514279
+      maia sprite DTU_5: -6081205095941437749
+      maia sprite DTU_6: 1638100970661486559
+      maia sprite DTU_7: -5556142143250033252
+      maia sprite DTU_8: 1323584430406351216
+      maia sprite DTU_9: 4498166019039819728
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
