@@ -37,6 +37,13 @@ public class FadeScene : MonoBehaviour
         SceneManager.LoadScene(NewSceneName);
     }
 
+    public IEnumerator EndScene() {
+        image = GameObject.Find("FaderImage").GetComponent<Image>();
+        StartCoroutine(FadeIn(2f));
+        yield return new WaitForSeconds(2f);
+        Application.Quit();
+    }
+
     void OnTriggerEnter2D(Collider2D collider) {
         if (collider.gameObject.layer == 6) {
             StartCoroutine(ChangeScene());

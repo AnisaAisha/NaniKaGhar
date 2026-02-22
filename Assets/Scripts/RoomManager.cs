@@ -3,12 +3,13 @@ using UnityEngine;
 public class RoomManager : MonoBehaviour
 {
     [SerializeField] ParticleSystem smoke;
-    [SerializeField] AudioSource crackling;
+    [SerializeField] AudioSource smokeSound;
 
     void Start()
     {
-        if (!StoryManager.instance.isFireExtinguished) {
+        if (!StoryManager.instance.isFireExtinguished && StoryManager.instance.isPhonePicked) {
             smoke.Play();
+            smokeSound.Play();
         }
         if (StoryManager.instance.isPhonePicked && !StoryManager.instance.isRoomDialogDone) {
             Dialogue d = new Dialogue();

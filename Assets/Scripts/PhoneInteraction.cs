@@ -43,7 +43,6 @@ public class PhoneInteraction : MonoBehaviour
         if (StoryManager.instance.isDiaryOpened) {
             StartSecondPhoneDialogue();
         } else if (StoryManager.instance.isLetterOpened) {
-            SmokeSound.Play();
             smoke.Play();
             StartPhoneDialogue();
             StoryManager.instance.isPhonePicked = true;
@@ -68,7 +67,7 @@ public class PhoneInteraction : MonoBehaviour
 
         // Since sentences are a queue, taking the index from bottom (to fix later)
         dialogTrigger.SetDialogueInteraction(2, phoneCut);
-        // dialogTrigger.SetDialogueInteraction(4, smoke);
+        dialogTrigger.SetDialogueInteraction(1, SmokeSound);
     }
 
      void StartSecondPhoneDialogue() 

@@ -21,6 +21,7 @@ public class DialogueManager : MonoBehaviour
     private int sentenceCounter;
     private bool isDelayRequired;
     private bool isFade;
+    private FadeScene fadeScript;
 
     public bool dialogInteraction;
 
@@ -51,6 +52,7 @@ public class DialogueManager : MonoBehaviour
         } else {
             if (sentences.Count == 0) {
                 animator.SetBool("isOpen", false);
+                if (isFade) StartCoroutine(fadeScript.EndScene());
                 return;
             }
             string sentence = sentences.Dequeue();
@@ -112,7 +114,9 @@ public class DialogueManager : MonoBehaviour
                     ps.Play();
                 } else if (item is string s) { // right now the only string is "delay"
                     if (s == "delay") isDelayRequired = true;
-                    // else if (s == "fade") isFade = true;
+                } else if (item is FadeScene fs) {
+                    isFade = true;
+                    fadeScript = fs;
                 }
             }
         }

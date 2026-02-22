@@ -18,6 +18,15 @@ public class SandooqInteraction : MonoBehaviour
         lockInputFields = new List<TMP_InputField>(GetComponentsInChildren<TMP_InputField>());
     }
 
+    void Start()
+    {
+        Dialogue d = new Dialogue();
+        d.sentences = new string[] { "Looks like I need to enter 4 numbers here..." };
+
+        DialogueTrigger dialogTrigger = gameObject.AddComponent<DialogueTrigger>();
+        dialogTrigger.TriggerDialogue(d);
+    }
+
     IEnumerator AddDelay() {
         yield return new WaitForSeconds(5f);
     }

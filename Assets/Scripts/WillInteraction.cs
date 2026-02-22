@@ -5,6 +5,8 @@ public class WillInteraction : MonoBehaviour
     [SerializeField] Sprite willBack;
     [SerializeField] SpriteRenderer willSprite;
     [SerializeField] AudioSource gaspAudio;
+    [SerializeField] Animator animator;
+    [SerializeField] FadeScene fadeScript;
 
     private int clickCount;
 
@@ -19,10 +21,7 @@ public class WillInteraction : MonoBehaviour
         if (clickCount == 0) {
             willSprite.sprite = willBack;
         } else if (clickCount == 1) {
-            // willSprite.color += new Color(1f, 1f, 1f, 0f);
-            Color c = willSprite.color;
-            c.a = 0f;
-            willSprite.color = c;
+            animator.SetBool("isInteracted", true);
 
             Dialogue d = new Dialogue();
             DialogueTrigger dialogTrigger = gameObject.AddComponent<DialogueTrigger>();
@@ -33,12 +32,13 @@ public class WillInteraction : MonoBehaviour
                 "More Coming Soon..."
             };
             dialogTrigger.SetDialogueInteraction(3, gaspAudio);
-
+            dialogTrigger.SetDialogueInteraction(0, fadeScript);
             dialogTrigger.TriggerDialogue(d);
-
-            // dialogTrigger.SetDialogueInteraction(0, "fade");
         }
 
         clickCount++;
+
     }
+
+    
 }
