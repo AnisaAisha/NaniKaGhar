@@ -27,13 +27,14 @@ public class SettingsMenu : MonoBehaviour
         MainMenu.SetActive(true);
     }
 
+    // Note: Probably replace these completely with AudioManager methods
     public void SetVolume(float sliderValue)
     {
-        mixer.SetFloat("Volume", Mathf.Log10(sliderValue) * 20);
+        AudioManager.instance.SetGlobalVolume(sliderValue);
     }
 
     public void SetSFX(float sliderValue)
     {
-        mixer.SetFloat("SFX", Mathf.Log10(sliderValue) * 20);
+        AudioManager.instance.SetGlobalSFX(sliderValue);
     }
 }

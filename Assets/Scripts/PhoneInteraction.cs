@@ -5,7 +5,7 @@ using System.Collections;
 
 public class PhoneInteraction : MonoBehaviour
 {
-    [SerializeField] AudioSource phoneRing;
+    // [SerializeField] AudioSource phoneRing;
     [SerializeField] AudioSource phoneCut;
     [SerializeField] LifafaInteraction letter;
     [SerializeField] ParticleSystem smoke;
@@ -29,14 +29,15 @@ public class PhoneInteraction : MonoBehaviour
         {
             Debug.Log("Scene loaded and diary was already opened");
 
-            phoneRing.Play();
+            AudioManager.instance.PlayLoopSoundSFX("PhoneRing");
             StoryManager.instance.isSecondPhoneRingOnce = true;
         }
     }
 
     public void OnMouseDown()
     {
-        phoneRing.Stop();
+        // phoneRing.Stop();
+        AudioManager.instance.StopLoopSoundSFX("PhoneRing");
         // isPhoneRinging = false;
         // isPhonePicked = true;
         // Debug.Log(name + " Game Object Clicked!");
@@ -103,7 +104,7 @@ public class PhoneInteraction : MonoBehaviour
         isPhoneRinging = true;
         Debug.Log("Phone has started ringing...");
         
-        phoneRing.Play();
+        AudioManager.instance.PlayLoopSoundSFX("PhoneRing");
     }
 
     void Update() 

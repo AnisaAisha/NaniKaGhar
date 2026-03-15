@@ -1,0 +1,80 @@
+using System;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.Audio;
+
+[System.Serializable]
+public class Sound
+{
+    public string name;
+    public AudioClip clip;
+}
+
+public class AudioManager : MonoBehaviour
+{
+    public static AudioManager instance;
+
+    [SerializeField] private AudioMixer mixer;
+    [SerializeField] private AudioSource musicSource;
+    [SerializeField] private AudioSource SFXSource;
+    [SerializeField] private Sound[] sound;
+
+    private Dictionary<string, AudioClip> soundDict;
+
+
+    void Awake() {
+        if (instance != null && instance != this)
+        {
+            Destroy(gameObject);
+            return;
+        }
+
+        instance = this;
+        DontDestroyOnLoad(gameObject);
+
+        soundDict = new Dictionary<string, AudioClip>();
+        foreach (Sound s in sound) soundDict.Add(s.name, s.clip);
+    }
+
+    public void PlaySingleSoundSFX(string soundName)
+    {
+        if (soundDict.TryGetValue(soundName, out var clip))
+        {
+            SFXSource.PlayOneShot(clip);
+        }
+        else
+        {
+            Debug.LogWarning("Song " + soundName + " not found!");
+        }
+    }
+
+    public void PlayLoopSoundSFX(string soundName)
+    {
+        if (soundDict.TryGetValue(soundName, out var clip))
+        {
+            SFXSource.clip = clip;
+            SFXSource.loop = true;
+            SFXSource.Play();
+        }
+        else
+        {
+            Debug.LogWarning("Song " + soundName + " not found!");
+        }
+    }
+
+    public void StopLoopSoundSFX(string soundName)
+    {
+        SFXSource.loop = false;
+        SFXSource.Stop();
+    }
+
+    public void SetGlobalVolume(float value)
+    {
+        mixer.SetFloat("Volume", Mathf.Log10(value) * 20);
+    }
+
+    public void SetGlobalSFX(float value)
+    {
+        mixer.SetFloat("SFX", Mathf.Log10(value) * 20);
+    }
+}

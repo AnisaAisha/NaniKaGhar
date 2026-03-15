@@ -56,6 +56,7 @@ public class LifafaInteraction : MonoBehaviour, IPointerClickHandler
             this.gameObject.SetActive(false); // Lifafa is not visible now
             // peekingLetter.SetActive(false);
             letter.SetActive(true);
+            AudioManager.instance.PlaySingleSoundSFX("LifafaPickup");
             StoryManager.instance.isLetterOpened = true;
         }
     }
