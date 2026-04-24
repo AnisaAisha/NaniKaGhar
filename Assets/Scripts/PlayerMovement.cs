@@ -14,14 +14,14 @@ public class PlayerMovement : MonoBehaviour
         movement.y = Input.GetAxisRaw("Vertical");
 
         // Prevent diagonal movement
-        if (Mathf.Abs(movement.x) > Mathf.Abs(movement.y))
-        {
-            movement.y = 0;
-        }
-        else
-        {
-            movement.x = 0;
-        }
+        // if (Mathf.Abs(movement.x) > Mathf.Abs(movement.y))
+        // {
+        //     movement.y = 0;
+        // }
+        // else
+        // {
+        //     movement.x = 0;
+        // }
 
 
         // var leftBorder = Camera.main.ViewportToWorldPoint(new Vector2(0,0)).x;

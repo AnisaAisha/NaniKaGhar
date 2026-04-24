@@ -15,4 +15,7 @@ MonoBehaviour:
   id: 5
   name: Bougainvillea
   isDry: 1
+  isPotionIngredient: 1
   icon: {fileID: 7598814892522292925, guid: bc954ac16158b4e699232492c835ddc0, type: 3}
+  changedIcon: {fileID: 0}
+  isDeleted: 0

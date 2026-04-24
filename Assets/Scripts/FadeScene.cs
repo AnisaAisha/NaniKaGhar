@@ -44,15 +44,14 @@ public class FadeScene : MonoBehaviour
         Application.Quit();
     }
 
+    public void FadeAndChangeScene() {
+        if (isStaticScene) {
+            StartCoroutine(ChangeScene());
+        }  
+    }
     void OnTriggerEnter2D(Collider2D collider) {
         if (collider.gameObject.layer == 6) {
             StartCoroutine(ChangeScene());
         }
-    }
-
-    void OnMouseDown() {
-        if (isStaticScene) {
-            StartCoroutine(ChangeScene());
-        }  
     }
 }

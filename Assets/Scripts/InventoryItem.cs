@@ -6,7 +6,6 @@ using UnityEngine.Audio;
 
 public class InventoryItem : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler
 {
-    [SerializeField] Sprite wetRag;
     public InventoryItemData itemData;
     private Vector2 originalPos;
     private Image itemImage;
@@ -17,18 +16,15 @@ public class InventoryItem : MonoBehaviour, IBeginDragHandler, IDragHandler, IEn
     }
 
     public void OnBeginDrag(PointerEventData eventData) {
-        // Debug.Log("Begin Drag...");
         originalPos = transform.position;
     }
 
     public void OnDrag(PointerEventData eventData) {
-        Debug.Log("Dragging...");
         transform.position = Input.mousePosition;
         CheckHover(eventData);
     }
 
     public void OnEndDrag(PointerEventData eventData) {
-        // Debug.Log("End Drag...");
         transform.position = originalPos;
     }
 
@@ -46,15 +42,15 @@ public class InventoryItem : MonoBehaviour, IBeginDragHandler, IDragHandler, IEn
             Debug.Log("Hovering over: " + hit.name);
             Dialogue d = new Dialogue();
             DialogueTrigger dialogTrigger = gameObject.AddComponent<DialogueTrigger>();
-            if (itemData.name == "Dry Rag" && hit.CompareTag("Stove")) {
+            if (!itemData.isPotionIngredient && hit.CompareTag("Stove")) {
                 d.sentences = new string[] { "I cannot add this to the pot." };
                 dialogTrigger.TriggerDialogue(d);
             }
             else if (itemData.name == "Dry Rag" && hit.CompareTag("Sink")) {
-                itemImage.sprite = wetRag; // Change rag icon
+                itemImage.sprite = itemData.changedIcon; // Change rag icon to wet
 
                 // Update scriptable object for persistent storage
-                itemData.icon = wetRag;
+                itemData.icon = itemData.changedIcon;
                 itemData.isDry = false;
 
                 d.sentences = new string[] { "The rag is now drenched in water. Maybe this can put out the fire..." };
@@ -92,7 +88,7 @@ public class InventoryItem : MonoBehaviour, IBeginDragHandler, IDragHandler, IEn
                 // Debug.Log(gameObject.name);
                 d.sentences = new string[] {  $"{itemData.name} added to the pot!", };
                 dialogTrigger.TriggerDialogue(d);
-                StoryManager.instance.AddStoveItems(itemData.name);
+                // StoryManager.instance.AddStoveItems(itemData.name);
                 InventoryManager.instance.RemoveItem(itemData);
             }
         }

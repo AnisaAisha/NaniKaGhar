@@ -120,8 +120,9 @@ public class InventoryManager : MonoBehaviour
 
     public void ToggleMenu()
     {
-        Debug.Log("Inventory Button Clicked!");
+        Debug.Log("Inventory Button Clicked!" + gameObject.name);
         isMenuActive = !isMenuActive;
+        Debug.Log("Menu state: " + isMenuActive);
         inventoryMenu.SetActive(isMenuActive);  
     }
 }

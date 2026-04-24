@@ -1,13 +1,26 @@
 using UnityEngine;
 
-public class ClickObject : MonoBehaviour
+// Objects that can be picked up by the player (inventory items)
+public class PickupObject : Interactables
 {
-    [SerializeField] GameObject objGameObject;
+    // TODO: MAKE ALL INVENTORY OBJECTS PREFABS
     [SerializeField] InventoryItemData itemData;
-    // [SerializeField] InventoryManager inventoryManager;
     [SerializeField] DialogueTrigger dialogTrigger;
 
-    public void OnMouseDown() {
+    void Awake() {
+        // If SO property says object is deleted, don't load it
+        if (itemData.isDeleted) {
+            DeleteObject();
+        }
+    }
+
+    void DeleteObject() // nitpick: replace with EndInteract?
+    {
+        itemData.isDeleted = true; // set object to delete in SO
+        Destroy(this.gameObject);
+    }
+
+    public override void Interact() {
         Dialogue d = new Dialogue();
 
         if (itemData.name == "Jalpari Scales") {
@@ -23,6 +36,6 @@ public class ClickObject : MonoBehaviour
 
         dialogTrigger.TriggerDialogue(d);
         InventoryManager.instance.AddItem(itemData);
-        Destroy(objGameObject);
+        DeleteObject();
     }
 }

@@ -15,4 +15,7 @@ MonoBehaviour:
   id: 2
   name: Jalpari Scales
   isDry: 1
+  isPotionIngredient: 1
   icon: {fileID: 2122563174107230422, guid: f10efd5566fe8482ebea03bb09770b99, type: 3}
+  changedIcon: {fileID: 0}
+  isDeleted: 0

@@ -15,4 +15,7 @@ MonoBehaviour:
   id: 4
   name: ChinarBark
   isDry: 1
+  isPotionIngredient: 1
   icon: {fileID: 1826633431340571036, guid: 5a34f9f8ac60f47d6a73b710486d56df, type: 3}
+  changedIcon: {fileID: 0}
+  isDeleted: 0

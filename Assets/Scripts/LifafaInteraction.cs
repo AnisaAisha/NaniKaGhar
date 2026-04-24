@@ -6,7 +6,7 @@ public class LifafaInteraction : MonoBehaviour, IPointerClickHandler
 {
     [SerializeField] GameObject peekingLetter;
     [SerializeField] GameObject letter;
-    [SerializeField] GameManager gameManager;
+    // [SerializeField] GameManager gameManager;
     [SerializeField] Image sr;
     // [SerializeField] StoryManager storyManager;
 
@@ -27,6 +27,7 @@ public class LifafaInteraction : MonoBehaviour, IPointerClickHandler
         clickCount++;
     }
 
+    // TODO: REPLACE THIS BY FOCUSED INTERACTABLES CODE
     public void CloseLetter() {
         letter.SetActive(false);
         Dialogue d = new Dialogue();
@@ -37,7 +38,7 @@ public class LifafaInteraction : MonoBehaviour, IPointerClickHandler
 
         isLetterOpened = true;
 
-        gameManager.SetBackgroundBlur(false);
+        DOFManager.instance.SetBackgroundBlur(false);
     }
 
     void Update()
