@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9665fa372b894d06896f5510367aec2, type: 3}
+  m_Name: DriedApricot
+  m_EditorClassIdentifier: 
+  id: 1
+  name: Dried Apricot
+  isDry: 1
+  isPotionIngredient: 1
+  icon: {fileID: -1795104590057013751, guid: e750190677f8e40e1a4c0957a77a6ce2, type: 3}
+  changedIcon: {fileID: 0}
+  isDeleted: 0

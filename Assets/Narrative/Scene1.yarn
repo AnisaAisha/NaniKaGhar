@@ -1,0 +1,43 @@
+﻿title: Letter
+---
+Maia: By Sunday? But that's today. I think mamu must have mailed this earlier. It's possible the post was delayed by the rain.
+===
+
+title: Phone
+---
+<<declare $firstMamuCall = true>>
+<<declare $isSmoke = false>>
+Mamu: Maia beta, how is the packing coming along?
+Maia: Hello mamu. I hope you are well too. I actually haven't started packing yet. Just got your letter.
+<<smoke Phone>>
+Mamu: What? That can't be right. I mailed it more than a week ago. You must have missed it.
+Mamu: That is understandable. However, nothing we can do about it. The movers will be there in the evening. Just clear out the furniture by then so they can take those away.
+// TODO: MOVE SFX OUT OF PHONE AND MAKE PUBLIC
+<<set $isSmoke to true>>
+<<audio_sfx Phone Smoke Loop>>
+Maia: But I -
+Mamu: Take care.
+<<audio_sfx Phone PhoneCut Once>>
+Maia: *Sigh*. Where do I even start? Wait, what is that smell?
+===
+
+title: BurningPotion
+---
+<<if $isSmoke == true>>
+    Maia: Oh no. I forgot about the brewing Sundrip fragrance. I need to put this fire out somehow.
+<<endif>>
+===
+
+title: InventoryItem
+---
+Item (TBD) added to inventory!
+===
+
+title: Potion
+---
+Maia: Any later, and mamu wouldn't have had a house to claim.
+Maia: It's such a shame though, the Sundrip fragrance was nani's favourite.
+Maia: I must make it again to dispel the smell of burnt potion.
+Maia: Actually, now that nani...isn't...or I mean she can't...see what I'm doing, I can just brew potions in the kitchen I guess.
+Maia: I should gather the ingredients again.
+===

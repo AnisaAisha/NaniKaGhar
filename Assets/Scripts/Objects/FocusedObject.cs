@@ -7,7 +7,7 @@ public class FocusedObject : Interactables
     [SerializeField] GameObject ObjectUIOverlay;
     public override void Interact()
     {
-        DOFManager.instance.SetBackgroundBlur(true);
+        // DOFManager.instance.SetBackgroundBlur(true);
         ObjectUIOverlay.SetActive(true);
         Debug.Log(name + " Game Object Clicked!");
     }
@@ -15,6 +15,8 @@ public class FocusedObject : Interactables
     public override void EndInteract()
     {
         ObjectUIOverlay.SetActive(false);
-        DOFManager.instance.SetBackgroundBlur(false);        
+        // DOFManager.instance.SetBackgroundBlur(false);        
     }
+
+    // TODO: Prevent collisions in scene when interacting with UI
 }

@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 863c12d44544f42a2bcf39105eea2152, type: 3}
+  m_Name: KitchenRag
+  m_EditorClassIdentifier: 
+  id: 5
+  name: Rag
+  icon: {fileID: 5178497552001929108, guid: a6f5636e248a04a119a30c4f376eed15, type: 3}
+  isDeleted: 0
+  isStateChanged: 0
+  changedIcon: {fileID: -7149484325893976055, guid: 42aa8e622be5245608b65531f9d9ced1, type: 3}

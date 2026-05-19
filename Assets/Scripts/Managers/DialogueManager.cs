@@ -3,6 +3,7 @@ using UnityEngine.UI;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
+using Yarn.Unity;
 
 [System.Serializable]
 public class Dialogue 
@@ -13,6 +14,15 @@ public class Dialogue
 
 public class DialogueManager : MonoBehaviour
 {
+    public static DialogueManager instance { get; private set;}
+    [SerializeField] DialogueRunner dialogueRunner;
+
+    public void StartStoryDialogue(string nextScene)
+    {
+        dialogueRunner.StartDialogue(nextScene);
+    }
+
+
     [SerializeField] TextMeshProUGUI dialogText;
     [SerializeField] Queue<string> sentences;
     [SerializeField] Animator animator;
@@ -27,6 +37,15 @@ public class DialogueManager : MonoBehaviour
 
      void Awake()
     {
+        // Singleton check
+        if (instance != null && instance != this)
+        {
+            Destroy(gameObject);
+            return;
+        }
+        instance = this;
+        DontDestroyOnLoad(gameObject);
+        
         sentenceCounter = 0;
         dialogInteraction = false;
         isDelayRequired = false;

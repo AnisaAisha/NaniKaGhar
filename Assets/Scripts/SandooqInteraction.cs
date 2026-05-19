@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 
-public class SandooqInteraction : MonoBehaviour
+public class SandooqInteraction : UIInteractables
 {
     [SerializeField] List<TMP_InputField> lockInputFields;
     [SerializeField] GameObject sandooqOpen;
@@ -16,37 +16,47 @@ public class SandooqInteraction : MonoBehaviour
     {
         isLockOpened = false;
         lockInputFields = new List<TMP_InputField>(GetComponentsInChildren<TMP_InputField>());
+
+        // add listeners on each text field to trigger a check when value changes
+        foreach (TMP_InputField field in lockInputFields)
+        {
+            field.onValueChanged.AddListener(_ => InteractUI());
+        }
     }
 
-    void Start()
-    {
-        Dialogue d = new Dialogue();
-        d.sentences = new string[] { "Looks like I need to enter 4 numbers here..." };
+    // void Start()
+    // {
+        // Dialogue d = new Dialogue();
+        // d.sentences = new string[] { "Looks like I need to enter 4 numbers here..." };
 
-        DialogueTrigger dialogTrigger = gameObject.AddComponent<DialogueTrigger>();
-        dialogTrigger.TriggerDialogue(d);
-    }
-
-    IEnumerator AddDelay() {
-        yield return new WaitForSeconds(5f);
-    }
+        // DialogueTrigger dialogTrigger = gameObject.AddComponent<DialogueTrigger>();
+        // dialogTrigger.TriggerDialogue(d);
+    // }
 
     public void CloseLock() {
-        Dialogue d = new Dialogue();
-        d.sentences = new string[] { "The lock opened!" };
+        // Dialogue d = new Dialogue();
+        // d.sentences = new string[] { "The lock opened!" };
 
-        DialogueTrigger dialogTrigger = gameObject.AddComponent<DialogueTrigger>();
-        dialogTrigger.TriggerDialogue(d);
+        // DialogueTrigger dialogTrigger = gameObject.AddComponent<DialogueTrigger>();
+        // dialogTrigger.TriggerDialogue(d);
 
-        StartCoroutine(AddDelay());
+        // StartCoroutine(AddDelay());
 
         gameObject.SetActive(false);
-        StoryManager.instance.isLockOpened = true;
+        sandooqOpen.SetActive(true);
+        scalesCollider.SetActive(true);
 
-        if (!InventoryManager.instance.isContainScales && StoryManager.instance.isLockOpened) {
-            sandooqOpen.SetActive(true);
-            scalesCollider.SetActive(true);
-        }
+        // if (!InventoryManager.instance.isContainScales) {
+        //     sandooqOpen.SetActive(true);
+        //     scalesCollider.SetActive(true);
+        // }
+
+        // StoryManager.instance.isLockOpened = true;
+
+        // if (!InventoryManager.instance.isContainScales && StoryManager.instance.isLockOpened) {
+        //     sandooqOpen.SetActive(true);
+        //     scalesCollider.SetActive(true);
+        // }
     }
 
     bool AreAllFieldsFilled()
@@ -77,14 +87,16 @@ public class SandooqInteraction : MonoBehaviour
         {
             field.text = "";
         }
-        Dialogue d = new Dialogue();
-        d.sentences = new string[] { "The lock does not seem to open..." };
+        // Dialogue d = new Dialogue();
+        // d.sentences = new string[] { "The lock does not seem to open..." };
 
-        DialogueTrigger dialogTrigger = gameObject.AddComponent<DialogueTrigger>();
-        dialogTrigger.TriggerDialogue(d);
+        // DialogueTrigger dialogTrigger = gameObject.AddComponent<DialogueTrigger>();
+        // dialogTrigger.TriggerDialogue(d);
     }
 
-    void Update()
+    //void Update()
+    // Main Interaction of Sandooq Lock
+    public override void InteractUI()
     {
         if (AreAllFieldsFilled()) 
         {

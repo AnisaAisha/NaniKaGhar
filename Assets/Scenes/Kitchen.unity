@@ -1119,6 +1119,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 647f59f4dfd1b443f93663ef86a5049b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dialogueRunner: {fileID: 0}
   dialogText: {fileID: 1266917308}
   animator: {fileID: 1070547776}
   dialogInteraction: 0
@@ -8222,7 +8223,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!82 &2075755145
 AudioSource:
   m_ObjectHideFlags: 0
@@ -8235,7 +8236,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: -8176467081267512689, guid: c9f2a3bfd319f41ddae487b0c576aeed, type: 2}
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 8300000, guid: fe7bfb39ae3994f19a1cdc213d9d7451, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 1

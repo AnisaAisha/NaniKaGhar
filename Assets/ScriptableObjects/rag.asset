@@ -14,6 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: 1
   name: Dry Rag
-  isDry: 1
   icon: {fileID: 5178497552001929108, guid: a6f5636e248a04a119a30c4f376eed15, type: 3}
-  changedIcon: {fileID: -7149484325893976055, guid: 42aa8e622be5245608b65531f9d9ced1, type: 3}
+  isDeleted: 0

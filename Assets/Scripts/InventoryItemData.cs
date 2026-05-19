@@ -5,9 +5,9 @@ public class InventoryItemData : ScriptableObject
 {
     public string id; // do we really need this?
     public string name;
-    public bool isDry;
-    public bool isPotionIngredient;
     public Sprite icon;
-    public Sprite changedIcon;
     public bool isDeleted;
+
+    // Each inventory item overrides and writes its own interaction
+    public virtual void InventoryItemInteract(Collider2D hitInfo) {}
 }

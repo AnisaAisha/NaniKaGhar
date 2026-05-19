@@ -2,63 +2,38 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-public class LifafaInteraction : MonoBehaviour, IPointerClickHandler
+public class LifafaInteraction : UIInteractables //MonoBehaviour, IPointerClickHandler
 {
-    [SerializeField] GameObject peekingLetter;
+    // [SerializeField] GameObject peekingLetter;
     [SerializeField] GameObject letter;
     // [SerializeField] GameManager gameManager;
-    [SerializeField] Image sr;
-    // [SerializeField] StoryManager storyManager;
+    // [SerializeField] Image sr;
 
-    public bool isLetterOpened;
+    // public bool isLetterOpened;
 
-    private int clickCount;
-
-
-    void Awake()
+    public override void InteractUI()
     {
-        clickCount = 0;
-        isLetterOpened = false;
+        gameObject.SetActive(false); // Lifafa is not visible now
+        letter.SetActive(true);
+        // StoryManager.instance.isLetterOpened = true;
+
+        // StoryManager.instance.UpdateStoryState(Objective.OpenLetter, true);
     }
 
-    public void OnPointerClick(PointerEventData eventData)
-    {
-        Debug.Log("UI Object Clicked!");
-        clickCount++;
-    }
-
-    // TODO: REPLACE THIS BY FOCUSED INTERACTABLES CODE
-    public void CloseLetter() {
+    public override void EndInteractUI() // CloseLetter() {
+    { 
         letter.SetActive(false);
-        Dialogue d = new Dialogue();
-        d.sentences = new string[] { "Maia: By Sunday? But that's today. I think mamu must have mailed this earlier. It's possible the post was delayed by the rain." };
+        // Dialogue d = new Dialogue();
+        // d.sentences = new string[] { "Maia: By Sunday? But that's today. I think mamu must have mailed this earlier. It's possible the post was delayed by the rain." };
 
-        DialogueTrigger dialogTrigger = gameObject.AddComponent<DialogueTrigger>();
-        dialogTrigger.TriggerDialogue(d);
+        // DialogueTrigger dialogTrigger = gameObject.AddComponent<DialogueTrigger>();
+        // dialogTrigger.TriggerDialogue(d);
 
-        isLetterOpened = true;
-
+        DialogueManager.instance.StartStoryDialogue("Letter");
+        // isLetterOpened = true;
         DOFManager.instance.SetBackgroundBlur(false);
-    }
 
-    void Update()
-    {
-        // hacky solution because apparently clicking the first time doesn't get triggered
-        if (clickCount == 1) 
-        {
-            // implement peeking letter later
-            // Color c = sr.color;
-            // c.a = 0f;
-            // sr.color = c;
-            // peekingLetter.SetActive(true);
-        // } 
-        // else if (clickCount == 2)
-        // {
-            this.gameObject.SetActive(false); // Lifafa is not visible now
-            // peekingLetter.SetActive(false);
-            letter.SetActive(true);
-            AudioManager.instance.PlaySingleSoundSFX("LifafaPickup");
-            StoryManager.instance.isLetterOpened = true;
-        }
+        // Move to next state ONLY after the letter is closed
+        // StoryManager.instance.UpdateStoryState(StoryState.LetterOpened);
     }
 }

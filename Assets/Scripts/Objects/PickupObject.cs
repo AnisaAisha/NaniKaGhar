@@ -21,20 +21,25 @@ public class PickupObject : Interactables
     }
 
     public override void Interact() {
-        Dialogue d = new Dialogue();
 
+        Debug.Log("Interacting with object...." + itemData.name);
+        // Dialogue d = new Dialogue();
+
+        // Add dialogues later
         if (itemData.name == "Jalpari Scales") {
             InventoryManager.instance.isContainScales = true;
-            d.sentences = new string[] { 
-                $"{itemData.name} added to inventory!",
-                "Maia: Guess I have no reason to hide these things anymore." 
-            };
             GameObject.Find("sandooq open_0").SetActive(false);
-        } else {
-            d.sentences = new string[] { $"{itemData.name} added to inventory!" };
         }
+        //     d.sentences = new string[] { 
+        //         $"{itemData.name} added to inventory!",
+        //         "Maia: Guess I have no reason to hide these things anymore." 
+        //     };
+        // } else {
+        //     d.sentences = new string[] { $"{itemData.name} added to inventory!" };
+        // }
 
-        dialogTrigger.TriggerDialogue(d);
+        // dialogTrigger.TriggerDialogue(d);
+
         InventoryManager.instance.AddItem(itemData);
         DeleteObject();
     }
