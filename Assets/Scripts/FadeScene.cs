@@ -38,7 +38,7 @@ public class FadeScene : MonoBehaviour
     }
 
     public IEnumerator EndScene() {
-        image = GameObject.Find("FaderImage").GetComponent<Image>();
+        image = GameObject.Find("FaderImage").GetComponent<Image>(); // CHANGE GAMEOBJECT.FIND HERE
         StartCoroutine(FadeIn(2f));
         yield return new WaitForSeconds(2f);
         Application.Quit();

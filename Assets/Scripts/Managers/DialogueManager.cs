@@ -15,11 +15,17 @@ public class Dialogue
 public class DialogueManager : MonoBehaviour
 {
     public static DialogueManager instance { get; private set;}
-    [SerializeField] DialogueRunner dialogueRunner;
+    public DialogueRunner dialogueRunner;
 
     public void StartStoryDialogue(string nextScene)
     {
         dialogueRunner.StartDialogue(nextScene);
+    }
+
+    public void StartItemDialogue(string itemName)
+    {
+        dialogueRunner.VariableStorage.SetValue("$itemName", itemName);
+        dialogueRunner.StartDialogue("InventoryItem");
     }
 
 

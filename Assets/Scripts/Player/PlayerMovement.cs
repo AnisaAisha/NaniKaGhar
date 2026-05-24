@@ -8,10 +8,11 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] float speed;
     private Vector2 movement;
 
+    // wait THIS UPDATE NEEDS TO BE REMOVED NO UPDATES IN ANY SCRIPTS
     void Update() {
         // Simple top-down movement
-        movement.x = Input.GetAxisRaw("Horizontal");
-        movement.y = Input.GetAxisRaw("Vertical");
+        // movement.x = Input.GetAxisRaw("Horizontal");
+        // movement.y = Input.GetAxisRaw("Vertical");
 
         // Prevent diagonal movement
         // if (Mathf.Abs(movement.x) > Mathf.Abs(movement.y))
@@ -22,6 +23,13 @@ public class PlayerMovement : MonoBehaviour
         // {
         //     movement.x = 0;
         // }
+
+        // Convert Cartesian to Isometric movement (diagonal movement)
+        float x = Input.GetAxisRaw("Horizontal");
+        float y = Input.GetAxisRaw("Vertical");
+
+        movement.x = x - y;
+        movement.y = (x + y)/2;
 
 
         // var leftBorder = Camera.main.ViewportToWorldPoint(new Vector2(0,0)).x;

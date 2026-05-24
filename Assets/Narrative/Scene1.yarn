@@ -14,23 +14,24 @@ Mamu: What? That can't be right. I mailed it more than a week ago. You must have
 Mamu: That is understandable. However, nothing we can do about it. The movers will be there in the evening. Just clear out the furniture by then so they can take those away.
 // TODO: MOVE SFX OUT OF PHONE AND MAKE PUBLIC
 <<set $isSmoke to true>>
-<<audio_sfx Phone Smoke Loop>>
+<<audio_sfx AudioManager Smoke Loop>>
 Maia: But I -
 Mamu: Take care.
-<<audio_sfx Phone PhoneCut Once>>
+<<audio_sfx AudioManager PhoneCut Once>>
 Maia: *Sigh*. Where do I even start? Wait, what is that smell?
 ===
 
-title: BurningPotion
+title: MaiaRoom
 ---
-<<if $isSmoke == true>>
-    Maia: Oh no. I forgot about the brewing Sundrip fragrance. I need to put this fire out somehow.
-<<endif>>
+// <<if $isSmoke == true>>
+Maia: Oh no. I forgot about the brewing Sundrip fragrance. I need to put this fire out somehow.
+// <<endif>>
 ===
 
 title: InventoryItem
 ---
-Item (TBD) added to inventory!
+<<declare $itemName = "">>
+{$itemName} added to inventory!
 ===
 
 title: Potion
@@ -40,4 +41,32 @@ Maia: It's such a shame though, the Sundrip fragrance was nani's favourite.
 Maia: I must make it again to dispel the smell of burnt potion.
 Maia: Actually, now that nani...isn't...or I mean she can't...see what I'm doing, I can just brew potions in the kitchen I guess.
 Maia: I should gather the ingredients again.
+===
+
+title: JalpariScales
+---
+Maia: Guess I have no reason to hide these things anymore.
+===
+
+title: SecondCall
+---
+Mamu: Maia, just talked to the movers, they'll be there at 6pm.
+Maia: Mamu...I don't think I can do this.
+Mamu: Sure, you can. The value of Nani ka Ghar will only depreciate further the longer we wait.
+Mamu: You know, I have been insisting on selling this house for a long time. Only your nani wouldn't listen...
+Maia: I just...I need more time.
+Mamu: We don't have time beta. Pick yourself up, c'mon.
+"..."
+===
+
+title: PotionSuccess
+---
+Maia: This fragrance reminds me of nani. She loves it.
+Maia: She would try to guess its notes, nagging me to tell her what was the one she couldn't place.
+Maia: She used to say there was something magical about it.
+Maia: If only I could tell her...
+Maia: Which reminds me, she never told me what the secret ingredient in her Khaplu-famous momos was.
+<<wait 5>>
+<<audio_sfx AudioManager DoorCreak Once>>
+Maia: What was that sound?
 ===

@@ -3,7 +3,7 @@ using System.Collections;
 using System.Linq;
 using System.Collections.Generic;
 
-public class StoveKnobInteraction : Interactables
+public class StoveKnob : Interactables
 {
     // [SerializeField] AudioSource doorCreakSFX;
     [SerializeField] ParticleSystem purpleHaze;
@@ -35,24 +35,8 @@ public class StoveKnobInteraction : Interactables
             stoveFlame.SetActive(true);
             purpleHaze.Play();
 
-            // Dialogue d = new Dialogue();
-            // DialogueTrigger dialogTrigger = gameObject.AddComponent<DialogueTrigger>();
-            // d.sentences = new string[] {  
-            //     "Maia: This fragrance reminds me of nani. She loves it.",
-            //     "Maia: She would try to guess its notes, nagging me to tell her what was the one she couldn't place.",
-            //     "Maia: She used to say there was something magical about it.",
-            //     "Maia: If only I could tell her..",
-            //     "Maia: Which reminds me, she never told me what the secret ingredient in her Khaplu-famous momos was.",
-            //     "Maia: What was that sound?"
-            // };
-            // dialogTrigger.TriggerDialogue(d);
-
-            // StoryManager.instance.isPotionReady = true;
-
-            // dialogTrigger.SetDialogueInteraction(1, "delay");
-            // dialogTrigger.SetDialogueInteraction(2, doorCreakSFX);
-
-            // StoryManager.instance.doorCreakDone = true;
+            StoryManager.instance.UpdateStoryState(StoryState.PotionSuccess);
+            DialogueManager.instance.StartStoryDialogue("PotionSuccess");
         }
     }
 }

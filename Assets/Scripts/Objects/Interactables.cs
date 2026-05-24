@@ -6,7 +6,6 @@ using System.Collections.Generic;
 // Base class for all interactable objects
 public class Interactables : MonoBehaviour, IPointerClickHandler
 {
-    // MouseDown is now handled by PlayerController
     // Used AI for thse two functions --- need to verify why
     void OnEnable() 
     {

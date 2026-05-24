@@ -8,7 +8,7 @@ public class InventoryManager : MonoBehaviour
 {
     public static InventoryManager instance;
     Button inventoryButton;
-    GameObject inventoryMenu;
+    public GameObject inventoryMenu;
     [SerializeField] GameObject itemSlot;
 
     public bool isContainScales;
@@ -33,22 +33,10 @@ public class InventoryManager : MonoBehaviour
         inventoryObjList = new List<GameObject>();
         isMenuActive = false;
         isContainScales = false;
+        inventoryMenu = null;
     }
 
-    void OnEnable()
-    {
-        SceneManager.sceneLoaded += OnSceneLoaded;
-    }
-
-    void OnDisable()
-    {
-        SceneManager.sceneLoaded -= OnSceneLoaded;
-    }
-
-    void OnSceneLoaded(Scene scene, LoadSceneMode mode)
-    {
-         Debug.Log("Scene Loaded");
-
+    public void InitializeInventoryPanel() {
         inventoryMenu = GameObject.Find("InventoryPanel");
         inventoryMenu.SetActive(false);
         if (inventoryMenu == null)

@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Audio;
+using Yarn.Unity;
 
 [System.Serializable]
 public class Sound
@@ -34,6 +35,17 @@ public class AudioManager : MonoBehaviour
 
         soundDict = new Dictionary<string, AudioClip>();
         foreach (Sound s in sound) soundDict.Add(s.name, s.clip);
+    }
+
+    [YarnCommand("audio_sfx")]
+    public void PlaySFX(string name, string mode)
+    {
+        if (mode == "Loop") {
+            PlayLoopSoundSFX(name);
+        } else if (mode == "Once")
+        {
+            PlaySingleSoundSFX(name);
+        }
     }
 
     public void PlaySingleSoundSFX(string soundName)
