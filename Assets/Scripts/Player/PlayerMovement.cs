@@ -8,7 +8,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] float speed;
     private Vector2 movement;
 
-    // wait THIS UPDATE NEEDS TO BE REMOVED NO UPDATES IN ANY SCRIPTS
+    // TODO: wait THIS UPDATE NEEDS TO BE REMOVED NO UPDATES IN ANY SCRIPTS
     void Update() {
         // Simple top-down movement
         // movement.x = Input.GetAxisRaw("Horizontal");

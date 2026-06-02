@@ -21,6 +21,8 @@ public class AudioManager : MonoBehaviour
     [SerializeField] private Sound[] sound;
 
     private Dictionary<string, AudioClip> soundDict;
+    private float musicVolume;
+    private float sfxVolume;
 
 
     void Awake() {
@@ -80,13 +82,38 @@ public class AudioManager : MonoBehaviour
         SFXSource.Stop();
     }
 
+    public void PlayMainMusic(string soundName)
+    {
+        if (soundDict.TryGetValue(soundName, out var clip))
+        {
+            if (musicSource.clip == clip && musicSource.isPlaying) return;
+            musicSource.clip = clip;
+            musicSource.loop = true;
+            musicSource.Play();
+        }
+        else
+        {
+            Debug.LogWarning("Song " + soundName + " not found!");
+        }
+    }
+
     public void SetGlobalVolume(float value)
     {
+        musicVolume = value;
         mixer.SetFloat("Volume", Mathf.Log10(value) * 20);
     }
 
     public void SetGlobalSFX(float value)
     {
+        sfxVolume = value;
         mixer.SetFloat("SFX", Mathf.Log10(value) * 20);
+    }
+
+    public float GetGlobalVolume() {
+        return musicVolume;
+    }
+
+    public float GetGlobalSFX() {
+        return sfxVolume;
     }
 }

@@ -6,41 +6,50 @@ using System.Collections;
 public class FadeScene : MonoBehaviour
 {
     [SerializeField] bool isStaticScene;
-    [SerializeField] Image image;
+    // [SerializeField] Image image;
     [SerializeField] string NewSceneName;
+    [SerializeField] CanvasGroup canvasGroup;
 
-    IEnumerator FadeIn(float duration) {
-        float t = 0;
-        Color c = image.color;
-        while (t < duration) {
-            t += Time.deltaTime;
-            c.a = t/duration;
-            image.color = c;
-            yield return null;
-        }
+    void Start()
+    {
+        // fade from black on loading a new scene
+        canvasGroup.alpha = 0f;
+        StartCoroutine(FadeFromBlack(1.5f));
     }
 
-    public IEnumerator FadeOut(float duration) {
+    IEnumerator FadeToBlack(float duration) {
         float t = 0;
-        Color c = image.color;
-        while (t < 1) {
+
+        while (t < duration) {
             t += Time.deltaTime;
-            c.a = 1.0f - (t/1f);
-            image.color = c;
+            canvasGroup.alpha = t/duration;
+            Debug.Log(canvasGroup.alpha);
             yield return null;
         }
+        canvasGroup.alpha = 1;
+    }
+
+    public IEnumerator FadeFromBlack(float duration) {
+        float t = 0;
+
+        canvasGroup.alpha = 1;
+
+        while (t < 1) {
+            t += Time.deltaTime;
+            canvasGroup.alpha = 1.0f - (t/duration);
+            yield return null;
+        }
+
+        canvasGroup.alpha = 0;
     }
 
     IEnumerator ChangeScene() {
-        StartCoroutine(FadeIn(2f));
-        yield return new WaitForSeconds(2);
+        yield return StartCoroutine(FadeToBlack(2f));
         SceneManager.LoadScene(NewSceneName);
     }
 
     public IEnumerator EndScene() {
-        image = GameObject.Find("FaderImage").GetComponent<Image>(); // CHANGE GAMEOBJECT.FIND HERE
-        StartCoroutine(FadeIn(2f));
-        yield return new WaitForSeconds(2f);
+        yield return StartCoroutine(FadeToBlack(3f));
         Application.Quit();
     }
 
@@ -50,6 +59,7 @@ public class FadeScene : MonoBehaviour
         }  
     }
     void OnTriggerEnter2D(Collider2D collider) {
+        // if Player is in trigger area, change scene
         if (collider.gameObject.layer == 6) {
             StartCoroutine(ChangeScene());
         }

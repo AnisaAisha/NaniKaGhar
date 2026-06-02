@@ -12,13 +12,17 @@ Maia: Hello mamu. I hope you are well too. I actually haven't started packing ye
 <<smoke Phone>>
 Mamu: What? That can't be right. I mailed it more than a week ago. You must have missed it.
 Mamu: That is understandable. However, nothing we can do about it. The movers will be there in the evening. Just clear out the furniture by then so they can take those away.
-// TODO: MOVE SFX OUT OF PHONE AND MAKE PUBLIC
 <<set $isSmoke to true>>
 <<audio_sfx AudioManager Smoke Loop>>
 Maia: But I -
 Mamu: Take care.
 <<audio_sfx AudioManager PhoneCut Once>>
 Maia: *Sigh*. Where do I even start? Wait, what is that smell?
+===
+
+title: NaniRoom
+---
+Maia: Oh, I don't think I am ready to step into Nani's room just yet.
 ===
 
 title: MaiaRoom
@@ -56,7 +60,7 @@ Mamu: Sure, you can. The value of Nani ka Ghar will only depreciate further the 
 Mamu: You know, I have been insisting on selling this house for a long time. Only your nani wouldn't listen...
 Maia: I just...I need more time.
 Mamu: We don't have time beta. Pick yourself up, c'mon.
-"..."
+...
 ===
 
 title: PotionSuccess
@@ -66,7 +70,7 @@ Maia: She would try to guess its notes, nagging me to tell her what was the one 
 Maia: She used to say there was something magical about it.
 Maia: If only I could tell her...
 Maia: Which reminds me, she never told me what the secret ingredient in her Khaplu-famous momos was.
-<<wait 5>>
+<<wait 3>>
 <<audio_sfx AudioManager DoorCreak Once>>
 Maia: What was that sound?
 ===

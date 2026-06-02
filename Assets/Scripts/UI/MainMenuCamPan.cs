@@ -20,6 +20,7 @@ public class SmoothFollowCamera2D : MonoBehaviour
         time = true;
     }
 
+    // TODO: remove this
      void Update()
     {
         if (time)

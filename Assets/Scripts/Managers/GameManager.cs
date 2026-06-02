@@ -17,6 +17,12 @@ public class GameManager : MonoBehaviour
         DontDestroyOnLoad(gameObject);
     }
 
+    void Start()
+    {
+        // Start BG music as the game starts
+        AudioManager.instance.PlayMainMusic("BGTheme");
+    }
+
     /** 
         Scene loding and scene context changes
     */

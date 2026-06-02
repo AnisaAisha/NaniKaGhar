@@ -15,4 +15,4 @@ MonoBehaviour:
   id: 3
   name: Bougainvillea
   icon: {fileID: 7598814892522292925, guid: bc954ac16158b4e699232492c835ddc0, type: 3}
-  isDeleted: 1
+  isDeleted: 0

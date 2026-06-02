@@ -1,31 +1,31 @@
 using UnityEngine;
 using UnityEngine.Audio;
+using UnityEngine.UI;
+using System.Collections;
 
 public class PauseMenu : MonoBehaviour
 {
+    [SerializeField] GameObject pauseMenuUI;
+    [SerializeField] Slider musicSlider;
+    [SerializeField] Slider sfxSlider;
+    private bool isPaused;
 
-    [SerializeField] private AudioSource buttonAudioSource;
-    public GameObject pauseMenuUI;
-    private bool isPaused = false;
+    void Start()
+    {
+        isPaused = false;
+        LoadSliderValues();
+    }
 
-    // Update is called once per frame
+    // TODO: Remove Update if possible
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Escape) || Input.GetKeyDown(KeyCode.P))
         {
-            buttonAudioSource.Play();
-            
-            if (isPaused)
-            {
-                Resume();
-            }
-            else
-            {
-                Pause();
-            }
+            // buttonAudioSource.Play();
+            if (isPaused) Resume();
+            else Pause();
         }
     }
-
 
     public void Resume()
     {
@@ -41,4 +41,15 @@ public class PauseMenu : MonoBehaviour
         isPaused = true;
     }
 
+    public void Quit()
+    {
+        Application.Quit();
+    }
+
+    void LoadSliderValues()
+    {
+        // sync sliders to current AudioManager values when menu opens
+        musicSlider.value = AudioManager.instance.GetGlobalVolume();
+        sfxSlider.value = AudioManager.instance.GetGlobalSFX();
+    }
 }

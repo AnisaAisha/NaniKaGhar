@@ -16,11 +16,12 @@ public class LifafaInteraction : UIInteractables
     public override void EndInteractUI()
     { 
         letter.SetActive(false);
-        DialogueManager.instance.StartStoryDialogue("Letter");
-
         DOFManager.instance.SetBackgroundBlur(false);
+        if (StoryManager.instance.currentState == StoryState.Initial) {
+            DialogueManager.instance.StartStoryDialogue("Letter");
 
-        // Move to next state ONLY after the letter is closed
-        StoryManager.instance.UpdateStoryState(StoryState.LetterOpened);
+            // Move to next state ONLY after the letter is closed
+            StoryManager.instance.UpdateStoryState(StoryState.LetterOpened);
+        }
     }
 }

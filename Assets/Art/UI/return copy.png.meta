@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: fe7ae4cc1ac3844f891b1672a5dd6a83
+guid: 2bfb1d6fb3fd64206b0a3d4d63470f5f
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1652737239819419185
-    second: middleflower_0
+      213: 3589117368040472762
+    second: return copy_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -96,17 +96,30 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: middleflower_0
+      name: return copy_0
       rect:
         serializedVersion: 2
-        x: 643
-        y: 299
-        width: 340
-        height: 295
+        x: 0
+        y: 0
+        width: 363
+        height: 126
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 13efe7653c3bfe610800000000000000
-      internalID: 1652737239819419185
+      spriteID: ab0cc33fa3b1fc130800000000000000
+      internalID: 3589117368040472762
       vertices: []
       indices: 
       edges: []
@@ -135,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      middleflower_0: 1652737239819419185
+      return copy_0: 3589117368040472762
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
