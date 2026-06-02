@@ -23,7 +23,6 @@ public class FadeScene : MonoBehaviour
         while (t < duration) {
             t += Time.deltaTime;
             canvasGroup.alpha = t/duration;
-            Debug.Log(canvasGroup.alpha);
             yield return null;
         }
         canvasGroup.alpha = 1;

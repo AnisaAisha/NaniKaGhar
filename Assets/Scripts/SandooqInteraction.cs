@@ -33,6 +33,7 @@ public class SandooqInteraction : UIInteractables
         // dialogTrigger.TriggerDialogue(d);
     // }
 
+    // TODO: Replace with EndInteractUI()
     public void CloseLock() {
         // Dialogue d = new Dialogue();
         // d.sentences = new string[] { "The lock opened!" };
@@ -45,6 +46,7 @@ public class SandooqInteraction : UIInteractables
         gameObject.SetActive(false);
         sandooqOpen.SetActive(true);
         scalesCollider.SetActive(true);
+        DOFManager.instance.SetBackgroundBlur(false);    
 
         // if (!InventoryManager.instance.isContainScales) {
         //     sandooqOpen.SetActive(true);

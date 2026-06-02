@@ -13,5 +13,8 @@ public class UIInteractables : MonoBehaviour, IPointerClickHandler
     public virtual void InteractUI() {
         // Add dialogue manager code here
     }
-    public virtual void EndInteractUI() {}
+    public virtual void EndInteractUI()
+    {
+        // Add dof end here?
+    }
 }

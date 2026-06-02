@@ -37,6 +37,10 @@ public class AudioManager : MonoBehaviour
 
         soundDict = new Dictionary<string, AudioClip>();
         foreach (Sound s in sound) soundDict.Add(s.name, s.clip);
+
+        // Set default values
+        musicVolume = 1f;
+        sfxVolume = 1f;
     }
 
     [YarnCommand("audio_sfx")]

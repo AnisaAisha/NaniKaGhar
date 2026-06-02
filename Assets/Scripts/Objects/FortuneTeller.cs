@@ -89,7 +89,7 @@ public class FortuneTeller : FocusedObject
     public override void EndInteract()
     {
         gameObject.SetActive(false);
-        // DOFManager.instance.SetBackgroundBlur(false); 
+        DOFManager.instance.SetBackgroundBlur(false); 
         ResetState();
     }
 }

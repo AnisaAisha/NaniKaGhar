@@ -40,8 +40,9 @@ public class GameManager : MonoBehaviour
     {
         Debug.Log("Scene Loaded " + scene.name);
         
+        // TODO: Move this code to inventory manager, temp fix
         // Initialize and rebuild inventory panel on every scene load
-        InventoryManager.instance.InitializeInventoryPanel();
+        if (scene.name != "MainMenu") InventoryManager.instance.InitializeInventoryPanel();
     }
 
     // Scene specific interaction handled by each scene's own context class

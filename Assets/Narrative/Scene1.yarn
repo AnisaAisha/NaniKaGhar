@@ -70,7 +70,7 @@ Maia: She would try to guess its notes, nagging me to tell her what was the one 
 Maia: She used to say there was something magical about it.
 Maia: If only I could tell her...
 Maia: Which reminds me, she never told me what the secret ingredient in her Khaplu-famous momos was.
-<<wait 3>>
 <<audio_sfx AudioManager DoorCreak Once>>
+<<wait 2>>
 Maia: What was that sound?
 ===
