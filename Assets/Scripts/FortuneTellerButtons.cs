@@ -1,13 +1,14 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-public class FortuneTellerButtons : MonoBehaviour
+// Class for fortune teller buttons -- may discard later
+public class FortuneTellerButtons : UIInteractables 
 {
     [SerializeField] ButtonRegion buttonRegion;
     [SerializeField] FortuneTeller teller;
 
-    void Awake()
+    public override void InteractUI()
     {
-        GetComponent<Button>().onClick.AddListener(() => teller.OnRegionClicked(buttonRegion));
+        teller.OnRegionClicked(buttonRegion);
     }
 }

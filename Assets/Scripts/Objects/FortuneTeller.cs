@@ -10,7 +10,7 @@ using System.Collections.Generic;
     Bottomleft,
     Bottomright
 }
-public class FortuneTeller : FocusedObject
+public class FortuneTeller : UIInteractables
 {
     public enum FortuneTellerState
     {
@@ -86,7 +86,7 @@ public class FortuneTeller : FocusedObject
         SwitchState(FortuneTellerState.Initial);
     }
 
-    public override void EndInteract()
+    public override void EndInteractUI()
     {
         gameObject.SetActive(false);
         DOFManager.instance.SetBackgroundBlur(false); 

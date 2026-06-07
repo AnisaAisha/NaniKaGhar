@@ -9,12 +9,14 @@ public class SandooqInteraction : UIInteractables
     [SerializeField] GameObject sandooqOpen;
     [SerializeField] GameObject scalesCollider;
 
-    public bool isLockOpened;
+    private bool isLockOpened;
+    private bool isSandooqOpen;
     private const string correctCombo = "2699";
 
     void Awake()
     {
         isLockOpened = false;
+        isSandooqOpen = false;
         lockInputFields = new List<TMP_InputField>(GetComponentsInChildren<TMP_InputField>());
 
         // add listeners on each text field to trigger a check when value changes
@@ -22,6 +24,16 @@ public class SandooqInteraction : UIInteractables
         {
             field.onValueChanged.AddListener(_ => InteractUI());
         }
+    }
+
+    public bool GetLockStatus()
+    {
+        return isLockOpened;
+    }
+
+    public void SetLockStatus(bool status)
+    {
+        isLockOpened = status;
     }
 
     // void Start()
@@ -105,10 +117,21 @@ public class SandooqInteraction : UIInteractables
             string combo = GetCombination();
             if (combo == correctCombo) 
             {
+                isLockOpened = true;
+                StoryManager.instance.UpdateStoryState(StoryState.LockOpened);
                 CloseLock();
             } else {
                 Reset();
             }
+        }
+    }
+
+    public void ChangeState()
+    {
+        if (isLockOpened)
+        {
+            isSandooqOpen = !isSandooqOpen;
+            sandooqOpen.SetActive(isSandooqOpen);
         }
     }
 }

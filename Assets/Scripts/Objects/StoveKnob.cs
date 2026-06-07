@@ -31,7 +31,7 @@ public class StoveKnob : Interactables
     public override void Interact()
     {
         bool isStoveReady = CheckStoveIngredients();
-        if (isStoveReady) {
+        if (isStoveReady && StoryManager.instance.currentState == StoryState.SecondCallPicked) {
             stoveFlame.SetActive(true);
             purpleHaze.Play();
 

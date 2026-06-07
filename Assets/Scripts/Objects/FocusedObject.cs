@@ -7,9 +7,18 @@ public class FocusedObject : Interactables
     [SerializeField] GameObject ObjectUIOverlay;
     public override void Interact()
     {
-        DOFManager.instance.SetBackgroundBlur(true);
-        ObjectUIOverlay.SetActive(true);
-        Debug.Log(name + " Game Object Clicked!");
+        SandooqInteraction sandooq = ObjectUIOverlay.GetComponent<SandooqInteraction>();
+        if (sandooq != null && sandooq.GetLockStatus())
+        {
+            sandooq.ChangeState();
+            return;
+        }
+        else
+        {
+            DOFManager.instance.SetBackgroundBlur(true);
+            ObjectUIOverlay.SetActive(true);
+        }
+        // Debug.Log(name + " Game Object Clicked!");
     }
 
     public override void EndInteract()

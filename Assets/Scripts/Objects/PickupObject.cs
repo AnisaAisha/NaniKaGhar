@@ -5,7 +5,6 @@ public class PickupObject : Interactables
 {
     // TODO: MAKE ALL INVENTORY OBJECTS PREFABS
     [SerializeField] InventoryItemData itemData;
-    [SerializeField] DialogueTrigger dialogTrigger;
 
     void Awake() {
         // If SO property says object is deleted, don't load it
@@ -25,8 +24,7 @@ public class PickupObject : Interactables
         Debug.Log("Interacting with object...." + itemData.name);
 
         if (itemData.name == "Jalpari Scales") {
-            InventoryManager.instance.isContainScales = true;
-            GameObject.Find("sandooq open_0").SetActive(false); // CHANGE THIS
+            GameObject.Find("sandooq open_0").SetActive(false); // TODO: CHANGE THIS
 
             DialogueManager.instance.StartStoryDialogue("JalpariScales");
         }

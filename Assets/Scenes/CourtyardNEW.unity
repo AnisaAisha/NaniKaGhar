@@ -1389,7 +1389,7 @@ Canvas:
   m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_TargetDisplay: 0
 --- !u!224 &470193001
 RectTransform:
@@ -8097,11 +8097,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b4f9f44ff28ec4984a514ec0a29683e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogue:
-    sentences:
-    - Hello! I am maia the protagonist
-    - Mamu calling...
-    - Another text space
 --- !u!114 &1268011225
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9353,6 +9348,17 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1711880375}
   m_CullTransparentMesh: 1
+--- !u!114 &1797431613 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3859336324316773513, guid: 52571f68872914e24837210513edea1d, type: 3}
+  m_PrefabInstance: {fileID: 202069987}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 61503eb6a998a4af68e0dcbec4aad8cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1820128941
 GameObject:
   m_ObjectHideFlags: 0
@@ -9397,10 +9403,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 647f59f4dfd1b443f93663ef86a5049b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogueRunner: {fileID: 539113729}
-  dialogText: {fileID: 1241315890}
-  animator: {fileID: 1305354884}
-  dialogInteraction: 0
 --- !u!1 &1871054679
 GameObject:
   m_ObjectHideFlags: 0
@@ -9432,7 +9434,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   inventoryMenu: {fileID: 0}
   itemSlot: {fileID: 4569243179798894094, guid: 01a1803875aac4337bf5ed5af6043d83, type: 3}
-  isContainScales: 0
 --- !u!4 &1871054681
 Transform:
   m_ObjectHideFlags: 0
@@ -9493,6 +9494,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogueRunner: {fileID: 539113729}
+  lineAdvancer: {fileID: 1797431613}
   smoke: {fileID: 1060750126}
   MagicDoor: {fileID: 1149651265}
 --- !u!1 &1938349432
@@ -9721,7 +9723,6 @@ GameObject:
   - component: {fileID: 2111497269}
   - component: {fileID: 2111497268}
   - component: {fileID: 2111497267}
-  - component: {fileID: 2111497266}
   m_Layer: 0
   m_Name: Bougainvillea
   m_TagString: Untagged
@@ -9729,20 +9730,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &2111497266
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2111497265}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b4f9f44ff28ec4984a514ec0a29683e1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogue:
-    sentences: []
 --- !u!114 &2111497267
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9756,7 +9743,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemData: {fileID: 11400000, guid: 3a40262b7a1064969aa5bd1ef34eb6e8, type: 2}
-  dialogTrigger: {fileID: 2111497266}
 --- !u!58 &2111497268
 CircleCollider2D:
   m_ObjectHideFlags: 0

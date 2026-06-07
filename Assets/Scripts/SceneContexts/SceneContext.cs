@@ -5,6 +5,7 @@ using Yarn.Unity;
 public class SceneContext : MonoBehaviour
 {
     [SerializeField] public DialogueRunner dialogueRunner;
+    [SerializeField] public LineAdvancer lineAdvancer;
     [SerializeField] ParticleSystem smoke;
 
      void Awake()

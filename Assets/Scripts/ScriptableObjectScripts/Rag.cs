@@ -30,7 +30,7 @@ public class Rag : InventoryItemData
 
             AudioManager.instance.StopLoopSoundSFX("Smoke");
 
-            ParticleSystem smoke = GameObject.Find("Smoke").GetComponent<ParticleSystem>(); // CHANGE THIS
+            ParticleSystem smoke = GameObject.Find("Smoke").GetComponent<ParticleSystem>(); // TODO: CHANGE THIS
             smoke.Stop();
             // crackling.Stop();
             // StartCoroutine(AddDelay());

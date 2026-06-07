@@ -2,6 +2,7 @@ using UnityEngine;
 using UnityEngine.Audio;
 using UnityEngine.UI;
 using System.Collections;
+using Yarn.Unity;
 
 public class PauseMenu : MonoBehaviour
 {
@@ -32,6 +33,7 @@ public class PauseMenu : MonoBehaviour
         pauseMenuUI.SetActive(false);
         Time.timeScale = 1f; // Resume game time
         isPaused = false;
+        DialogueManager.instance.PauseDialogue(false);
     }
 
     private void Pause()
@@ -39,6 +41,7 @@ public class PauseMenu : MonoBehaviour
         pauseMenuUI.SetActive(true);
         Time.timeScale = 0f; // Freeze game time
         isPaused = true;
+        DialogueManager.instance.PauseDialogue(true);
     }
 
     public void Quit()

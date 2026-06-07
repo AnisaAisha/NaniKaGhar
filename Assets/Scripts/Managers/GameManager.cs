@@ -39,6 +39,8 @@ public class GameManager : MonoBehaviour
     void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
         Debug.Log("Scene Loaded " + scene.name);
+
+        // DialogueManager.instance.dialogueRunner.timeScale = false;
         
         // TODO: Move this code to inventory manager, temp fix
         // Initialize and rebuild inventory panel on every scene load
@@ -49,7 +51,8 @@ public class GameManager : MonoBehaviour
     public void SetSceneContext(SceneContext context)
     {
         // currentContext = context;
-        DialogueManager.instance.dialogueRunner = context.dialogueRunner;
+        DialogueManager.instance.SetDialogueRunner(context.dialogueRunner); //context.dialogueRunner;
+        DialogueManager.instance.SetLineAdvancer(context.lineAdvancer); //context.lineAdvancer;
         context.OnSceneReady();
     }
 }

@@ -11,8 +11,6 @@ public class InventoryManager : MonoBehaviour
     public GameObject inventoryMenu;
     [SerializeField] GameObject itemSlot;
 
-    public bool isContainScales;
-
     private bool isMenuActive;
     private List<InventoryItemData> inventoryList;
     private List<GameObject> inventoryObjList;
@@ -32,7 +30,6 @@ public class InventoryManager : MonoBehaviour
         inventoryList = new List<InventoryItemData>();
         inventoryObjList = new List<GameObject>();
         isMenuActive = false;
-        isContainScales = false;
         inventoryMenu = null;
     }
 

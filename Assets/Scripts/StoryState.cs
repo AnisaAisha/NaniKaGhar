@@ -9,6 +9,7 @@ public enum StoryState
     PhonePicked,
     EnterMaiaRoom,
     ExtinguishFlame,
+    LockOpened,
     SecondCallRing,
     SecondCallPicked,
     PotionSuccess,

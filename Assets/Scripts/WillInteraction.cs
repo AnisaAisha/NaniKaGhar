@@ -23,17 +23,17 @@ public class WillInteraction : MonoBehaviour
         } else if (clickCount == 1) {
             animator.SetBool("isInteracted", true);
 
-            Dialogue d = new Dialogue();
-            DialogueTrigger dialogTrigger = gameObject.AddComponent<DialogueTrigger>();
-            d.sentences = new string[] {  
-                "Maia: Noooo!",
-                "...",
-                "Jump In?",
-                "More Coming Soon..."
-            };
-            dialogTrigger.SetDialogueInteraction(3, gaspAudio);
-            dialogTrigger.SetDialogueInteraction(0, fadeScript);
-            dialogTrigger.TriggerDialogue(d);
+            // Dialogue d = new Dialogue();
+            // DialogueTrigger dialogTrigger = gameObject.AddComponent<DialogueTrigger>();
+            // d.sentences = new string[] {  
+            //     "Maia: Noooo!",
+            //     "...",
+            //     "Jump In?",
+            //     "More Coming Soon..."
+            // };
+            // dialogTrigger.SetDialogueInteraction(3, gaspAudio);
+            // dialogTrigger.SetDialogueInteraction(0, fadeScript);
+            // dialogTrigger.TriggerDialogue(d);
         }
 
         clickCount++;

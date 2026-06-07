@@ -13,11 +13,11 @@ public class CourtyardContext : SceneContext
             StoryManager.instance.UpdateStoryState(StoryState.SecondCallRing);
             AudioManager.instance.PlayLoopSoundSFX("PhoneRing");
         }
-        else if (StoryManager.instance.storyStates[StoryState.PotionSuccess] &&
-           !StoryManager.instance.storyStates[StoryState.MagicDoorAppeared])
+        else if (StoryManager.instance.storyStates[StoryState.PotionSuccess])
         {
             MagicDoor.SetActive(true);
-            StoryManager.instance.UpdateStoryState(StoryState.MagicDoorAppeared);
+            // TODO: We'll deal with this state change once we need have another story state dependent on it
+            // StoryManager.instance.UpdateStoryState(StoryState.MagicDoorAppeared);
         }
     }
 }

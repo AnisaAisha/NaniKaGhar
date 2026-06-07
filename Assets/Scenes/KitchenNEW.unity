@@ -870,7 +870,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemData: {fileID: 11400000, guid: b7b7f8743a3ed4be298e097788ea7003, type: 2}
-  dialogTrigger: {fileID: 538154769}
 --- !u!58 &538154772
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -1007,6 +1006,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogueRunner: {fileID: 2055289509}
+  lineAdvancer: {fileID: 2055289510}
   smoke: {fileID: 0}
 --- !u!4 &597187578
 Transform:
@@ -1551,7 +1551,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemData: {fileID: 11400000, guid: d3f968e2faa1b49ae881d8b174554ce6, type: 2}
-  dialogTrigger: {fileID: 1058811104}
 --- !u!58 &1058811106
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -1838,7 +1837,7 @@ Canvas:
   m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_TargetDisplay: 0
 --- !u!224 &1155672527
 RectTransform:
@@ -7328,7 +7327,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemData: {fileID: 11400000, guid: b470f038bf76a41a888983655f12fe6b, type: 2}
-  dialogTrigger: {fileID: 1546293223}
 --- !u!58 &1546293226
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -7835,6 +7833,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bec29c0a230741bdac901dba8da47ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &2055289510 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3859336324316773513, guid: 52571f68872914e24837210513edea1d, type: 3}
+  m_PrefabInstance: {fileID: 2055289508}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 61503eb6a998a4af68e0dcbec4aad8cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2075755144
 GameObject:
   m_ObjectHideFlags: 0
@@ -8016,7 +8025,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8443086726298524686, guid: 136455e0017cf42aeb5e5d05508ecc01, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
