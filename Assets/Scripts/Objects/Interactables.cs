@@ -9,12 +9,12 @@ public class Interactables : MonoBehaviour, IPointerClickHandler
     // Used AI for thse two functions --- need to verify why
     void OnEnable() 
     {
-        StoryManager.OnStateChanged += OnStoryStateChanged;
+        StoryManager.OnStoryStateChanged += OnStoryStateChanged;
     }
 
     void OnDisable()
     {
-        StoryManager.OnStateChanged -= OnStoryStateChanged;
+        StoryManager.OnStoryStateChanged -= OnStoryStateChanged;
     }
 
     // Virtual function that may be overriden in child classes
@@ -25,9 +25,9 @@ public class Interactables : MonoBehaviour, IPointerClickHandler
 
     public virtual void EndInteract() {}
 
+    // All interactables listen to story state change
     protected virtual void OnStoryStateChanged(StoryState newState) {}
 
-    // NOTE: In Room1, DialogueSystem is disabled because that is over some objects and is blocking clicks
     public void OnPointerClick(PointerEventData eventData)
     {
         Interact();

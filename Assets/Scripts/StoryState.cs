@@ -10,6 +10,7 @@ public enum StoryState
     EnterMaiaRoom,
     ExtinguishFlame,
     LockOpened,
+    ScalesPicked,
     SecondCallRing,
     SecondCallPicked,
     PotionSuccess,

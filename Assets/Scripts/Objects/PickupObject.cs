@@ -24,22 +24,10 @@ public class PickupObject : Interactables
         Debug.Log("Interacting with object...." + itemData.name);
 
         if (itemData.name == "Jalpari Scales") {
-            GameObject.Find("sandooq open_0").SetActive(false); // TODO: CHANGE THIS
-
-            DialogueManager.instance.StartStoryDialogue("JalpariScales");
+            StoryManager.instance.UpdateStoryState(StoryState.ScalesPicked);
         }
-        //     d.sentences = new string[] { 
-        //         $"{itemData.name} added to inventory!",
-        //         "Maia: Guess I have no reason to hide these things anymore." 
-        //     };
-        // } else {
-        //     d.sentences = new string[] { $"{itemData.name} added to inventory!" };
-        // }
-
-        // dialogTrigger.TriggerDialogue(d);
 
         DialogueManager.instance.StartItemDialogue(itemData.name);
-
         InventoryManager.instance.AddItem(itemData);
         DeleteObject();
     }

@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 5cd313a04a189e04795a7e766ee131af
+guid: 1e54ff9ab603e40a9808a8b98b9e3be2
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8695018848087917711
-    second: Quit button_0
+      213: 6879715089841845490
+    second: potionafter_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -96,17 +96,30 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Quit button_0
+      name: potionafter_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 664
-        height: 194
+        x: 53
+        y: 43
+        width: 151
+        height: 236
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f844b9bf299eaa870800000000000000
-      internalID: 8695018848087917711
+      spriteID: 2f4fae58c68a97f50800000000000000
+      internalID: 6879715089841845490
       vertices: []
       indices: 
       edges: []
@@ -135,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Quit button_0: 8695018848087917711
+      potionafter_0: 6879715089841845490
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

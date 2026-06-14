@@ -6,17 +6,13 @@ using TMPro;
 public class SandooqInteraction : UIInteractables
 {
     [SerializeField] List<TMP_InputField> lockInputFields;
-    [SerializeField] GameObject sandooqOpen;
     [SerializeField] GameObject scalesCollider;
-
     private bool isLockOpened;
-    private bool isSandooqOpen;
     private const string correctCombo = "2699";
 
     void Awake()
     {
         isLockOpened = false;
-        isSandooqOpen = false;
         lockInputFields = new List<TMP_InputField>(GetComponentsInChildren<TMP_InputField>());
 
         // add listeners on each text field to trigger a check when value changes
@@ -56,21 +52,8 @@ public class SandooqInteraction : UIInteractables
         // StartCoroutine(AddDelay());
 
         gameObject.SetActive(false);
-        sandooqOpen.SetActive(true);
         scalesCollider.SetActive(true);
         DOFManager.instance.SetBackgroundBlur(false);    
-
-        // if (!InventoryManager.instance.isContainScales) {
-        //     sandooqOpen.SetActive(true);
-        //     scalesCollider.SetActive(true);
-        // }
-
-        // StoryManager.instance.isLockOpened = true;
-
-        // if (!InventoryManager.instance.isContainScales && StoryManager.instance.isLockOpened) {
-        //     sandooqOpen.SetActive(true);
-        //     scalesCollider.SetActive(true);
-        // }
     }
 
     bool AreAllFieldsFilled()
@@ -123,15 +106,6 @@ public class SandooqInteraction : UIInteractables
             } else {
                 Reset();
             }
-        }
-    }
-
-    public void ChangeState()
-    {
-        if (isLockOpened)
-        {
-            isSandooqOpen = !isSandooqOpen;
-            sandooqOpen.SetActive(isSandooqOpen);
         }
     }
 }

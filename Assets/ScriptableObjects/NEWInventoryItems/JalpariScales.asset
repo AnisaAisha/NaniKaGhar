@@ -15,4 +15,4 @@ MonoBehaviour:
   id: 4
   name: Jalpari Scales
   icon: {fileID: 2122563174107230422, guid: f10efd5566fe8482ebea03bb09770b99, type: 3}
-  isDeleted: 0
+  isDeleted: 1

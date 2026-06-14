@@ -7,9 +7,7 @@ using Yarn.Unity;
 public class Phone : Interactables
 {
     [SerializeField] ParticleSystem smoke;
-    // [SerializeField] AudioSource SmokeSound;
 
-    // void StartPhoneDialogue() 
     public override void Interact()
     {
         // ONLY start the dialogue and change state if the phone is ringing

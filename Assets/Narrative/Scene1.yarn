@@ -27,15 +27,16 @@ Maia: Oh, I don't think I am ready to step into Nani's room just yet.
 
 title: MaiaRoom
 ---
-// <<if $isSmoke == true>>
 Maia: Oh no. I forgot about the brewing Sundrip fragrance. I need to put this fire out somehow.
-// <<endif>>
 ===
 
 title: InventoryItem
 ---
 <<declare $itemName = "">>
 {$itemName} added to inventory!
+<<if $itemName == "Jalpari Scales">>
+    Maia: Guess I have no reason to hide these things anymore.
+<<endif>>
 ===
 
 title: Potion
@@ -45,11 +46,6 @@ Maia: It's such a shame though, the Sundrip fragrance was nani's favourite.
 Maia: I must make it again to dispel the smell of burnt potion.
 Maia: Actually, now that nani...isn't...or I mean she can't...see what I'm doing, I can just brew potions in the kitchen I guess.
 Maia: I should gather the ingredients again.
-===
-
-title: JalpariScales
----
-Maia: Guess I have no reason to hide these things anymore.
 ===
 
 title: SecondCall

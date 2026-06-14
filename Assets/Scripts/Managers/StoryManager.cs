@@ -6,7 +6,7 @@ public class StoryManager : MonoBehaviour
 {
     // TODO: Use a persistent system like Yarn or Ink for this after the Game Jam
     public static StoryManager instance;
-    public static event System.Action<StoryState> OnStateChanged;
+    public static event System.Action<StoryState> OnStoryStateChanged;
     public Dictionary<StoryState, bool> storyStates;
     public StoryState currentState;
 
@@ -49,7 +49,7 @@ public class StoryManager : MonoBehaviour
         currentState = state; // Change current state
 
         // Invoke event for certain events that are time based e.g. phone rings
-        OnStateChanged?.Invoke(currentState);
+        OnStoryStateChanged?.Invoke(currentState);
 
         // DEBUG CODE: remove later
         foreach (KeyValuePair<StoryState,bool> kvp in storyStates)

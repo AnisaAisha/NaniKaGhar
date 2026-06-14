@@ -24,17 +24,12 @@ public class Rag : InventoryItemData
         //     dialogTrigger.TriggerDialogue(d);
         }
         else if (isStateChanged && hit.CompareTag("Flame")) {
-            // Turn off the flame and smoke
+            // Turn off the flame
             hit.gameObject.SetActive(false);
+
+            InventoryManager.instance.RemoveItem(this);
             StoryManager.instance.UpdateStoryState(StoryState.ExtinguishFlame);
-
             AudioManager.instance.StopLoopSoundSFX("Smoke");
-
-            ParticleSystem smoke = GameObject.Find("Smoke").GetComponent<ParticleSystem>(); // TODO: CHANGE THIS
-            smoke.Stop();
-            // crackling.Stop();
-            // StartCoroutine(AddDelay());
-
             DialogueManager.instance.StartStoryDialogue("Potion");
         }
     }

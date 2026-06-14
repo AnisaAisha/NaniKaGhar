@@ -4,6 +4,9 @@ public class Room1Context : SceneContext
 {
     [SerializeField] GameObject flame;
     [SerializeField] SandooqInteraction sandooqUI;
+    // Note: Probably make the potion scriptable object
+    [SerializeField] SpriteRenderer potionRenderer;
+    [SerializeField] Sprite burntPotion;
 
     public override void OnSceneReady()
     {
@@ -24,4 +27,23 @@ public class Room1Context : SceneContext
             flame.SetActive(false); // if flame is extinguished, don't show it
         }
     }
+
+    void OnEnable() 
+    {
+        StoryManager.OnStoryStateChanged += OnStoryStateChanged;
+    }
+
+    void OnDisable()
+    {
+        StoryManager.OnStoryStateChanged -= OnStoryStateChanged;
+    }
+
+    void OnStoryStateChanged(StoryState newState) {
+        if (StoryManager.instance.currentState == StoryState.ExtinguishFlame)
+        {
+            potionRenderer.sprite = burntPotion;
+            smoke.Stop();
+        }
+    }
+
 }
