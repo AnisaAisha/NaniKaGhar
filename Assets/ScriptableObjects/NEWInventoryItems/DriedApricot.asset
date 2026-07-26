@@ -12,7 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e9665fa372b894d06896f5510367aec2, type: 3}
   m_Name: DriedApricot
   m_EditorClassIdentifier: 
-  id: 1
+  id: item_apricot
   name: Dried Apricot
   icon: {fileID: -1795104590057013751, guid: e750190677f8e40e1a4c0957a77a6ce2, type: 3}
-  isDeleted: 0

@@ -1,9 +1,13 @@
 using UnityEngine;
+using System.Collections.Generic;
 using UnityEngine.SceneManagement;
 using Yarn.Unity;
 public class GameManager : MonoBehaviour
 {
     public static GameManager instance { get; private set;}
+
+    // inventory items picked up by player
+    private HashSet<string> pickupObjectIDs = new HashSet<string>();
 
     void Awake() {
         // Singleton check
@@ -12,7 +16,6 @@ public class GameManager : MonoBehaviour
             Destroy(gameObject);
             return; // IMPORTANT: stop execution
         }
-
         instance = this;
         DontDestroyOnLoad(gameObject);
     }
@@ -54,5 +57,16 @@ public class GameManager : MonoBehaviour
         DialogueManager.instance.SetDialogueRunner(context.dialogueRunner); //context.dialogueRunner;
         DialogueManager.instance.SetLineAdvancer(context.lineAdvancer); //context.lineAdvancer;
         context.OnSceneReady();
+    }
+
+    // Pickup inventory item methods
+    public bool IsPickedup(string uniqueID) => pickupObjectIDs.Contains(uniqueID);
+
+    public void CollectPickupItem(string uniqueID)
+    {
+        if (!string.IsNullOrEmpty(uniqueID))
+        {
+            pickupObjectIDs.Add(uniqueID);
+        }
     }
 }
