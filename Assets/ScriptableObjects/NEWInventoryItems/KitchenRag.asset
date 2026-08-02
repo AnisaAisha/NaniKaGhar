@@ -12,9 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 863c12d44544f42a2bcf39105eea2152, type: 3}
   m_Name: KitchenRag
   m_EditorClassIdentifier: 
-  id: 5
+  id: item_rag
   name: Rag
   icon: {fileID: 5178497552001929108, guid: a6f5636e248a04a119a30c4f376eed15, type: 3}
-  isDeleted: 0
   isStateChanged: 0
   changedIcon: {fileID: -7149484325893976055, guid: 42aa8e622be5245608b65531f9d9ced1, type: 3}

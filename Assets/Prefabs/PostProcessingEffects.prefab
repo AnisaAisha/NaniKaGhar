@@ -46,6 +46,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   globalVolume: {fileID: 3048335347143675989}
+  backgroundCanvas: {fileID: 8768226463192597082, guid: 149812aacb610431191e53c3466cf434, type: 3}
 --- !u!114 &3048335347143675989
 MonoBehaviour:
   m_ObjectHideFlags: 0

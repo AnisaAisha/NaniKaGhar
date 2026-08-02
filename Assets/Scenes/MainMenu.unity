@@ -818,6 +818,10 @@ MonoBehaviour:
   musicSource: {fileID: 229547884}
   SFXSource: {fileID: 847773433}
   sound:
+  - name: BGTheme
+    clip: {fileID: 8300000, guid: 8e838f64b85ab4d209a0cb2b497b0209, type: 3}
+  - name: VoidBGM
+    clip: {fileID: 8300000, guid: 387f0e598c80449ef948afea4a4d199c, type: 3}
   - name: LifafaPickup
     clip: {fileID: 8300000, guid: 782fffaca162746df91a282f08ac0118, type: 3}
   - name: PhoneRing
@@ -830,8 +834,8 @@ MonoBehaviour:
     clip: {fileID: 8300000, guid: 224b4aa9742644aae945093b34289412, type: 3}
   - name: Button
     clip: {fileID: 8300000, guid: 224b4aa9742644aae945093b34289412, type: 3}
-  - name: BGTheme
-    clip: {fileID: 8300000, guid: 8e838f64b85ab4d209a0cb2b497b0209, type: 3}
+  - name: MaiaGasp
+    clip: {fileID: 8300000, guid: ce0304a80d70b49c78e9b670569da9ab, type: 3}
 --- !u!4 &876815554
 Transform:
   m_ObjectHideFlags: 0

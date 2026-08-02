@@ -12,7 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e9665fa372b894d06896f5510367aec2, type: 3}
   m_Name: Bougainvillea
   m_EditorClassIdentifier: 
-  id: 3
+  id: item_bougainvillea
   name: Bougainvillea
   icon: {fileID: 7598814892522292925, guid: bc954ac16158b4e699232492c835ddc0, type: 3}
-  isDeleted: 0

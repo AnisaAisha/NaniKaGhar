@@ -12,7 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e9665fa372b894d06896f5510367aec2, type: 3}
   m_Name: JalpariScales
   m_EditorClassIdentifier: 
-  id: 4
+  id: item_scales
   name: Jalpari Scales
   icon: {fileID: 2122563174107230422, guid: f10efd5566fe8482ebea03bb09770b99, type: 3}
-  isDeleted: 1

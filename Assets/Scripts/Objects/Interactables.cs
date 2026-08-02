@@ -30,6 +30,7 @@ public class Interactables : MonoBehaviour, IPointerClickHandler
 
     public void OnPointerClick(PointerEventData eventData)
     {
+        Debug.Log("checking pointer clickk....");
         Interact();
     }
 }
