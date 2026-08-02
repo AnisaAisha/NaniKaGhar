@@ -1,39 +1,29 @@
 using UnityEngine;
+using UnityEngine.UI;
 
-public class WillInteraction : MonoBehaviour
+public class WillInteraction : UIInteractables
 {
     [SerializeField] Sprite willBack;
-    [SerializeField] SpriteRenderer willSprite;
-    [SerializeField] AudioSource gaspAudio;
     [SerializeField] Animator animator;
-    [SerializeField] FadeScene fadeScript;
-
+    private Image willImage;
     private int clickCount;
 
     void Awake() 
     {
         clickCount = 0;
+        willImage = GetComponent<Image>();
     }
 
-    void OnMouseDown() 
+    // TODO: Use enums instead of click counts
+    public override void InteractUI()
     {
         Debug.Log(clickCount);
         if (clickCount == 0) {
-            willSprite.sprite = willBack;
+            willImage.sprite = willBack;
         } else if (clickCount == 1) {
             animator.SetBool("isInteracted", true);
 
-            // Dialogue d = new Dialogue();
-            // DialogueTrigger dialogTrigger = gameObject.AddComponent<DialogueTrigger>();
-            // d.sentences = new string[] {  
-            //     "Maia: Noooo!",
-            //     "...",
-            //     "Jump In?",
-            //     "More Coming Soon..."
-            // };
-            // dialogTrigger.SetDialogueInteraction(3, gaspAudio);
-            // dialogTrigger.SetDialogueInteraction(0, fadeScript);
-            // dialogTrigger.TriggerDialogue(d);
+            DialogueManager.instance.StartStoryDialogue("Void");
         }
 
         clickCount++;

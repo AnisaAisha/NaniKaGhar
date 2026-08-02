@@ -48,6 +48,9 @@ public class GameManager : MonoBehaviour
         // TODO: Move this code to inventory manager, temp fix
         // Initialize and rebuild inventory panel on every scene load
         if (scene.name != "MainMenu") InventoryManager.instance.InitializeInventoryPanel();
+
+        // TODO: Probably take this to void scene context?
+        if (scene.name == "Void") AudioManager.instance.PlayMainMusic("VoidBGM");
     }
 
     // Scene specific interaction handled by each scene's own context class
