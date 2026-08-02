@@ -26,8 +26,8 @@ public class PuzzlePiece : MonoBehaviour, IPointerDownHandler, IBeginDragHandler
     {
         canvasGroup.alpha = 1f; // Reset transparency
 
-        if (Mathf.Abs(rectTransform.anchoredPosition.x - slot.GetComponent<RectTransform>().anchoredPosition.x) <= 70f &&
-        Mathf.Abs(rectTransform.anchoredPosition.y - slot.GetComponent<RectTransform>().anchoredPosition.y) <= 70f)
+        if (Mathf.Abs(rectTransform.anchoredPosition.x - slot.GetComponent<RectTransform>().anchoredPosition.x) <= 20f &&
+        Mathf.Abs(rectTransform.anchoredPosition.y - slot.GetComponent<RectTransform>().anchoredPosition.y) <= 20f)
         {
             rectTransform.anchoredPosition = slot.GetComponent<RectTransform>().anchoredPosition;
         }
