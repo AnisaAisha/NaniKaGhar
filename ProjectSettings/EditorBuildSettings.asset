@@ -17,7 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/KitchenNEW.unity
     guid: 63ab2f207e36a42769440c57cfc0a89c
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/Void.unity
     guid: e76f8bc69d7134ff991be424170633c2
   m_configObjects:

@@ -7,8 +7,11 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] Animator animator;
     [SerializeField] float speed;
     private Vector2 movement;
+    private float paddingX = 0.035f; 
+    private float paddingY = 0.075f; 
 
     // TODO: wait THIS UPDATE NEEDS TO BE REMOVED NO UPDATES IN ANY SCRIPTS
+    // Also use FixedUpdate() instead of Update()
     void Update() {
         // Simple top-down movement
         // movement.x = Input.GetAxisRaw("Horizontal");
@@ -31,17 +34,6 @@ public class PlayerMovement : MonoBehaviour
         movement.x = x - y;
         movement.y = (x + y)/2;
 
-
-        // var leftBorder = Camera.main.ViewportToWorldPoint(new Vector2(0,0)).x;
-        // var rightBorder = Camera.main.ViewportToWorldPoint(new Vector2(1,0)).x;
-        // var topBorder = Camera.main.ViewportToWorldPoint(new Vector2(0,0)).y;
-        // var bottomBorder = Camera.main.ViewportToWorldPoint(new Vector2(0,1)).y;
-
-        // Vector3 playerSize = this.gameObject.GetComponent<Renderer>().bounds.size;
-
-        // movement.x = Mathf.Clamp(movement.x, leftBorder + playerSize.x/2, rightBorder - playerSize.x/2);
-        // movement.y = Mathf.Clamp(movement.y, topBorder + playerSize.y/2, bottomBorder - playerSize.y/2);
-
         playerRigidbody.linearVelocity = movement * speed;
         animator.SetFloat("Speed", Mathf.Abs(movement.x));
 
@@ -54,8 +46,10 @@ public class PlayerMovement : MonoBehaviour
             animator.SetFloat("LastVertical", movement.y);
         }
 
+        // Confine the player within world bounds
         Vector3 pos = Camera.main.WorldToViewportPoint(transform.position);
-        pos.x = Mathf.Clamp01(pos.x);
+        pos.x = Mathf.Clamp(pos.x, paddingX, 1f - paddingX);
+        pos.y = Mathf.Clamp(pos.y, paddingY, 1f - paddingY);
         transform.position = Camera.main.ViewportToWorldPoint(pos);
     }
 }

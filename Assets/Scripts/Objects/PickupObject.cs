@@ -5,17 +5,20 @@ public class PickupObject : Interactables
 {
     // TODO: MAKE ALL INVENTORY OBJECTS PREFABS
     [SerializeField] InventoryItemData itemData;
+    [SerializeField] private string sceneObjectID; // Must be same as inventoryitemdata ID
 
-    void Awake() {
-        // If SO property says object is deleted, don't load it
-        if (itemData.isDeleted) {
-            DeleteObject();
+    void Start()
+    {
+        // If item has been picked up by player (saved in pickup list in game manager), don't load it again
+        if (GameManager.instance != null && GameManager.instance.IsPickedup(sceneObjectID))
+        {
+            Destroy(gameObject);
         }
     }
 
     void DeleteObject() // nitpick: replace with EndInteract?
     {
-        itemData.isDeleted = true; // set object to delete in SO
+        // itemData.isDeleted = true; // set object to delete in SO
         Destroy(this.gameObject);
     }
 
@@ -23,12 +26,18 @@ public class PickupObject : Interactables
 
         Debug.Log("Interacting with object...." + itemData.name);
 
-        if (itemData.name == "Jalpari Scales") {
+        if (itemData.id == "item_scales") {
             StoryManager.instance.UpdateStoryState(StoryState.ScalesPicked);
         }
 
         DialogueManager.instance.StartItemDialogue(itemData.name);
         InventoryManager.instance.AddItem(itemData);
+
+        if (GameManager.instance != null)
+        {
+            GameManager.instance.CollectPickupItem(sceneObjectID);
+        }
+
         DeleteObject();
     }
 }

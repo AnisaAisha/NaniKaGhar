@@ -54,6 +54,7 @@ public class InventoryManager : MonoBehaviour
 
     void RebuildInventoryUI()
     {
+        isMenuActive = false;
         inventoryObjList.Clear();
         Debug.Log(inventoryObjList.Count);
         // inventoryObjList.Clear();

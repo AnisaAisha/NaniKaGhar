@@ -12,9 +12,8 @@ GameObject:
   - component: {fileID: 2757466547489427528}
   - component: {fileID: 6684325107416392947}
   - component: {fileID: 2553269242696679404}
-  - component: {fileID: 8443086726298524686}
   m_Layer: 0
-  m_Name: TESTAPRICOT
+  m_Name: Bougainvillea
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -79,7 +78,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -1795104590057013751, guid: e750190677f8e40e1a4c0957a77a6ce2, type: 3}
+  m_Sprite: {fileID: 7598814892522292925, guid: bc954ac16158b4e699232492c835ddc0, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -124,8 +123,8 @@ CircleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
-  m_Radius: 0.5
+  m_Offset: {x: -0.07062626, y: 0}
+  m_Radius: 3.000164
 --- !u!114 &2553269242696679404
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -138,19 +137,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d51a3f46e809448dc83536880fddc101, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemData: {fileID: 11400000, guid: b232075548b7e42848bf999f2b169f76, type: 2}
-  dialogTrigger: {fileID: 8443086726298524686}
---- !u!114 &8443086726298524686
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 120416316855566790}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b4f9f44ff28ec4984a514ec0a29683e1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogue:
-    sentences: []
+  itemData: {fileID: 11400000, guid: 3a40262b7a1064969aa5bd1ef34eb6e8, type: 2}
+  sceneObjectID: item_bougainvillea

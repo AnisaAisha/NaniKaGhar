@@ -12,7 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e9665fa372b894d06896f5510367aec2, type: 3}
   m_Name: ChinarBark
   m_EditorClassIdentifier: 
-  id: 2
+  id: item_chinar
   name: Chinar Bark
   icon: {fileID: 1826633431340571036, guid: 5a34f9f8ac60f47d6a73b710486d56df, type: 3}
-  isDeleted: 0

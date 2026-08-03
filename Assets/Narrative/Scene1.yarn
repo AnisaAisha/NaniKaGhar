@@ -70,3 +70,13 @@ Maia: Which reminds me, she never told me what the secret ingredient in her Khap
 <<wait 2>>
 Maia: What was that sound?
 ===
+
+title: Void
+---
+<<wait 3>>
+<<audio_sfx AudioManager MaiaGasp Once>>
+Maia: Noooo!
+...
+Jump In?
+More Coming Soon...
+===

@@ -9,7 +9,8 @@ public class LifafaInteraction : UIInteractables
 
     public override void InteractUI()
     {
-        gameObject.SetActive(false); // Lifafa is not visible now
+        // lifafa is child of popup blocker, so disable parent 
+        transform.parent.gameObject.SetActive(false);
         letter.SetActive(true);
     }
 
