@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 52c03a4c924d3f1478ae11214348d2e2
+guid: e7a00fb551403114fae90c61011c1b11
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2562436420628430477
-    second: stained glass puzzle incomplete_0
+      213: -2775326380974642689
+    second: stained glass puzzle complete_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: stained glass puzzle incomplete_0
+      name: stained glass puzzle complete_0
       rect:
         serializedVersion: 2
-        x: 422
-        y: 13
-        width: 1052
-        height: 1042
+        x: 412
+        y: 0
+        width: 1096
+        height: 1079
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3714becd6a5607cd0800000000000000
-      internalID: -2562436420628430477
+      spriteID: ff96c3e5c5f0c79d0800000000000000
+      internalID: -2775326380974642689
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      stained glass puzzle incomplete_0: -2562436420628430477
+      stained glass puzzle complete_0: -2775326380974642689
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

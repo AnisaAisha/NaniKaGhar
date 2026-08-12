@@ -1930,7 +1930,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &471653814
 RectTransform:
   m_ObjectHideFlags: 0
@@ -11491,6 +11491,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemData: {fileID: 11400000, guid: 3a40262b7a1064969aa5bd1ef34eb6e8, type: 2}
+  sceneObjectID: 
 --- !u!58 &2111497268
 CircleCollider2D:
   m_ObjectHideFlags: 0

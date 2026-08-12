@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 1600d60112e014a9397d250c16e12ce9
+guid: e7f6cf020c1f46043a62393af761b82a
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2008113668272904275
-    second: stained glass puzzle_0
+      213: -5271824499105772225
+    second: return to courtyard new_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: stained glass puzzle_0
+      name: return to courtyard new_0
       rect:
         serializedVersion: 2
-        x: 516
-        y: 98
-        width: 848
-        height: 837
+        x: 196
+        y: 188
+        width: 1056
+        height: 1179
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 358530aedb04edb10800000000000000
-      internalID: 2008113668272904275
+      spriteID: f3d4994ac87b6d6b0800000000000000
+      internalID: -5271824499105772225
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      stained glass puzzle_0: 2008113668272904275
+      return to courtyard new_0: -5271824499105772225
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -1,10 +1,22 @@
 fileFormatVersion: 2
-guid: 9b95807f4924dc340ab8d3c4ba5f2c0f
+guid: 777771cd2b854f04e8c2a0fcfdab7567
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2008113668272904275
-    second: stained glass puzzle_0
+      213: 670124692745648817
+    second: lampbroken_0
+  - first:
+      213: -867085188996505482
+    second: lampbroken_1
+  - first:
+      213: -6875811548320286660
+    second: lampbroken_2
+  - first:
+      213: -4608250143606383246
+    second: lampbroken_3
+  - first:
+      213: -2408072993110372130
+    second: lampbroken_4
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -46,7 +58,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -100,13 +112,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: stained glass puzzle_0
+      name: lampbroken_0
       rect:
         serializedVersion: 2
-        x: 516
-        y: 98
-        width: 848
-        height: 837
+        x: 24
+        y: 15
+        width: 147
+        height: 146
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +127,96 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 358530aedb04edb10800000000000000
-      internalID: 2008113668272904275
+      spriteID: 1ba725a8bd2cc4900800000000000000
+      internalID: 670124692745648817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lampbroken_1
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 126
+        width: 58
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6706cd75d9e77f3f0800000000000000
+      internalID: -867085188996505482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lampbroken_2
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 127
+        width: 81
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3837df83d53490a0800000000000000
+      internalID: -6875811548320286660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lampbroken_3
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 24
+        width: 96
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27dd232f8e43c00c0800000000000000
+      internalID: -4608250143606383246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lampbroken_4
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 106
+        width: 49
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed0d17c0f5ec49ed0800000000000000
+      internalID: -2408072993110372130
       vertices: []
       indices: 
       edges: []
@@ -125,7 +225,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -135,7 +235,11 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      stained glass puzzle_0: 2008113668272904275
+      lampbroken_0: 670124692745648817
+      lampbroken_1: -867085188996505482
+      lampbroken_2: -6875811548320286660
+      lampbroken_3: -4608250143606383246
+      lampbroken_4: -2408072993110372130
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -1,8 +1,9 @@
 using UnityEngine;
-
+using UnityEngine.UI;
 public class CourtyardContext : SceneContext
 {
     [SerializeField] GameObject MagicDoor;
+    public GameObject PuzzleButton;
     public override void OnSceneReady()
     {
         base.HandleSmoke();
@@ -12,6 +13,12 @@ public class CourtyardContext : SceneContext
         {
             StoryManager.instance.UpdateStoryState(StoryState.SecondCallRing);
             AudioManager.instance.PlayLoopSoundSFX("PhoneRing");
+        }
+        //this is for if player leaves scene although rn magic door also doesn't reappear in this case
+        else if (StoryManager.instance.storyStates[StoryState.PuzzleUnlocked])
+        {
+            PuzzleButton.GetComponent<Button>().enabled = true;
+            PuzzleGame.PuzzleCounter = 0;
         }
         else if (StoryManager.instance.storyStates[StoryState.PotionSuccess])
         {

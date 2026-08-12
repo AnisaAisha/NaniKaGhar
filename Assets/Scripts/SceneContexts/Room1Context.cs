@@ -7,6 +7,8 @@ public class Room1Context : SceneContext
     // Note: Probably make the potion scriptable object
     [SerializeField] SpriteRenderer potionRenderer;
     [SerializeField] Sprite burntPotion;
+    [SerializeField] GameObject lamp;
+    [SerializeField] GameObject brokenLamp;
 
     public override void OnSceneReady()
     {
@@ -25,6 +27,12 @@ public class Room1Context : SceneContext
         {
             // TODO: Perhaps make this a scriptable object?
             flame.SetActive(false); // if flame is extinguished, don't show it
+        }
+
+        if (Mallet.lampBroken)
+        {
+            Destroy(lamp);
+            Instantiate(brokenLamp); //so that it is still there in scene reload if player doesn't pick it up
         }
     }
 
