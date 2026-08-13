@@ -7,6 +7,8 @@ TagManager:
   - Sink
   - Flame
   - Stove
+  - Lamp
+  - Puzzle
   layers:
   - Default
   - TransparentFX

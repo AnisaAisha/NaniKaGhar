@@ -30,6 +30,12 @@ public class PuzzlePiece : MonoBehaviour, IPointerDownHandler, IBeginDragHandler
         Mathf.Abs(rectTransform.anchoredPosition.y - slot.GetComponent<RectTransform>().anchoredPosition.y) <= 20f)
         {
             rectTransform.anchoredPosition = slot.GetComponent<RectTransform>().anchoredPosition;
+            PuzzleGame.PuzzleCounter++;
+            Debug.Log(PuzzleGame.PuzzleCounter);
+            if (PuzzleGame.PuzzleCounter == 8)
+            {
+                StoryManager.instance.UpdateStoryState(StoryState.PuzzleCompleted);
+            }
         }
         if (rectTransform.anchoredPosition != slot.GetComponent<RectTransform>().anchoredPosition)
         {

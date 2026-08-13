@@ -67,6 +67,7 @@ public class InventoryManager : MonoBehaviour
 
             newItem.GetComponent<InventoryItem>().itemData = item;
             newItem.GetComponent<Image>().sprite = item.icon;
+            newItem.name = item.name;
 
             inventoryObjList.Add(newItem);
         }
@@ -80,6 +81,7 @@ public class InventoryManager : MonoBehaviour
         newInventoryItem.GetComponent<InventoryItem>().itemData = item;
         newInventoryItem.GetComponent<Image>().sprite = item.icon;
         newInventoryItem.transform.parent = inventoryMenu.transform;
+        newInventoryItem.name = item.name;
 
         inventoryObjList.Add(newInventoryItem);
         // Debug.Log(inventoryList);

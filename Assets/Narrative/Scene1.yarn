@@ -24,6 +24,12 @@ title: NaniRoom
 ---
 Maia: Oh, I don't think I am ready to step into Nani's room just yet.
 ===
+title: Lamp
+---
+Maia: This lamp is the last present Nani gave me...
+Maia: Can't believe it was just last week when I assembled it and placed it here.
+Maia: The glasswork is so pretty. Seeing it glint in the sunlight almost gets me teary-eyed.
+===
 
 title: MaiaRoom
 ---
@@ -69,6 +75,13 @@ Maia: Which reminds me, she never told me what the secret ingredient in her Khap
 <<audio_sfx AudioManager DoorCreak Once>>
 <<wait 2>>
 Maia: What was that sound?
+===
+
+title: MagicDoorFirst
+---
+<<wait 3>>
+Maia: This stained glass panel. It's broken.
+Maia: Why does it look so familiar?
 ===
 
 title: Void
