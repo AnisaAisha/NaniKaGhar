@@ -11,19 +11,7 @@ public class PuzzleGame : Interactables
     public Sprite CompletedPuzzle;
     public static int PuzzleCounter = 0;
     public static bool DoorOverlay = false;
-    void OnTriggerEnter2D(Collider2D collider) 
-    {
-        // if Player is in trigger area, change scene
-        if (collider.gameObject.layer == 6) 
-        {
-            MagicDoorOverlay.SetActive(true);
-            DoorOverlay = true;
-           if (StoryManager.instance.currentState != StoryState.PuzzleUnlocked)
-            {
-                DialogueManager.instance.StartStoryDialogue("MagicDoorFirst"); //dialogue doesn't appear over UI
-            }
-        }
-    }
+
 
     protected override void OnStoryStateChanged(StoryState newState)
     {

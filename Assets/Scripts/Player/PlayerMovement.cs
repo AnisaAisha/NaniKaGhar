@@ -13,20 +13,6 @@ public class PlayerMovement : MonoBehaviour
     // TODO: wait THIS UPDATE NEEDS TO BE REMOVED NO UPDATES IN ANY SCRIPTS
     // Also use FixedUpdate() instead of Update()
     void Update() {
-        // Simple top-down movement
-        // movement.x = Input.GetAxisRaw("Horizontal");
-        // movement.y = Input.GetAxisRaw("Vertical");
-
-        // Prevent diagonal movement
-        // if (Mathf.Abs(movement.x) > Mathf.Abs(movement.y))
-        // {
-        //     movement.y = 0;
-        // }
-        // else
-        // {
-        //     movement.x = 0;
-        // }
-
         // Convert Cartesian to Isometric movement (diagonal movement)
         float x = Input.GetAxisRaw("Horizontal");
         float y = Input.GetAxisRaw("Vertical");

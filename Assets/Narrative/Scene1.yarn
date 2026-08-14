@@ -77,9 +77,14 @@ Maia: Which reminds me, she never told me what the secret ingredient in her Khap
 Maia: What was that sound?
 ===
 
+title: MagicDoorAppear
+---
+Maia: What?! This- door. How is there a door here?
+===
+
 title: MagicDoorFirst
 ---
-<<wait 3>>
+<<wait 1>>
 Maia: This stained glass panel. It's broken.
 Maia: Why does it look so familiar?
 ===

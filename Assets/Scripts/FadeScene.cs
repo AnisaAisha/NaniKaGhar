@@ -5,8 +5,6 @@ using System.Collections;
 
 public class FadeScene : MonoBehaviour
 {
-    [SerializeField] bool isStaticScene;
-    // [SerializeField] Image image;
     [SerializeField] string NewSceneName;
     [SerializeField] CanvasGroup canvasGroup;
 
@@ -45,6 +43,9 @@ public class FadeScene : MonoBehaviour
     IEnumerator ChangeScene() {
         yield return StartCoroutine(FadeToBlack(2f));
         SceneManager.LoadScene(NewSceneName);
+
+        // If there are any popups open, disable DOF
+        DOFManager.instance.SetBackgroundBlur(false);
     }
 
     public IEnumerator EndScene() {
@@ -53,9 +54,7 @@ public class FadeScene : MonoBehaviour
     }
 
     public void FadeAndChangeScene() {
-        if (isStaticScene) {
-            StartCoroutine(ChangeScene());
-        }  
+        StartCoroutine(ChangeScene());  
     }
     void OnTriggerEnter2D(Collider2D collider) {
         // if Player is in trigger area, change scene
