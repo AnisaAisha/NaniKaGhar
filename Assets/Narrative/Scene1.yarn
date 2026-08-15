@@ -39,7 +39,7 @@ Maia: Oh no. I forgot about the brewing Sundrip fragrance. I need to put this fi
 title: InventoryItem
 ---
 <<declare $itemName = "">>
-{$itemName} added to inventory!
+<style="inventory"> {$itemName} </style> added to inventory!
 <<if $itemName == "Jalpari Scales">>
     Maia: Guess I have no reason to hide these things anymore.
 <<endif>>

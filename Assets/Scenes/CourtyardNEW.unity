@@ -627,6 +627,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2958262986520364888, guid: 52571f68872914e24837210513edea1d, type: 3}
+      propertyPath: m_StyleSheet
+      value: 
+      objectReference: {fileID: 11400000, guid: 367c296127675493987c1413788c16ce, type: 2}
+    - target: {fileID: 2958262986520364888, guid: 52571f68872914e24837210513edea1d, type: 3}
       propertyPath: m_fontColor.b
       value: 0
       objectReference: {fileID: 0}
@@ -2891,8 +2895,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 872d4b8b4e2c64001a578509295bb618, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentPlayerPosition: {x: 0, y: 0, z: 0}
-  isPlayerPositionSaved: 0
 --- !u!4 &1003512208
 Transform:
   m_ObjectHideFlags: 0
@@ -8982,7 +8984,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f4e9dcaf40ea464e83a038a4086e85d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isStaticScene: 0
   NewSceneName: Room 1
   canvasGroup: {fileID: 918125289}
 --- !u!1 &1241315888
@@ -11345,7 +11346,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f4e9dcaf40ea464e83a038a4086e85d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isStaticScene: 0
   NewSceneName: KitchenNEW
   canvasGroup: {fileID: 918125289}
 --- !u!61 &1938349434
@@ -11705,7 +11705,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f4e9dcaf40ea464e83a038a4086e85d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isStaticScene: 1
   NewSceneName: Void
   canvasGroup: {fileID: 918125289}
 --- !u!1 &2029650136

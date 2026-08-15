@@ -940,7 +940,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f4e9dcaf40ea464e83a038a4086e85d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isStaticScene: 1
   NewSceneName: CourtyardNEW
   canvasGroup: {fileID: 1256756499}
 --- !u!114 &324703423
@@ -8054,6 +8053,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2958262986520364888, guid: 52571f68872914e24837210513edea1d, type: 3}
+      propertyPath: m_StyleSheet
+      value: 
+      objectReference: {fileID: 11400000, guid: 367c296127675493987c1413788c16ce, type: 2}
     - target: {fileID: 2958262986520364888, guid: 52571f68872914e24837210513edea1d, type: 3}
       propertyPath: m_fontColor.b
       value: 0
