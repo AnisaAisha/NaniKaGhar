@@ -10,8 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fa97a0aa29caebc428337e38228f8f20, type: 3}
-  m_Name: Glass Shards
+  m_Name: GlassShards
   m_EditorClassIdentifier: 
   id: item_shards
-  name: Glass Shards
+  name: Stained Glass Shards
   icon: {fileID: 21300000, guid: 777771cd2b854f04e8c2a0fcfdab7567, type: 3}
+  puzzleOverlay: {fileID: 0}

@@ -7,7 +7,7 @@ using System.Collections.Generic;
 public class Mallet : InventoryItemData
 {
     public GameObject brokenLamp;
-    public static bool lampBroken = false;
+    public bool lampBroken;
     
     public override void InventoryItemInteract(Collider2D hit)
     {

@@ -19,6 +19,11 @@ public class InventoryItem : UIInteractables, IBeginDragHandler, IDragHandler, I
     // If needed, drag functions will be moved out to UI Interactables class in future. Rn it is only specific to inventory items
     public void OnBeginDrag(PointerEventData eventData) {
         originalPos = transform.position;
+        //This allows dry rag hint to reappear everytime player tries using it on flame but only once per drag
+        if (itemData is Rag rag && !rag.isStateChanged)
+        {
+            rag.hitOnce = false;
+        }
     }
 
     public void OnDrag(PointerEventData eventData) {

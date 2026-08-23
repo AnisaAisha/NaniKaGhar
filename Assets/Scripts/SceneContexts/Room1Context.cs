@@ -9,6 +9,7 @@ public class Room1Context : SceneContext
     [SerializeField] Sprite burntPotion;
     [SerializeField] GameObject lamp;
     [SerializeField] GameObject brokenLamp;
+    [SerializeField] Mallet mallet;
 
     public override void OnSceneReady()
     {
@@ -29,7 +30,7 @@ public class Room1Context : SceneContext
             flame.SetActive(false); // if flame is extinguished, don't show it
         }
 
-        if (Mallet.lampBroken)
+        if (mallet.lampBroken)
         {
             Destroy(lamp);
             Instantiate(brokenLamp); //so that it is still there in scene reload if player doesn't pick it up

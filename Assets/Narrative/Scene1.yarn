@@ -1,98 +1,187 @@
 ﻿title: Letter
 ---
-Maia: By Sunday? But that's today. I think mamu must have mailed this earlier. It's possible the post was delayed by the rain.
+Maia: ...
+Maia: *sigh*
+Maia: I wonder why mamu even bothers trying to be pleasant.
+Maia: And by Sunday? Surely, he couldn't have meant today. 
+Maia: Unless... the post got delayed by the rain and this letter was supposed to arrive a week ago. 
 ===
 
 title: Phone
 ---
 <<declare $firstMamuCall = true>>
 <<declare $isSmoke = false>>
+Mamu: Hello?
 Mamu: Maia beta, how is the packing coming along?
-Maia: Hello mamu. I hope you are well too. I actually haven't started packing yet. Just got your letter.
-<<smoke Phone>>
-Mamu: What? That can't be right. I mailed it more than a week ago. You must have missed it.
-Mamu: That is understandable. However, nothing we can do about it. The movers will be there in the evening. Just clear out the furniture by then so they can take those away.
-<<set $isSmoke to true>>
+Maia: Hello mamu. 
+Maia: I hope you are well too. 
+<<smoke Phone>> 
+Maia: Umm... I haven't started packing yet. I actully just got your letter.
+Mamu: What? That can't be right. I mailed it more than a week ago.
+Mamu: You must have left it lying around and forgotten about it.
+Maia: No, I received it today. It's been raining non-stop so-
 <<audio_sfx AudioManager Smoke Loop>>
+Mamu: Listen Maia, the movers are already on their way. They will be there by evening.
+Mamu: So, I suggest you gather whatever's worth something and leave nani ka ghar as soon as you can.
+Mamu: Come over to our place. Stay with us for a while. I miss you, you know?
+Maia: Mamu, I-  Wait, what's that smell?
+Mamu: I'm sorry?
+Maia: Something's burning!
+Mamu: Well, I'll let you go see to that. Hope you don't burn the house down.
+Mamu: Ha ha.
+Mamu: Anyway, remember to have your things packed by six.
+Maia: Mamu, you can't be serious right now. I really won't be able to do everything in just a few hours!
+Mamu: Unfortunately, there's nothing we can do about it Maia. I hope to see you soon.
 Maia: But I -
-Mamu: Take care.
+Mamu: Take care. 
+Maia: ...
+Mamu: Love you. 
 <<audio_sfx AudioManager PhoneCut Once>>
-Maia: *Sigh*. Where do I even start? Wait, what is that smell?
+<<wait 1>>
+Maia: *sigh* 
 ===
 
 title: NaniRoom
 ---
-Maia: Oh, I don't think I am ready to step into Nani's room just yet.
-===
-title: Lamp
----
-Maia: This lamp is the last present Nani gave me...
-Maia: Can't believe it was just last week when I assembled it and placed it here.
-Maia: The glasswork is so pretty. Seeing it glint in the sunlight almost gets me teary-eyed.
+Maia: Oh, I don't think I am ready to step into nani's room just yet.
 ===
 
 title: MaiaRoom
 ---
-Maia: Oh no. I forgot about the brewing Sundrip fragrance. I need to put this fire out somehow.
+Maia: Oh great. 
+Maia: Thanks to mamu's rambling, I forgot I had left a potion brewing in my room. 
+Maia: It's no good now. I need to put this fire out.
+===
+
+title: Lamp
+---
+Maia: This lamp is the last present Nani gave me.
+Maia: Can't believe it was just last week when I put it together and placed it here.
+Maia: The<style="clue"> glasswork </style>is so pretty. The way it catches the sunlight and disperses it around the room reminds me of... well...
+Maia: It reminds me of nani ka ghar. Which is an odd thought because... this is nani ka ghar...
 ===
 
 title: InventoryItem
 ---
 <<declare $itemName = "">>
-<style="inventory"> {$itemName} </style> added to inventory!
+<style="inventory"> {$itemName} </style>added to inventory!
 <<if $itemName == "Jalpari Scales">>
-    Maia: Guess I have no reason to hide these things anymore.
+    Maia: Guess I have no reason to hide this in here anymore.
 <<endif>>
+===
+
+title: Rag
+---
+Maia: A<style="wrong"> dry cloth </style>would work great if I truly wanted to bring the house down.
 ===
 
 title: Potion
 ---
 Maia: Any later, and mamu wouldn't have had a house to claim.
-Maia: It's such a shame though, the Sundrip fragrance was nani's favourite.
-Maia: I must make it again to dispel the smell of burnt potion.
-Maia: Actually, now that nani...isn't...or I mean she can't...see what I'm doing, I can just brew potions in the kitchen I guess.
-Maia: I should gather the ingredients again.
+Maia: It's such a shame though. The<style="clue"> Sundrip potion's </style>fragrance is nani's favourite.
+Maia: Although, she thinks it's just some fancy perfume I get from afar. 
+Maia: She often asks- asked... Oh. 
+Maia: Nani... Umm... Nani used to ask me what it was made of.
+Maia: Of course I couldn't tell her what was really in it... *sigh*
+<<wait 1>>
+Maia: Ugh. It smells so bad in here. 
+Maia: I think I'll make the potion again to chase away the smell.
+Maia: And I guess I'll just brew it in the kitchen now. 
+Maia: With nani...not here... there's no point sneaking around and risking a forest fire again.
+Maia: I should gather the ingredients.
+===
+
+title: PotionAdd
+---
+<style="inventory"> {$itemName} </style>added to pot!
 ===
 
 title: SecondCall
 ---
-Mamu: Maia, just talked to the movers, they'll be there at 6pm.
-Maia: Mamu...I don't think I can do this.
-Mamu: Sure, you can. The value of Nani ka Ghar will only depreciate further the longer we wait.
-Mamu: You know, I have been insisting on selling this house for a long time. Only your nani wouldn't listen...
+Maia: Hello?
+Mamu: Maia, how are things?
+Maia: Not much different from two hours ago.
+Mamu: Well, I just talked to the movers. They may be arriving sooner than expected.
+Maia: Mamu... I don't think I can do this.
+Mamu: Sure, you can. The value of nani ka ghar will only depreciate further the longer we wait.
+Mamu: You know I have been insisting on selling this house for a long time. Only amma wouldn't listen...
 Maia: I just...I need more time.
-Mamu: We don't have time beta. Pick yourself up, c'mon.
-...
+Mamu: Don't worry, I did tell the movers you will need some time.
+Maia: ... 
+Maia: Mamu, can I ask you something?
+Mamu: Yes?
+Maia: Why did you send me a letter when you could have just called.
+Mamu: You didn't like the letter?
+Maia: I mean, it has caused me two panic attacks within the last two hours, but aside from that, sure.
+Mamu: Well, I'm sorry. I thought a letter might have helped land the news more softly.
+Mamu: I really did want to tell you about my decision ealier but things got really chaotic on my end.
+Mamu: I thought a letter would convey my sentiments better. But I guess, the younger generation can't be expected to appreciate <i>antiquites</i> like handwritten letters.
+Maia: Right. 
+Maia: I'll get going now. Bye.
+<<audio_sfx AudioManager PhoneCut Once>>
 ===
 
 title: PotionSuccess
 ---
-Maia: This fragrance reminds me of nani. She loves it.
-Maia: She would try to guess its notes, nagging me to tell her what was the one she couldn't place.
-Maia: She used to say there was something magical about it.
-Maia: If only I could tell her...
-Maia: Which reminds me, she never told me what the secret ingredient in her Khaplu-famous momos was.
+Maia: Aah. The warm, pine-foresty smell never fails to lift spirits.
+Maia: I wish nani were here.
+Maia: And I wish that I had never had to keep any secrets from her.
+Maia: If nani were here right now, I wouldn't care about anyhting. I would instantly spill all that I have been holding in these past years.
+Maia: I would tell her about the potion and the jalpari scales and how I had acquired them. I would tell her about Ansharia, and I would tell her... who I really am.
+Maia: Maybe then she would tell me her secrets too. Like the secret ingredient she adds in her Khaplu-famous momos.
+Maia: *sigh* I wish you were here nani.
 <<audio_sfx AudioManager DoorCreak Once>>
-<<wait 2>>
-Maia: What was that sound?
+<<wait 3>>
+Maia: Huh? What was that sound?
 ===
 
 title: MagicDoorAppear
 ---
-Maia: What?! This- door. How is there a door here?
+Maia: That's- 
+Maia: What in the Ansharia?
+Maia: There's a door here?!
+Maia: I'm pretty sure there's never been a door here. 
+Maia: I must be trippin-
+<<wait 1>>
+<<audio_sfx AudioManager PhoneRing Loop>>
+<<wait 1>>
+Maia: Oh! That scared me. 
+Maia: God, what does mamu want now?
+===
+
+title: ThirdCall
+---
+Maia: Hello mamu.
+"..."
+Maia: Hello?
+"..."
+Maia: Mamu, is that you?
+"..."
+Maia: Hello??
+<<audio_sfx AudioManager PhoneCut Once>>
+<<wait 1>>
+Maia: Umm okay...
 ===
 
 title: MagicDoorFirst
 ---
+<<wait 2>>
+Maia: There's a<style="clue"> stained glass </style>panel on this door, and it's broken.
+Maia: Why does this glasswork look so familiar?
+===
+
+title: PuzzlePieces
+---
 <<wait 1>>
-Maia: This stained glass panel. It's broken.
-Maia: Why does it look so familiar?
+Maia: These stained glass pieces definitely go here. 
+Maia: But how come? This is so strange...
 ===
 
 title: Void
 ---
 <<wait 3>>
 <<audio_sfx AudioManager MaiaGasp Once>>
+<<wait 2>>
 Maia: Noooo!
 ...
 Jump In?

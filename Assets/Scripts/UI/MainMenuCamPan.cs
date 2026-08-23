@@ -18,6 +18,7 @@ public class SmoothFollowCamera2D : MonoBehaviour
     void TaskOnClick()
     {
         time = true;
+        AudioManager.instance.PlaySingleSoundSFX("MainMenuZoom");
     }
 
     // TODO: remove this

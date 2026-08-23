@@ -13219,6 +13219,7 @@ MonoBehaviour:
   burntPotion: {fileID: 6879715089841845490, guid: 1e54ff9ab603e40a9808a8b98b9e3be2, type: 3}
   lamp: {fileID: 1690344657}
   brokenLamp: {fileID: 6028210805199609708, guid: f9f38d7bc6c52c14cbd273f3da5bd911, type: 3}
+  mallet: {fileID: 11400000, guid: a42af0ed328ca824ea8b6860503a06e6, type: 2}
 --- !u!1 &1771256377
 GameObject:
   m_ObjectHideFlags: 0

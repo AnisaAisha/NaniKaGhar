@@ -20,6 +20,7 @@ public class CourtyardContext : SceneContext
         {
             StoryManager.instance.UpdateStoryState(StoryState.MagicDoorAppeared);
             DialogueManager.instance.StartStoryDialogue("MagicDoorAppear");
+            StoryManager.instance.UpdateStoryState(StoryState.ThirdCallRing);
         }
         //this is for if player leaves scene although rn magic door also doesn't reappear in this case
         else if (StoryManager.instance.storyStates[StoryState.PuzzleUnlocked])

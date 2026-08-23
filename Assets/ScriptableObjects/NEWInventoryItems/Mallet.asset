@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Mallet
   m_EditorClassIdentifier: 
   id: item_mallet
-  name: Mallet
+  name: Meat Mallet
   icon: {fileID: 6959695282216639186, guid: e578b9fe0a509994ca627d8cc428f9ee, type: 3}
   brokenLamp: {fileID: 6028210805199609708, guid: f9f38d7bc6c52c14cbd273f3da5bd911, type: 3}
