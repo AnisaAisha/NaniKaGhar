@@ -822,14 +822,20 @@ MonoBehaviour:
     clip: {fileID: 8300000, guid: 8e838f64b85ab4d209a0cb2b497b0209, type: 3}
   - name: VoidBGM
     clip: {fileID: 8300000, guid: 387f0e598c80449ef948afea4a4d199c, type: 3}
+  - name: MainMenuZoom
+    clip: {fileID: 8300000, guid: eb7cbda5ed03807489fe0df04722b66b, type: 3}
   - name: LifafaPickup
     clip: {fileID: 8300000, guid: 782fffaca162746df91a282f08ac0118, type: 3}
   - name: PhoneRing
     clip: {fileID: 8300000, guid: a28e4a2305c464fa8b9165b4d54ef404, type: 3}
+  - name: PhonePickup
+    clip: {fileID: 8300000, guid: a5a424e4cb4576744ad90fa92532ae5b, type: 3}
   - name: PhoneCut
     clip: {fileID: 8300000, guid: 0e94685ee1d0e4e72a1c01d892cc8f8b, type: 3}
   - name: Smoke
     clip: {fileID: 8300000, guid: da3c24ef670dd194eb294081c0de7008, type: 3}
+  - name: WrongMove
+    clip: {fileID: 8300000, guid: a88167d67becfac4082c9932d4da14f1, type: 3}
   - name: DoorCreak
     clip: {fileID: 8300000, guid: 224b4aa9742644aae945093b34289412, type: 3}
   - name: Button

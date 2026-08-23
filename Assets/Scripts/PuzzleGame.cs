@@ -5,10 +5,10 @@ using System.Collections;
 
 public class PuzzleGame : Interactables
 {
-    public GameObject MagicDoorOverlay;
-    public GameObject PuzzleOverlay;
-    public GameObject PuzzleButton;
-    public Sprite CompletedPuzzle;
+    [SerializeField] GameObject MagicDoorOverlay;
+    [SerializeField] GameObject PuzzleOverlay;
+    [SerializeField] GameObject PuzzleButton;
+    [SerializeField] Sprite CompletedPuzzle;
     public static int PuzzleCounter = 0;
     public static bool DoorOverlay = false;
 

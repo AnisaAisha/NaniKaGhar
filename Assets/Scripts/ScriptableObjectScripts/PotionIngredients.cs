@@ -12,6 +12,8 @@ public class PotionIngredients : InventoryItemData
 
             Debug.Log(name + " added to the pot!");
 
+            DialogueManager.instance.StartItemDialogue(this.name, true);
+
             InventoryManager.instance.RemoveItem(this);
 
             StoryManager.instance.AddStoveItems(this.name); // Temporary; to remove later
