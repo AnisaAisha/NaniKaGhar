@@ -9,6 +9,7 @@ public class GlassShards : InventoryItemData
     
         if (hit != null && PuzzleGame.DoorOverlay) 
         {
+            AudioManager.instance.PlaySingleSoundSFX("GlassPieces");
             StoryManager.instance.UpdateStoryState(StoryState.PuzzleUnlocked);
             DialogueManager.instance.StartStoryDialogue("PuzzlePieces");
             InventoryManager.instance.RemoveItem(this);

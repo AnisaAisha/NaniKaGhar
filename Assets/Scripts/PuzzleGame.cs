@@ -9,7 +9,6 @@ public class PuzzleGame : Interactables
     [SerializeField] GameObject PuzzleOverlay;
     [SerializeField] GameObject PuzzleButton;
     [SerializeField] Sprite CompletedPuzzle;
-    public static int PuzzleCounter = 0;
     public static bool DoorOverlay = false;
 
 

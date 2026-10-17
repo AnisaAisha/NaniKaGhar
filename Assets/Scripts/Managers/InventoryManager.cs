@@ -77,6 +77,7 @@ public class InventoryManager : MonoBehaviour
         Debug.Log(item);
         inventoryList.Add(item);
 
+        AudioManager.instance.PlaySingleSoundSFX("InventoryPickup");
         GameObject newInventoryItem = Instantiate(itemSlot, inventoryMenu.transform);
         newInventoryItem.GetComponent<InventoryItem>().itemData = item;
         newInventoryItem.GetComponent<Image>().sprite = item.icon;
@@ -109,6 +110,7 @@ public class InventoryManager : MonoBehaviour
     public void ToggleMenu()
     {
         Debug.Log("Inventory Button Clicked!" + gameObject.name);
+        AudioManager.instance.PlaySingleSoundSFX("ButtonClick");
         isMenuActive = !isMenuActive;
         Debug.Log("Menu state: " + isMenuActive);
         inventoryMenu.SetActive(isMenuActive);  

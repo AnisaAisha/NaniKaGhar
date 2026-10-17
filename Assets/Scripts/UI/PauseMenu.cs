@@ -23,6 +23,7 @@ public class PauseMenu : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Escape) || Input.GetKeyDown(KeyCode.P))
         {
             // buttonAudioSource.Play();
+            AudioManager.instance.PlaySingleSoundSFX("ButtonClick");
             if (isPaused) Resume();
             else Pause();
         }

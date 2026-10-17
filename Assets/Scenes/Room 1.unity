@@ -629,6 +629,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ObjectUIOverlay: {fileID: 739092410}
+  Lifafa: 0
+  Notebook: 0
+  Teller: 0
 --- !u!1 &58034238
 GameObject:
   m_ObjectHideFlags: 0
@@ -1629,6 +1632,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ObjectUIOverlay: {fileID: 1231804420}
+  Lifafa: 0
+  Notebook: 0
+  Teller: 1
 --- !u!1 &263217799
 GameObject:
   m_ObjectHideFlags: 0
@@ -2807,10 +2813,10 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 739092410}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
+      - m_Target: {fileID: 57380868}
+        m_TargetAssemblyTypeName: FocusedObject, Assembly-CSharp
+        m_MethodName: EndInteract
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -3871,6 +3877,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ObjectUIOverlay: {fileID: 739092410}
+  Lifafa: 0
+  Notebook: 0
+  Teller: 0
   sandooqOpen: {fileID: 1964755478368357101, guid: b6bf2aaa51cfd476b8fc66528d59bcdc, type: 3}
   sandooqOpenWithoutScales: {fileID: 1215408627061666670, guid: 5265b10b2909f43ab94f1f54bba7db19, type: 3}
 --- !u!1 &801991526
@@ -14021,6 +14030,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ObjectUIOverlay: {fileID: 1925521810}
+  Lifafa: 0
+  Notebook: 1
+  Teller: 0
 --- !u!1 &1844373945
 GameObject:
   m_ObjectHideFlags: 0

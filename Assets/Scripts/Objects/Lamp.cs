@@ -9,6 +9,7 @@ public class Lamp : Interactables
     [SerializeField] GameObject brokenLamp;
     public override void Interact()
     {
+        AudioManager.instance.PlaySingleSoundSFX("GlassClink");
         DialogueManager.instance.StartStoryDialogue("Lamp");
         // Debug.Log(name + " Game Object Clicked!");
     }

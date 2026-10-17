@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.UI;
+using System.Collections;
 
 public class SmoothFollowCamera2D : MonoBehaviour
 {
@@ -11,6 +12,7 @@ public class SmoothFollowCamera2D : MonoBehaviour
     void Start()
     {
         // Get the Button component and add a listener to the OnClick event
+        
         Button btn = PlayButton.GetComponent<Button>();
         btn.onClick.AddListener(TaskOnClick);
     }
@@ -20,6 +22,7 @@ public class SmoothFollowCamera2D : MonoBehaviour
         time = true;
         AudioManager.instance.PlaySingleSoundSFX("MainMenuZoom");
     }
+
 
     // TODO: remove this
      void Update()

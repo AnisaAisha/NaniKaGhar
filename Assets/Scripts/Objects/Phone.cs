@@ -11,22 +11,24 @@ public class Phone : Interactables
     public override void Interact()
     {
         // ONLY start the dialogue and change state if the phone is ringing
-        AudioManager.instance.StopLoopSoundSFX("PhoneRing"); //shifted this here
 
         if (StoryManager.instance.currentState == StoryState.PhoneRinging)
         {
-            DialogueManager.instance.StartStoryDialogue("Phone");
+            AudioManager.instance.StopLoopSoundSFX("PhoneRing");
             AudioManager.instance.PlaySingleSoundSFX("PhonePickup");
+            DialogueManager.instance.StartStoryDialogue("Phone");
             StoryManager.instance.UpdateStoryState(StoryState.PhonePicked);
         }
         else if (StoryManager.instance.currentState == StoryState.SecondCallRing)
         {
-            DialogueManager.instance.StartStoryDialogue("SecondCall");
+            AudioManager.instance.StopLoopSoundSFX("PhoneRing");
             AudioManager.instance.PlaySingleSoundSFX("PhonePickup");
+            DialogueManager.instance.StartStoryDialogue("SecondCall");
             StoryManager.instance.UpdateStoryState(StoryState.SecondCallPicked);
         }    
         else if (StoryManager.instance.currentState == StoryState.ThirdCallRing)
         {  
+            AudioManager.instance.StopLoopSoundSFX("PhoneRing");
             AudioManager.instance.PlaySingleSoundSFX("PhonePickup");
             DialogueManager.instance.StartStoryDialogue("ThirdCall");
         }

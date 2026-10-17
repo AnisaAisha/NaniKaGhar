@@ -10015,6 +10015,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ObjectUIOverlay: {fileID: 451942533}
+  Lifafa: 1
 --- !u!61 &1538580437
 BoxCollider2D:
   m_ObjectHideFlags: 0

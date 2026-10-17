@@ -11,19 +11,20 @@ public class Rag : InventoryItemData
     {
         //hitOnce makes sure wet rag dialogue only appears once
         if (hit.CompareTag("Sink") && !hitOnce) {
-            Debug.Log("now the rag is wet!");
+            AudioManager.instance.PlaySingleSoundSFX("WetRag");
 
             // Update scriptable object for persistent storage
             this.icon = changedIcon;
             isStateChanged = true;
             DialogueManager.instance.StartItemDialogue("Wet Rag", false);
+            AudioManager.instance.PlaySingleSoundSFX("Inventory Pickup");
             hitOnce = true;
 
             // d.sentences = new string[] { "The rag is now drenched in water. Maybe this can put out the fire..." };
             // dialogTrigger.TriggerDialogue(d);
         }
         //hitOnce ensures dry rag dialogue only appears once per drag (see InventoryItem)
-        else if (!isStateChanged && hit.CompareTag("Flame") && !hitOnce) {
+        else if (!isStateChanged && StoryManager.instance.storyStates[StoryState.PhonePicked] && hit.CompareTag("Flame") && !hitOnce) {
             AudioManager.instance.PlaySingleSoundSFX("WrongMove");
             DialogueManager.instance.StartStoryDialogue("Rag");
             hitOnce = true;
@@ -37,6 +38,7 @@ public class Rag : InventoryItemData
             InventoryManager.instance.RemoveItem(this);
             StoryManager.instance.UpdateStoryState(StoryState.ExtinguishFlame);
             AudioManager.instance.StopLoopSoundSFX("Smoke");
+            AudioManager.instance.PlaySingleSoundSFX("FlameExtinguish");
             DialogueManager.instance.StartStoryDialogue("Potion");
         }
     }

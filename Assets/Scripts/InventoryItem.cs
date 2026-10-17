@@ -4,7 +4,7 @@ using UnityEngine.EventSystems;
 using System.Collections;
 using UnityEngine.Audio;
 
-public class InventoryItem : UIInteractables, IBeginDragHandler, IDragHandler, IEndDragHandler //MonoBehaviour
+public class InventoryItem : UIInteractables, IBeginDragHandler, IDragHandler, IEndDragHandler, IPointerDownHandler //MonoBehaviour
 {
     public InventoryItemData itemData; // ScriptableObject with InventoryItem info
     private Vector2 originalPos;
@@ -34,9 +34,15 @@ public class InventoryItem : UIInteractables, IBeginDragHandler, IDragHandler, I
     }
 
     public void OnEndDrag(PointerEventData eventData) {
+        AudioManager.instance.PlaySingleSoundSFX("InventoryPickup");
         transform.position = originalPos;
     }
-
+    
+    // didn't use OnPointerClick cuz idk if it would be ok to make it virtual
+    public void OnPointerDown(PointerEventData eventData) 
+    {
+        AudioManager.instance.PlaySingleSoundSFX("InventoryRepickup");
+    }
     public override void InteractUI()
     {
         Vector2 worldPos = Camera.main.ScreenToWorldPoint(currentEventData.position);

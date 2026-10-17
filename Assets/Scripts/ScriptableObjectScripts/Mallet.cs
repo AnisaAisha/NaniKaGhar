@@ -14,8 +14,10 @@ public class Mallet : InventoryItemData
     
         if (hit.CompareTag("Lamp")) 
         {
+            AudioManager.instance.PlaySingleSoundSFX("GlassShatter");
             Destroy(hit.gameObject);
             lampBroken = true;
+            Debug.Log(lampBroken);
             Instantiate(brokenLamp);
             InventoryManager.instance.RemoveItem(this);
         }

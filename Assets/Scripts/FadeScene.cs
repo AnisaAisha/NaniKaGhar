@@ -54,6 +54,7 @@ public class FadeScene : MonoBehaviour
     }
 
     public void FadeAndChangeScene() {
+        AudioManager.instance.PlaySingleSoundSFX("ButtonClick");
         StartCoroutine(ChangeScene());  
     }
     void OnTriggerEnter2D(Collider2D collider) {

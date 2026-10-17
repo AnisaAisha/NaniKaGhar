@@ -18,7 +18,16 @@ public class SandooqInteraction : UIInteractables
         // add listeners on each text field to trigger a check when value changes
         foreach (TMP_InputField field in lockInputFields)
         {
-            field.onValueChanged.AddListener(_ => InteractUI());
+            field.onValueChanged.AddListener(_ => 
+            {
+                // sound for when player types digits
+                if (field != null)
+                {
+                    AudioManager.instance.PlaySingleSoundSFX("SandooqKey");
+                }
+
+                InteractUI();
+            });
         }
     }
 
@@ -84,6 +93,8 @@ public class SandooqInteraction : UIInteractables
         {
             field.text = "";
         }
+        DialogueManager.instance.StartStoryDialogue("SandooqError");
+        AudioManager.instance.PlaySingleSoundSFX("WrongCombination");
         // Dialogue d = new Dialogue();
         // d.sentences = new string[] { "The lock does not seem to open..." };
 
@@ -101,6 +112,7 @@ public class SandooqInteraction : UIInteractables
             if (combo == correctCombo) 
             {
                 isLockOpened = true;
+                AudioManager.instance.PlaySingleSoundSFX("LockOpened");
                 StoryManager.instance.UpdateStoryState(StoryState.LockOpened);
                 CloseLock();
             } else {

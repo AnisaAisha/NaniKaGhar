@@ -12,6 +12,7 @@ public class LifafaInteraction : UIInteractables
         // lifafa is child of popup blocker, so disable parent 
         transform.parent.gameObject.SetActive(false);
         letter.SetActive(true);
+        AudioManager.instance.PlaySingleSoundSFX("PageRustle");
     }
 
     public override void EndInteractUI()

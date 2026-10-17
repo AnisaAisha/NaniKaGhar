@@ -72,7 +72,12 @@ title: InventoryItem
 
 title: Rag
 ---
-Maia: A<style="wrong"> dry cloth </style>would work great if I truly wanted to bring the house down.
+Maia: A <style="wrong">dry</style> rag would work great if I actually wanted to bring the house down.
+===
+
+title: SandooqError
+---
+Maia: Agh! That's not it. I am sure I wrote the <style="clue">combination</style> somewhere.
 ===
 
 title: Potion
@@ -123,11 +128,13 @@ Maia: I'll get going now. Bye.
 
 title: PotionSuccess
 ---
+<<wait 1>>
+<<audio_sfx AudioManager BubblingPot Loop>>
 Maia: Aah. The warm, pine-foresty smell never fails to lift spirits.
 Maia: I wish nani were here.
 Maia: And I wish that I had never had to keep any secrets from her.
 Maia: If nani were here right now, I wouldn't care about anyhting. I would instantly spill all that I have been holding in these past years.
-Maia: I would tell her about the potion and the jalpari scales and how I had acquired them. I would tell her about Ansharia, and I would tell her... who I really am.
+Maia: I would tell her about the potion and the jalpari scales and how I acquired them. I would tell her about Ansharia, and I would tell her... who I really am.
 Maia: Maybe then she would tell me her secrets too. Like the secret ingredient she adds in her Khaplu-famous momos.
 Maia: *sigh* I wish you were here nani.
 <<audio_sfx AudioManager DoorCreak Once>>
@@ -145,7 +152,8 @@ Maia: I must be trippin-
 <<wait 1>>
 <<audio_sfx AudioManager PhoneRing Loop>>
 <<wait 1>>
-Maia: Oh! That scared me. 
+Maia: Oh! 
+Maia: That scared me. 
 Maia: God, what does mamu want now?
 ===
 
@@ -160,26 +168,32 @@ Maia: Mamu, is that you?
 Maia: Hello??
 <<audio_sfx AudioManager PhoneCut Once>>
 <<wait 1>>
-Maia: Umm okay...
+Maia: ...
 ===
 
 title: MagicDoorFirst
 ---
-<<wait 2>>
-Maia: There's a<style="clue"> stained glass </style>panel on this door, and it's broken.
-Maia: Why does this glasswork look so familiar?
+<<wait 1>>
+<<audio_sfx AudioManager MagicDoorCloseup Once>>
+<<wait 1>>
+Maia: It's locked.
+Maia: I have never seen anything like this before.
+Maia: There seems to be a<style="clue"> stained glass </style>panel on this door, but it's broken.
+Maia: Wait... this glasswork looks kind of familiar.
 ===
 
 title: PuzzlePieces
 ---
 <<wait 1>>
 Maia: These stained glass pieces definitely go here. 
-Maia: But how come? This is so strange...
+Maia: Although, it makes no sense. This is so strange...
 ===
 
 title: Void
 ---
-<<wait 3>>
+<<wait 1>>
+<<audio_sfx AudioManager WillFalling Once>>
+<<wait 1>>
 <<audio_sfx AudioManager MaiaGasp Once>>
 <<wait 2>>
 Maia: Noooo!

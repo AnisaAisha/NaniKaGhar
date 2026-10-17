@@ -9,4 +9,10 @@ public class KitchenContext : SceneContext
             smoke?.Play();
         }
     }
+
+    //AudioManager.instance.PlayLoopSoundSFX("SinkDrip"); looping sound cancels smoke sound
+    /**void OnDisable() 
+    {
+        AudioManager.instance.StopLoopSoundSFX("SinkDrip");
+    }*/
 }

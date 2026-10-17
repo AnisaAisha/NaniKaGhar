@@ -19,10 +19,11 @@ public class WillInteraction : UIInteractables
     {
         Debug.Log(clickCount);
         if (clickCount == 0) {
+            AudioManager.instance.PlaySingleSoundSFX("WillPageFlip");
             willImage.sprite = willBack;
         } else if (clickCount == 1) {
             animator.SetBool("isInteracted", true);
-
+            AudioManager.instance.PlaySingleSoundSFX("GrabWill");
             DialogueManager.instance.StartStoryDialogue("Void");
         }
 

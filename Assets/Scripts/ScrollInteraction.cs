@@ -8,6 +8,7 @@ public class ScrollInteraction : UIInteractables
     {        
         ObjectUIOverlay.SetActive(true);
         transform.parent.gameObject.SetActive(false);
+        AudioManager.instance.PlaySingleSoundSFX("PageRustle");
 
     }
 
