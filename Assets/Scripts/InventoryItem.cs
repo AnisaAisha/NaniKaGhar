@@ -4,7 +4,7 @@ using UnityEngine.EventSystems;
 using System.Collections;
 using UnityEngine.Audio;
 
-public class InventoryItem : UIInteractables, IBeginDragHandler, IDragHandler, IEndDragHandler //MonoBehaviour
+public class InventoryItem : UIInteractables, IBeginDragHandler, IDragHandler, IEndDragHandler, IPointerDownHandler //MonoBehaviour
 {
     public InventoryItemData itemData; // ScriptableObject with InventoryItem info
     private Vector2 originalPos;
@@ -19,6 +19,11 @@ public class InventoryItem : UIInteractables, IBeginDragHandler, IDragHandler, I
     // If needed, drag functions will be moved out to UI Interactables class in future. Rn it is only specific to inventory items
     public void OnBeginDrag(PointerEventData eventData) {
         originalPos = transform.position;
+        //This allows dry rag hint to reappear everytime player tries using it on flame but only once per drag
+        if (itemData is Rag rag && !rag.isStateChanged)
+        {
+            rag.hitOnce = false;
+        }
     }
 
     public void OnDrag(PointerEventData eventData) {
@@ -29,9 +34,15 @@ public class InventoryItem : UIInteractables, IBeginDragHandler, IDragHandler, I
     }
 
     public void OnEndDrag(PointerEventData eventData) {
+        AudioManager.instance.PlaySingleSoundSFX("InventoryPickup");
         transform.position = originalPos;
     }
-
+    
+    // didn't use OnPointerClick cuz idk if it would be ok to make it virtual
+    public void OnPointerDown(PointerEventData eventData) 
+    {
+        AudioManager.instance.PlaySingleSoundSFX("InventoryRepickup");
+    }
     public override void InteractUI()
     {
         Vector2 worldPos = Camera.main.ScreenToWorldPoint(currentEventData.position);

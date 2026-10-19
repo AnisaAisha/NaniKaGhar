@@ -7,6 +7,7 @@ public class PuzzlePiece : MonoBehaviour, IPointerDownHandler, IBeginDragHandler
     private CanvasGroup canvasGroup;
     private Canvas canvas;
     public GameObject slot;
+    public static int PuzzleCounter = 0;
     private void Awake()
     {
         rectTransform = GetComponent<RectTransform>();
@@ -29,12 +30,14 @@ public class PuzzlePiece : MonoBehaviour, IPointerDownHandler, IBeginDragHandler
         if (Mathf.Abs(rectTransform.anchoredPosition.x - slot.GetComponent<RectTransform>().anchoredPosition.x) <= 20f &&
         Mathf.Abs(rectTransform.anchoredPosition.y - slot.GetComponent<RectTransform>().anchoredPosition.y) <= 20f)
         {
+            AudioManager.instance.PlaySingleSoundSFX("PuzzleFixed");
             rectTransform.anchoredPosition = slot.GetComponent<RectTransform>().anchoredPosition;
-            PuzzleGame.PuzzleCounter++;
-            Debug.Log(PuzzleGame.PuzzleCounter);
-            if (PuzzleGame.PuzzleCounter == 8)
+            PuzzleCounter++;
+            Debug.Log(PuzzleCounter);
+            if (PuzzleCounter == 8)
             {
                 StoryManager.instance.UpdateStoryState(StoryState.PuzzleCompleted);
+                AudioManager.instance.PlaySingleSoundSFX("MagicDoorOpen");
             }
         }
         if (rectTransform.anchoredPosition != slot.GetComponent<RectTransform>().anchoredPosition)
@@ -44,6 +47,7 @@ public class PuzzlePiece : MonoBehaviour, IPointerDownHandler, IBeginDragHandler
     }
     public void OnPointerDown(PointerEventData eventData)
     {
-         canvasGroup.alpha = 0.7f; // Make item slightly transparent
+        AudioManager.instance.PlaySingleSoundSFX("PuzzlePickup");
+        canvasGroup.alpha = 0.7f; // Make item slightly transparent
     }
 }

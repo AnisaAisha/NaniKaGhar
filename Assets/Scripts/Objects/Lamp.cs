@@ -6,13 +6,12 @@ using UnityEngine.EventSystems;
 // Objects that are interactable/non-interactable on closeup with blurred background
 public class Lamp : Interactables
 {
-    public GameObject brokenLamp;
+    [SerializeField] GameObject brokenLamp;
     public override void Interact()
     {
+        AudioManager.instance.PlaySingleSoundSFX("GlassClink");
         DialogueManager.instance.StartStoryDialogue("Lamp");
         // Debug.Log(name + " Game Object Clicked!");
-
-
     }
 
 }

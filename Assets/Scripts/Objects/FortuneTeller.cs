@@ -70,6 +70,14 @@ public class FortuneTeller : UIInteractables
             }
         }
         currentStep++;
+        Debug.Log(currentStep);
+
+        //button sounds
+        if (currentStep <= 2)
+        {
+            AudioManager.instance.PlaySingleSoundSFX("LifafaPickup");
+        }
+        else if (currentStep == 3) AudioManager.instance.PlaySingleSoundSFX("TellerRustle");
     }
 
     // switch state and image of fortune teller

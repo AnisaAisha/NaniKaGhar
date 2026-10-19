@@ -14,7 +14,8 @@ public enum StoryState
     SecondCallRing,
     SecondCallPicked,
     PotionSuccess,
-    MagicDoorAppeared, 
+    MagicDoorAppeared,
+    ThirdCallRing,
     PuzzleUnlocked,
     PuzzleCompleted
 }

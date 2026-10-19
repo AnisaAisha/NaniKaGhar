@@ -20,11 +20,16 @@ public class Sandooq : FocusedObject
         SandooqInteraction sandooq = ObjectUIOverlay.GetComponent<SandooqInteraction>();
         if (sandooq != null && sandooq.GetLockStatus())
         {
+            if (spriteRenderer.sprite == sandooqClosed)
+            {
+                AudioManager.instance.PlaySingleSoundSFX("SandooqOpening");
+            }
             ChangeSprite();
             return;
         }
         else
         {
+            AudioManager.instance.PlaySingleSoundSFX("SandooqCloseup");
             DOFManager.instance.SetBackgroundBlur(true);
             ObjectUIOverlay.SetActive(true);
         }
@@ -34,8 +39,15 @@ public class Sandooq : FocusedObject
     void ChangeSprite()
     {
         isSandooqOpen = !isSandooqOpen;
-        if (isSandooqOpen) spriteRenderer.sprite = sandooqOpenWithoutScales;
-        else spriteRenderer.sprite = sandooqClosed;
+        if (isSandooqOpen) 
+        {
+            spriteRenderer.sprite = sandooqOpenWithoutScales;
+        }
+        else 
+        {
+            spriteRenderer.sprite = sandooqClosed;
+            AudioManager.instance.PlaySingleSoundSFX("SandooqClosed");
+        }
     }
 
     // Listen to the OnStateChange event from StoryManager

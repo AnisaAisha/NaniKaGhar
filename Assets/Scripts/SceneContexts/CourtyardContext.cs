@@ -20,18 +20,20 @@ public class CourtyardContext : SceneContext
         {
             StoryManager.instance.UpdateStoryState(StoryState.MagicDoorAppeared);
             DialogueManager.instance.StartStoryDialogue("MagicDoorAppear");
+            StoryManager.instance.UpdateStoryState(StoryState.ThirdCallRing);
         }
         //this is for if player leaves scene although rn magic door also doesn't reappear in this case
         else if (StoryManager.instance.storyStates[StoryState.PuzzleUnlocked])
         {
             PuzzleButton.GetComponent<Button>().enabled = true;
-            PuzzleGame.PuzzleCounter = 0;
+            PuzzlePiece.PuzzleCounter = 0;
         }
 
         // If potion is successful, ALWAYS show the magic door
         if (StoryManager.instance.storyStates[StoryState.PotionSuccess])
         {
             MagicDoor.SetActive(true);
+            AudioManager.instance.StopLoopSoundSFX("BubblingPot");
         }
     }
 }

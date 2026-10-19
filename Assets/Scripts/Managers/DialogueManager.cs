@@ -43,9 +43,18 @@ public class DialogueManager : MonoBehaviour
         dialogueRunner.StartDialogue(nextScene);
     }
 
-    public void StartItemDialogue(string itemName)
+    //condition allows me to run dialogue for ingredient added to potion
+    public void StartItemDialogue(string itemName, bool potion)
     {
         dialogueRunner.VariableStorage.SetValue("$itemName", itemName);
-        dialogueRunner.StartDialogue("InventoryItem");
+        if (potion)
+        {
+            Debug.Log("here");
+            dialogueRunner.StartDialogue("PotionAdd");
+        }
+        else if (!potion)
+        {
+            dialogueRunner.StartDialogue("InventoryItem");
+        }
     }
 }

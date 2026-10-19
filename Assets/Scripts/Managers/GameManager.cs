@@ -24,6 +24,7 @@ public class GameManager : MonoBehaviour
     {
         // Start BG music as the game starts
         AudioManager.instance.PlayMainMusic("BGTheme");
+        AudioManager.instance.PlayLoopSoundSFX("Wind"); //can remove if it doesn't sound cool
     }
 
     /** 

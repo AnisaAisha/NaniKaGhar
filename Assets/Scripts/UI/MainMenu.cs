@@ -11,8 +11,9 @@ public class MainMenu : MonoBehaviour
     
     public void OnButtonClick() //we may not need this if we do door opening animation
     {
-        //StartCoroutine(PlayButtonSFX());
-        SceneManager.LoadScene(mainSceneName);
+        StartCoroutine(PlayButtonSFX());
+        //AudioManager.instance.PlaySingleSoundSFX("MainMenuDoor");
+        //SceneManager.LoadScene(mainSceneName);
     }
 
     public void OnButtonClickQuit() //we may not need this if we do door opening animation
@@ -22,10 +23,12 @@ public class MainMenu : MonoBehaviour
 
     public IEnumerator PlayButtonSFX()
     {
-        buttonAudioSource.Play();
 
-        yield return new WaitForSeconds(buttonAudioSource.clip.length);
+        AudioManager.instance.PlaySingleSoundSFX("MainMenuDoor");
+        yield return new WaitForSeconds(0.1f);
         SceneManager.LoadScene(mainSceneName);
+    
+ 
     }
     /**public void StartGame()
     {
@@ -33,7 +36,8 @@ public class MainMenu : MonoBehaviour
     }*/
     public IEnumerator QuitGame()
     {
-        buttonAudioSource.Play();
+        //buttonAudioSource.Play(); chainging this to below
+        AudioManager.instance.PlaySingleSoundSFX("ButtonClick");
 
         yield return new WaitForSeconds(buttonAudioSource.clip.length);
         Application.Quit();

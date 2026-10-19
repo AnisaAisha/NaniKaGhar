@@ -11,18 +11,27 @@ public class Phone : Interactables
     public override void Interact()
     {
         // ONLY start the dialogue and change state if the phone is ringing
+
         if (StoryManager.instance.currentState == StoryState.PhoneRinging)
         {
             AudioManager.instance.StopLoopSoundSFX("PhoneRing");
+            AudioManager.instance.PlaySingleSoundSFX("PhonePickup");
             DialogueManager.instance.StartStoryDialogue("Phone");
             StoryManager.instance.UpdateStoryState(StoryState.PhonePicked);
-        } 
+        }
         else if (StoryManager.instance.currentState == StoryState.SecondCallRing)
         {
             AudioManager.instance.StopLoopSoundSFX("PhoneRing");
+            AudioManager.instance.PlaySingleSoundSFX("PhonePickup");
             DialogueManager.instance.StartStoryDialogue("SecondCall");
             StoryManager.instance.UpdateStoryState(StoryState.SecondCallPicked);
         }    
+        else if (StoryManager.instance.currentState == StoryState.ThirdCallRing)
+        {  
+            AudioManager.instance.StopLoopSoundSFX("PhoneRing");
+            AudioManager.instance.PlaySingleSoundSFX("PhonePickup");
+            DialogueManager.instance.StartStoryDialogue("ThirdCall");
+        }
     }
 
     [YarnCommand("smoke")]
@@ -47,8 +56,8 @@ public class Phone : Interactables
     protected override void OnStoryStateChanged(StoryState newState)
     {
         if (StoryManager.instance.currentState == StoryState.LetterOpened)
-        {
-            StartCoroutine(RingAfterDelay(3f));
+        {  
+            StartCoroutine(RingAfterDelay(10f));
         }
     }
 }

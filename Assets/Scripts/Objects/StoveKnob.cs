@@ -9,7 +9,7 @@ public class StoveKnob : Interactables
     [SerializeField] ParticleSystem purpleHaze;
     [SerializeField] GameObject stoveFlame;
     private string[] reqIngredients;
-    private bool isStoveReady;
+    public bool isStoveReady; //made it public for testing
     
     void Awake() {
         isStoveReady = false;
@@ -32,6 +32,7 @@ public class StoveKnob : Interactables
     {
         bool isStoveReady = CheckStoveIngredients();
         if (isStoveReady && StoryManager.instance.currentState == StoryState.SecondCallPicked) {
+            AudioManager.instance.PlaySingleSoundSFX("StoveTurnOn");
             stoveFlame.SetActive(true);
             purpleHaze.Play();
 

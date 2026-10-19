@@ -30,7 +30,8 @@ public class PickupObject : Interactables
             StoryManager.instance.UpdateStoryState(StoryState.ScalesPicked);
         }
 
-        DialogueManager.instance.StartItemDialogue(itemData.name);
+        //runs dialogue for ingredient added to potion
+        DialogueManager.instance.StartItemDialogue(itemData.name, false);
         InventoryManager.instance.AddItem(itemData);
 
         if (GameManager.instance != null)
